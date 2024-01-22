@@ -3,15 +3,21 @@
 # Update package manager
 sudo apt update
 
-# Install essential packages
-sudo apt install -y package1 package2 package3
+# Upgrade any outdated packages
+sudo apt upgrade
 
-# Install drivers
-sudo apt install -y driver1 driver2 driver3
+# Install gparted
+sudo apt install gparted
 
-# Install applications
-sudo apt install -y telegram skype
+# Install git
+sudo apt install git
 
-# Add more commands as needed
+# Install npm
+sudo apt install npm
 
-echo "Setup complete!"
+# Installing NVM (Node Version Manager) - to change versions of Node.
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+echo "********************************************************"
+echo "Setup complete! Close and reopen the terminal to take effect."
+echo "********************************************************"
