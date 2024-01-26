@@ -18,6 +18,9 @@ sudo apt install npm
 # Installing NVM (Node Version Manager) - to change versions of Node.
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
+# Install python
+sudo apt install python3
+
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
 echo "********************************************************"
