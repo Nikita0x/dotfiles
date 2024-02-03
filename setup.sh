@@ -39,6 +39,9 @@ sudo apt install htop
 # SQLite browser
 sudo apt-get install sqlitebrowser
 
+#install yarn globally
+npm install --global yarn
+
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
 echo "********************************************************"
