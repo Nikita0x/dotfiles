@@ -1,0 +1,483 @@
+{
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+"security.workspace.trust.untrustedFiles": "open",
+  "liveServer.settings.host": "localhost",
+  "editor.linkedEditing": true,
+  "workbench.iconTheme": "icons",
+  "rapidapi.terminalLink.enabled": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.fontFamily": "Waree",
+  "editor.fontLigatures": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "bounded",
+  "emmet.preferences": {},
+  "tabnine.experimentalAutoImports": true,
+  "explorer.confirmDragAndDrop": false,
+"git.openRepositoryInParentFolders": "never",
+  "cSpell.languageSettings": [],
+"workbench.startupEditor": "none",
+  "editor.fontVariations": false,
+  "emmet.includeLanguages": {
+    "vue": "html",
+    "vue-html": "html",
+    "javascript": "javascriptreact",
+    "django-html": "html",
+  },
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.semanticHighlighting.enabled": true,
+  "terminal.integrated.smoothScrolling": true,
+  "volar.inlayHints.eventArgumentInInlineHandlers": false,
+//   Developer: Inspect Editor Tokens and Scope
+  "editor.tokenColorCustomizations": {
+    "[Monokai Dimmed]": {
+        "textMateRules": [
+            {
+              "scope": "emphasis",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "strong",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "entity.other.attribute-name.html",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "markup.underline",
+              "settings": {
+                "fontStyle": "underline"
+              }
+            },
+            {
+              "scope": "markup.bold",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "markup.heading",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "markup.italic",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "storage.type",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "storage.modifier",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "name": "String interpolation",
+              "scope": [
+                "punctuation.definition.template-expression.begin",
+                "punctuation.definition.template-expression.end",
+                "punctuation.section.embedded"
+              ],
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "keyword.control",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": [
+                "keyword.operator.new",
+                "keyword.operator.expression",
+                "keyword.operator.cast",
+                "keyword.operator.sizeof",
+                "keyword.operator.logical.python"
+              ],
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "name": "this.self",
+              "scope": "variable.language",
+              "settings": {
+                "fontStyle": "italic",
+                "foreground": "#fa426187"
+              }
+            },
+            {
+              "name": "@Decorator",
+              "scope": ["meta.decorator punctuation.decorator"],
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+
+            // arguments to a function
+            {
+              "scope": ["variable.parameter"],
+              "settings": {
+                "foreground": "#078448be",
+                "fontStyle": "italic",
+              }
+            }
+          ]
+    },
+    // OK
+    "comments": {
+        "foreground": "#525252",
+        // "fontStyle": "italic"
+    },
+    // "variables": {
+    //     "foreground": "#00bd78",
+    //     "fontStyle": ""
+    // },
+    // "types": {
+    //     "foreground": "#7d0000",
+    //     "fontStyle": ""
+    // },
+    // OK
+    "strings": {
+        // 100% OK
+        "foreground": "#9AA83A",
+        "fontStyle": ""
+    },
+    "functions": {
+        // "foreground": "#ac46c5",
+        "foreground": "#d97706",
+        // bold - 50%-50%
+        "fontStyle": "underline"
+    },
+    "keywords": {
+        // "foreground": "#5073ff",
+        // italic for keywords - 100% OK
+        "fontStyle": "italic"
+    },
+    "numbers": {
+        // kinda OK
+        "foreground": "#3bac9b",
+    //     "fontStyle": ""
+    }
+  },
+"terminal.integrated.env.windows": {},
+  "workbench.settings.useSplitJSON": true,
+  "json.schemas": [],
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#c7000090",
+    "editorCursor.foreground": "#fff"
+  },
+  "workbench.sideBar.location": "right",
+  "explorer.openEditors.visible": 0,
+  "cSpell.allowedSchemas": [
+    "file",
+    "gist",
+    "sftp",
+    "untitled",
+    "vscode-notebook-cell",
+    "vscode-scm",
+    "vscode-userdata",
+    "html"
+  ],
+"git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+"javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+  "githubPullRequests.createOnPublishBranch": "never",
+  "git.openAfterClone": "always",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "ecsstractor_port.bem_nesting": true,
+"ecsstractor_port.attributes": "className",
+  "editor.minimap.enabled": false,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+"editor.inlayHints.padding": true,
+  "workbench.colorTheme": "Monokai Dimmed",
+  "editor.cursorWidth": 3,
+"editor.cursorBlinking": "phase",
+"prettier.tabWidth": 4,
+"prettier.singleAttributePerLine": true,
+"prettier.trailingComma": "all",
+"prettier.useTabs": true,
+"prettier.vueIndentScriptAndStyle": true,
+"cSpell.userWords": [
+    "admob",
+    "axios",
+    "betapi",
+    "chartjs",
+    "cutecat",
+    "devo",
+    "drymobile",
+    "haptics",
+    "homescreen",
+    "instantsearch",
+    "ionicons",
+    "leptos",
+    "meilisearch",
+    "onclick",
+    "SUSP",
+    "swiper",
+    "todos",
+    "vspx",
+    "vuex",
+    "Yposition",
+    "Аккордеон",
+    "аккордеона",
+    "Базовый",
+    "блока",
+    "блоками",
+    "Блюр",
+    "Бордер",
+    "бордера",
+    "браузера",
+    "будет",
+    "быть",
+    "ввода",
+    "вертикально",
+    "видео",
+    "визуально",
+    "внутри",
+    "вручную",
+    "вставки",
+    "второстепенные",
+    "выбран",
+    "выбрать",
+    "Высота",
+    "галки",
+    "горизонтально",
+    "груп",
+    "дефолтные",
+    "Добавит",
+    "добавится",
+    "добавляем",
+    "должен",
+    "других",
+    "другой",
+    "если",
+    "Жирность",
+    "закрывать",
+    "закрыт",
+    "Значение",
+    "ивент",
+    "Иконка",
+    "иконки",
+    "иконок",
+    "инпут",
+    "инпута",
+    "инпутом",
+    "использовать",
+    "Используется",
+    "ищет",
+    "картинка",
+    "картинки",
+    "картинку",
+    "картинок",
+    "класс",
+    "клике",
+    "Кнопка",
+    "кнопки",
+    "кнопкой",
+    "кнопку",
+    "кнопок",
+    "когда",
+    "компонент",
+    "конец",
+    "Контент",
+    "контента",
+    "котик",
+    "кружка",
+    "Лейбл",
+    "лейблом",
+    "либо",
+    "линии",
+    "линию",
+    "линия",
+    "Максимальная",
+    "Максимальное",
+    "Массив",
+    "между",
+    "Минимальное",
+    "Модальное",
+    "Можно",
+    "наводке",
+    "нажатию",
+    "нажать",
+    "Название",
+    "найдена",
+    "начале",
+    "нужно",
+    "обертка",
+    "объектов",
+    "окно",
+    "Описание",
+    "опции",
+    "остаток",
+    "отдельно",
+    "открыт",
+    "открыть",
+    "папке",
+    "передается",
+    "передан",
+    "перехода",
+    "Подсказка",
+    "Позиционирование",
+    "Показать",
+    "Показывать",
+    "Полное",
+    "пользователя",
+    "попапа",
+    "представить",
+    "применятся",
+    "пробела",
+    "пробелы",
+    "пропс",
+    "пропсы",
+    "прямой",
+    "прямоугольник",
+    "радио",
+    "Радиус",
+    "Разделительная",
+    "Размер",
+    "разметки",
+    "Расстояние",
+    "ручного",
+    "сайт",
+    "сама",
+    "связки",
+    "себе",
+    "символов",
+    "скринридеров",
+    "скрыть",
+    "Состояние",
+    "Ссылка",
+    "ссылку",
+    "ставит",
+    "Стандартный",
+    "стили",
+    "Стиль",
+    "Текст",
+    "текста",
+    "тема",
+    "титула",
+    "убираем",
+    "Уникальный",
+    "фокусе",
+    "фона",
+    "Функция",
+    "ховере",
+    "хотим",
+    "Цвет",
+    "центру",
+    "чекбокс",
+    "чекбокса",
+    "через",
+    "чисел",
+    "числа",
+    "ширина",
+    "шрифта",
+    "элементы",
+    "этот"
+],
+"editor.codeLensFontFamily": "PT Sans Narrow",
+"editor.fontSize": 15,
+"editor.cursorStyle": "line-thin",
+"editor.multiCursorModifier": "ctrlCmd",
+"terminal.integrated.fontFamily": "monospace",
+"editor.cursorSurroundingLines": 8,
+"mdb.confirmDeleteDocument": false,
+"notebook.confirmDeleteRunningCell": false,
+"explorer.confirmDelete": false,
+// TEST
+"window.titleBarStyle": "custom",
+"window.customMenuBarAltFocus": false,
+// 
+"explorer.confirmUndo": "verbose",
+"[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+},
+"editor.guides.bracketPairs": "active",
+"editor.hideCursorInOverviewRuler": true,
+"editor.inlayHints.enabled": "off",
+
+// brackets colorization
+// Controls whether bracket pair colorization is enabled or not. Use 'workbench.colorCustomizations' to override the bracket highlight colors.
+"editor.bracketPairColorization.enabled": true,
+"breadcrumbs.enabled": false,
+// // Controls whether the editor should render indent guides.
+// "editor.guides.indentation": true,
+// // Controls whether bracket pair guides are enabled or not.
+// //  - true: Enables bracket pair guides.
+// //  - active: Enables bracket pair guides only for the active bracket pair.
+// //  - false: Disables bracket pair guides.
+// "editor.guides.bracketPairs": "active",
+// // Controls whether horizontal bracket pair guides are enabled or not.
+// //  - true: Enables horizontal guides as addition to vertical bracket pair guides.
+// //  - active: Enables horizontal guides only for the active bracket pair.
+// //  - false: Disables horizontal bracket pair guides.
+// "editor.guides.bracketPairsHorizontal": "active",
+// // Controls whether the editor should highlight the active indent guide.
+// "editor.guides.highlightActiveIndentation": true,
+// // Controls whether bracket pair guides are enabled or not.
+// "editor.guides.highlightActiveBracketPair": true,
+// // Defines the bracket symbols that increase or decrease the indentation.
+// "editor.language.brackets": [
+//     ["[", "]"],
+//     ["(", ")"],
+//     ["{", "}"]
+// ],
+// // Defines the bracket pairs that are colorized by their nesting level if bracket pair colorization is enabled.
+// "editor.language.colorizedBracketPairs": [
+//     ["[", "]"],
+//     ["(", ")"],
+//     ["{", "}"]
+// ],
+// "workbench.colorCustomizations": {
+//     "editorBracketHighlight.foreground1": "#fac928",
+//     "editorBracketHighlight.foreground2": "#c122e9",
+//     "editorBracketHighlight.foreground3": "#057aff",
+//     "editorBracketHighlight.foreground4": "#00e74d",
+//     "editorBracketHighlight.foreground5": "#f51384",
+//     "editorBracketHighlight.foreground6": "#19f9d8",
+//     "editorBracketPairGuide.background1": "#fac9289E",
+//     "editorBracketPairGuide.background2": "#c122e99E",
+//     "editorBracketPairGuide.background3": "#057aff9E",
+//     "editorBracketPairGuide.background4": "#00e74d9E",
+//     "editorBracketPairGuide.background5": "#f513849E",
+//     "editorBracketPairGuide.background6": "#19f9d89E",
+//     "editorBracketPairGuide.activeBackground1": "#FAC9289E",
+//     "editorBracketPairGuide.activeBackground2": "#C122E99E",
+//     "editorBracketPairGuide.activeBackground3": "#057AFF9E",
+//     "editorBracketPairGuide.activeBackground4": "#00E7499E",
+//     "editorBracketPairGuide.activeBackground5": "#F513849E",
+//     "editorBracketPairGuide.activeBackground6": "#19F9D89E"
+// },
+// "breadcrumbs.enabled": false
+}

@@ -39,8 +39,11 @@ sudo apt install htop
 # SQLite browser
 sudo apt-get install sqlitebrowser
 
-#install yarn globally
+# install yarn globally
 npm install --global yarn
+
+# install PostgreSQL, so we can use psql
+sudo apt-get install postgresql postgresql-contrib
 
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."

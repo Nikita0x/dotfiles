@@ -1,0 +1,61 @@
+{
+    // Stateless function component
+    "Stateless Function Component": {
+        "prefix": "sfc",
+        "body": [
+            "function ${1}(props) {",
+            "    return (",
+            "        <div>${1}</div>",
+            "    );",
+            "}",
+        ],
+        "description": "Create a Stateless Function Component"
+    },
+
+
+
+    //Desription
+    "JSDoc description": {
+        "prefix": "desc",
+        "body": [
+            "/**",
+            "* @typedef {Object} ItemProps",
+            "* @property {string} title - description",
+            "*/",
+            "",
+            "/**",
+            "* Component description",
+            "*", 
+            "* @example",
+            "* <Item />",
+                "@param {ItemProps}",
+            "*/",
+        ],
+        "description": "JSDoc description for a component"
+    },
+
+    //Use effect
+    "Use effect snippet": {
+        "prefix": "eff",
+        "body": [
+            "useEffect(() => {",
+            "    ${1}",
+            "}, [])",
+        ],
+        "description": "useEffect snippet"
+    },
+
+        // Rust Yew Function Component
+        "Rust Yew Function Component": {
+            "prefix": "rfc",
+            "body": [
+                "#[function_component(MyComponent)]",
+                "pub fn my_component() -> Html {",
+                "    html! {",
+                "        <div></div>",
+                "    }",
+                "}"
+            ],
+            "description": "Rust Yew Function Component"
+        },
+}
