@@ -45,6 +45,12 @@ npm install --global yarn
 # install PostgreSQL, so we can use psql
 sudo apt-get install postgresql postgresql-contrib
 
+# install Rust and Cargo
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh /dev/stdin -y -c rustc
+
+# Add Rust to PATH
+source "$HOME/.cargo/env"
+
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
 echo "********************************************************"
