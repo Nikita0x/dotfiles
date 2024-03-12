@@ -51,6 +51,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh /dev/stdin -y -c 
 # Add Rust to PATH
 source "$HOME/.cargo/env"
 
+# install cloc - to count lines,commets,blank spaces in many languages
+echo "Y" | sudo apt install cloc
+
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
 echo "********************************************************"
