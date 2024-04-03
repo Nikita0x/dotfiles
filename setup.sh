@@ -54,6 +54,9 @@ source "$HOME/.cargo/env"
 # install cloc - to count lines,commets,blank spaces in many languages
 echo "Y" | sudo apt install cloc
 
+# install gnome-system-monitor (GUI for htop, basically)
+sudo apt-get install gnome-system-monitor
+
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
 echo "********************************************************"
