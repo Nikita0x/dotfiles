@@ -250,11 +250,7 @@
 	"terminal.integrated.env.windows": {},
 	"workbench.settings.useSplitJSON": true,
 	"json.schemas": [],
-	"workbench.colorCustomizations": {
-		"tab.activeBackground": "#c7000090",
-		"editorCursor.foreground": "#fff"
-	},
-	"explorer.openEditors.visible": 0,
+	"explorer.openEditors.visible": 1,
 	"cSpell.allowedSchemas": [
 		"file",
 		"gist",
@@ -524,7 +520,13 @@
 	},
 	"workbench.sideBar.location": "right",
 	"git.ignoreRebaseWarning": true,
-
+	// editor customization
+	"workbench.colorCustomizations": {
+		"tab.activeBackground": "#00042b90",
+		"editorCursor.foreground": "#fff",
+		"editor.background": "#1e1e1e",
+		"editor.selectionBackground": "#000"
+	},
 	//Custom syntax highlighter
 	// background: #1E1E1E
 	"editor.tokenColorCustomizations": {
@@ -544,7 +546,6 @@
 			"fontStyle": ""
 		},
 		"comments": "#525252",
-
 		"types": "#931600",
 		// "variables": "#4FC1FF",
 
@@ -555,7 +556,9 @@
 				"scope": [
 					"constant.language.boolean.false",
 					"constant.language.boolean.true",
-					"constant.language.json.comments"
+					"constant.language.json.comments",
+					"constant.language.null",
+					"constant.language.undefined"
 				],
 				"settings": {
 					"foreground": "#408080"
@@ -572,8 +575,8 @@
 			{
 				"scope": [
 					"variable.language.this",
-					"keyword.operator.spread.js",
-					"variable.language.this.ts"
+					"keyword.operator.spread",
+					"keyword.operator.rest"
 				],
 				"settings": {
 					"foreground": "#C7444A"
@@ -601,13 +604,25 @@
 					"foreground": "#9CDCFE"
 				}
 			},
+			// IN PROGRESS: console, Math,
+			// {
+			// 	"scope": ["support.variable"],
+			// 	"settings": {
+			// 		"foreground": "#0d9c00"
+			// 	}
+			// },
+			// IN PROGRESS, interface,
+			{
+				"scope": ["entity.name.type.interface"],
+				"settings": {
+					"foreground": "#53b20b"
+				}
+			},
 			// other
 			{
 				"scope": [
 					"punctuation.accessor",
 					"punctuation.terminator.statement",
-					"keyword.operator.new",
-					"keyword.operator.ternary",
 					"punctuation.definition.parameters.begin",
 					"punctuation.definition.parameters.end",
 					"punctuation.definition.typeparameters.begin",
@@ -623,27 +638,79 @@
 					"punctuation.definition.interpolation.begin.html.vue",
 					"punctuation.definition.interpolation.end.html.vue",
 					"punctuation.definition.binding-pattern.object.js",
-					"punctuation.separator.key-value.css",
-					"punctuation.terminator.rule.css",
-					"punctuation.section.keyframes.begin.bracket.curly.css",
-					"punctuation.section.keyframes.end.bracket.curly.css"
+					"punctuation.separator.key-value",
+					"punctuation.terminator.rule",
+					"punctuation.section.keyframes.begin.bracket.curly",
+					"punctuation.section.keyframes.end.bracket.curly",
+					"meta.property-value",
+					"punctuation.section.property-list.begin.bracket.curly",
+					"punctuation.section.property-list.end.bracket.curly"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			//logical operators: ||, &&, ??
+			{
+				"scope": ["keyword.operator.logical"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// ternary operators: ?, :
+			{
+				"scope": ["keyword.operator.ternary"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// relational operators: >, <
+			{
+				"scope": ["keyword.operator.relational"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// comparison operators: !==, !=,  ==, ===
+			{
+				"scope": ["keyword.operator.comparison"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// html tags < and >, />
+			{
+				"scope": [
+					"punctuation.definition.tag.begin.html",
+					"punctuation.definition.tag.end.html"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// new operator, typeof operator
+			{
+				"scope": [
+					"keyword.operator.new",
+					"keyword.operator.expression.typeof"
 				],
 				"settings": {
 					"foreground": "#676867"
 				}
 			},
 			// highlight key fields in object literals
-			{
-				// "scope": [
-				// 	"variable.other.property",
-				// 	"variable.other.property.js",
-				// 	"variable.other.object.property.js"
-				// ],
-				// "settings": {
-				// 	"foreground": "#ff0015",
-				// 	"fontStyle": "underline strikethrough"
-				// }
-			},
+			// {
+			// 	// "scope": [
+			// 	// 	"variable.other.property",
+			// 	// 	"variable.other.property.js",
+			// 	// 	"variable.other.object.property.js"
+			// 	// ],
+			// 	// "settings": {
+			// 	// 	"foreground": "#ff0015",
+			// 	// 	"fontStyle": "underline strikethrough"
+			// 	// }
+			// },
+			// types
 			{
 				"scope": ["support.type"],
 				"settings": {
