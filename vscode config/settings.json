@@ -39,212 +39,6 @@
 	"editor.semanticHighlighting.enabled": true,
 	"terminal.integrated.smoothScrolling": true,
 	"volar.inlayHints.eventArgumentInInlineHandlers": false,
-	//   Developer: Inspect Editor Tokens and Scope
-	//   "editor.tokenColorCustomizations": {
-	//     "[Monokai Dimmed]": {
-	//         "textMateRules": [
-	//             {
-	//               "scope": "emphasis",
-	//               "settings": {
-	//                 "fontStyle": "italic"
-	//               }
-	//             },
-	//             {
-	//               "scope": "strong",
-	//               "settings": {
-	//                 "fontStyle": "bold"
-	//               }
-	//             },
-	//             {
-	//               "scope": "entity.other.attribute-name.html",
-	//               "settings": {
-	//                 "fontStyle": "italic"
-	//               }
-	//             },
-	//             {
-	//               "scope": "markup.underline",
-	//               "settings": {
-	//                 "fontStyle": "underline"
-	//               }
-	//             },
-	//             {
-	//               "scope": "markup.bold",
-	//               "settings": {
-	//                 "fontStyle": "bold"
-	//               }
-	//             },
-	//             {
-	//               "scope": "markup.heading",
-	//               "settings": {
-	//                 "fontStyle": "bold"
-	//               }
-	//             },
-	//             {
-	//               "scope": "markup.italic",
-	//               "settings": {
-	//                 "fontStyle": "italic"
-	//               }
-	//             },
-	//             {
-	//               "scope": "storage.type",
-	//               "settings": {
-	//                 "fontStyle": "italic"
-	//               }
-	//             },
-	//             {
-	//               "scope": "storage.modifier",
-	//               "settings": {
-	//                 "fontStyle": "italic"
-	//               }
-	//             },
-	//             {
-	//               "name": "String interpolation",
-	//               "scope": [
-	//                 "punctuation.definition.template-expression.begin",
-	//                 "punctuation.definition.template-expression.end",
-	//                 "punctuation.section.embedded"
-	//               ],
-	//               "settings": {
-	//                 "fontStyle": "italic"
-	//               }
-	//             },
-	//             {
-	//               "scope": "keyword.control",
-	//               "settings": {
-	//                 "fontStyle": "italic"
-	//               }
-	//             },
-	//             {
-	//               "scope": [
-	//                 "keyword.operator.new",
-	//                 "keyword.operator.expression",
-	//                 "keyword.operator.cast",
-	//                 "keyword.operator.sizeof",
-	//                 "keyword.operator.logical.python"
-	//               ],
-	//               "settings": {
-	//                 "fontStyle": "italic"
-	//               }
-	//             },
-	//             {
-	//               "name": "this.self",
-	//               "scope": "variable.language",
-	//               "settings": {
-	//                 "fontStyle": "italic",
-	//                 "foreground": "#fa426187"
-	//               }
-	//             },
-	//             {
-	//               "name": "@Decorator",
-	//               "scope": ["meta.decorator punctuation.decorator"],
-	//               "settings": {
-	//                 "fontStyle": "italic"
-	//               }
-	//             },
-
-	//             // arguments to a function
-	//             {
-	//               "scope": ["variable.parameter"],
-	//               "settings": {
-	//                 "foreground": "#078448be",
-	//                 "fontStyle": "italic",
-	//               }
-	//             },
-	//             {
-	//                 "scope": [
-	//                     "punctuation.definition.block.js",
-	//                     "meta.brace.round.js",
-	//                     "punctuation.definition.parameters.begin.js",
-	//                     "punctuation.definition.parameters.end.js",
-	//                     "meta.brace.square.js",
-	//                     "punctuation.definition.dictionary.end.json.comments",
-	//                     "punctuation.definition.dictionary.begin.json.comments",
-	//                     "punctuation.definition.array.begin.json.comments",
-	//                     "punctuation.definition.array.end.json.comments",
-	//                     "punctuation.section.property-list.begin.bracket.curly.css", "punctuation.section.property-list.end.bracket.curly.css",
-	//                     "meta.brace.round.ts",
-	//                     "punctuation.definition.block.ts",
-	//                     "punctuation.definition.parameters.begin.ts",
-	//                     "punctuation.definition.parameters.end.ts",
-	//                     "punctuation.separator.comma.js",
-	//                     "punctuation.terminator.statement.js",
-	//                     "punctuation.separator.parameter.js",
-	//                     "punctuation.accessor.js",
-	//                     "punctuation.separator.key-value.js"
-	//                     ,"punctuation.separator.key-value.html.vue",
-	//                     "punctuation.definition.interpolation.end.html.vue",
-	//                     "punctuation.definition.interpolation.begin.html.vue",
-	//                     "punctuation.terminator.rule.css",
-	//                     "punctuation.separator.key-value.css",
-	//                     "punctuation.section.function.begin.bracket.round.css",
-	//                     "punctuation.section.function.end.bracket.round.css",
-	//                     "punctuation.separator.list.comma.css",
-	//                     "punctuation.definition.dictionary.begin.json",
-	//                     "punctuation.definition.dictionary.end.json",
-	//                     "punctuation.separator.dictionary.key-value.json",
-	//                     "punctuation.accessor.ts",
-	//                     "punctuation.definition.binding-pattern.object.js"
-
-	//                 ],
-	//                 "settings": {
-	//                     // color for brackets,braces,parentheses
-	//                     "foreground": "#676867"
-	//                     // 100%
-	//                     // "foreground": "#424242"
-	//                 },
-	//             },
-	//             {
-	//                 "scope": [
-	//                     "storage.type.function.arrow.ts",
-	//                     "storage.type.function.arrow.js",
-
-	//                     // test for the "constructor" method inside a class
-	//                     // "storage.type.js
-	//                     // meta.method.declaration.js
-	//                     // meta.class.js
-	//                     // source.js"
-	//                 ],
-	//                 "settings":{
-	//                     "foreground": "#d97706",
-	//                     // "fontStyle": "underline"
-	//                 }
-	//             }
-	//           ]
-	//     },
-	//     // OK
-	//     "comments": {
-	//         "foreground": "#525252",
-	//         // "fontStyle": "italic"
-	//     },
-	//     // "variables": {
-	//     //     "foreground": "#00bd78",
-	//     //     "fontStyle": ""
-	//     // },
-	//     // "types": {
-	//     //     "foreground": "#7d0000",
-	//     //     "fontStyle": ""
-	//     // },
-	//     // OK
-	//     "strings": {
-	//         // 100% OK
-	//         "foreground": "#9AA83A",
-	//         "fontStyle": ""
-	//     },
-	//     "functions": {
-	//         "foreground": "#d97706",
-	//         "fontStyle": "underline"
-	//     },
-	//     "keywords": {
-	//         "foreground": "#5073ff",
-	//         // italic for keywords - 100% OK
-	//         "fontStyle": "italic"
-	//     },
-	//     "numbers": {
-	//         // kinda OK
-	//         "foreground": "#3bac9b",
-	//     //     "fontStyle": ""
-	//     },
-	//   },
 	//disable underline for links
 	"editor.links": false,
 	"terminal.integrated.env.windows": {},
@@ -497,10 +291,6 @@
 	"mdb.confirmDeleteDocument": false,
 	"notebook.confirmDeleteRunningCell": false,
 	"explorer.confirmDelete": false,
-	// TEST
-	// "window.titleBarStyle": "custom",
-	// "window.customMenuBarAltFocus": false,
-	//
 	"explorer.confirmUndo": "verbose",
 	"[rust]": {
 		"editor.defaultFormatter": "rust-lang.rust-analyzer"
@@ -513,11 +303,6 @@
 	"editor.bracketPairColorization.enabled": false,
 	"breadcrumbs.enabled": false,
 	"terminal.integrated.env.linux": {},
-	"console-ninja.featureSet": "Community",
-	"console-ninja.toolsToEnableSupportAutomaticallyFor": {
-		"live-server-extension": true,
-		"live-preview-extension": true
-	},
 	"workbench.sideBar.location": "right",
 	"git.ignoreRebaseWarning": true,
 	// editor customization
@@ -525,7 +310,9 @@
 		"tab.activeBackground": "#00042b90",
 		"editorCursor.foreground": "#fff",
 		"editor.background": "#1e1e1e",
-		"editor.selectionBackground": "#000"
+		"editor.selectionBackground": "#000",
+		"editorLineNumber.foreground": "#676867",
+		"editorLineNumber.activeForeground": "#fff"
 	},
 	//Custom syntax highlighter
 	// background: #1E1E1E
@@ -710,6 +497,7 @@
 			// 	// 	"fontStyle": "underline strikethrough"
 			// 	// }
 			// },
+
 			// types
 			{
 				"scope": ["support.type"],
