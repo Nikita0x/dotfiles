@@ -102,6 +102,7 @@
 		"leptos",
 		"meilisearch",
 		"onclick",
+		"revenuecat",
 		"SUSP",
 		"swiper",
 		"todos",
@@ -358,7 +359,7 @@
 					"foreground": "#3b8cb8"
 				}
 			},
-			// this keyword, spread operator
+			// this keyword, spread/rest operator
 			{
 				"scope": [
 					"variable.language.this",
@@ -431,7 +432,11 @@
 					"punctuation.section.keyframes.end.bracket.curly",
 					"meta.property-value",
 					"punctuation.section.property-list.begin.bracket.curly",
-					"punctuation.section.property-list.end.bracket.curly"
+					"punctuation.section.property-list.end.bracket.curly",
+					"punctuation.definition.binding-pattern.object",
+					"keyword.operator.bitwise",
+					"punctuation.section.keyframes.begin",
+					"punctuation.section.keyframes.end"
 				],
 				"settings": {
 					"foreground": "#676867"
@@ -485,17 +490,41 @@
 					"foreground": "#676867"
 				}
 			},
-			// highlight key fields in object literals
+			// keyboard operator type |
+			{
+				"scope": ["keyword.operator.type"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// interpolation ${} brackets
 			// {
-			// 	// "scope": [
-			// 	// 	"variable.other.property",
-			// 	// 	"variable.other.property.js",
-			// 	// 	"variable.other.object.property.js"
-			// 	// ],
-			// 	// "settings": {
-			// 	// 	"foreground": "#ff0015",
-			// 	// 	"fontStyle": "underline strikethrough"
-			// 	// }
+			// 	"scope": [
+			// 		"punctuation.definition.template-expression.begin",
+			// 		"punctuation.definition.template-expression.end"
+			// 	],
+			// 	"settings": {
+			// 		"foreground": "#df02b6"
+			// 	}
+			// },
+			// highlight key fields in object literals
+			{
+				"scope": [
+					"variable.other.property",
+					"variable.other.property.js",
+					"variable.other.object.property.js"
+				],
+				"settings": {
+					// "foreground": "#ba546d"
+					// "foreground": "#9d9d9d"
+				}
+			},
+			// read write alias
+			// {
+			// 	"scope": ["variable.other.readwrite.alias"],
+			// 	"settings": {
+			// 		"foreground": "#979f70"
+			// 	}
 			// },
 
 			// types
@@ -538,7 +567,12 @@
 			},
 			// arithmetic operators
 			{
-				"scope": ["keyword.operator.arithmetic"],
+				"scope": [
+					"keyword.operator.arithmetic",
+					"keyword.operator.decrement",
+					"keyword.operator.increment",
+					"keyword.operator.assignment.compound"
+				],
 				"settings": {
 					"foreground": "#F92672"
 				}
@@ -622,7 +656,58 @@
 			}
 		]
 	},
-	"files.autoSave": "afterDelay",
+	// "files.autoSave": "afterDelay",
 	"editor.formatOnSave": true,
-	"explorer.confirmPasteNative": false
+	"explorer.confirmPasteNative": false,
+	"vim.highlightedyank.enable": true,
+
+	// VIM SETTINGS
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "j"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<leader>", "d"],
+			"after": ["d", "d"]
+		},
+		{
+			"before": ["<C-l>"],
+			"commands": [":nohl"]
+		},
+		{
+			"before": ["K"],
+			"commands": ["lineBreakInsert"],
+			"silent": true
+		},
+		{
+			"before": ["<leader>", "e"],
+			"commands": ["workbench.action.toggleSidebarVisibility"],
+			"when": "sideBarFocus"
+		},
+		{
+			"before": ["<leader>", "f"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		}
+	],
+	"vim.leader": "<space>",
+	"vim.handleKeys": {
+		"<C-a>": false,
+		"<C-f>": false
+	},
+
+	"extensions.experimental.affinity": {
+		"vscodevim.vim": 1
+	}
 }
