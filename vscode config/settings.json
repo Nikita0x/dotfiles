@@ -215,6 +215,7 @@
 		"отдельно",
 		"открыт",
 		"открыть",
+		"Отправить",
 		"папке",
 		"передается",
 		"передан",
@@ -250,6 +251,7 @@
 		"символов",
 		"скринридеров",
 		"скрыть",
+		"сообщение",
 		"Состояние",
 		"Ссылка",
 		"ссылку",
@@ -316,7 +318,6 @@
 		"editorLineNumber.activeForeground": "#fff"
 	},
 	//Custom syntax highlighter
-	// background: #1E1E1E
 	"editor.tokenColorCustomizations": {
 		"functions": {
 			"fontStyle": "underline",
@@ -436,7 +437,10 @@
 					"punctuation.definition.binding-pattern.object",
 					"keyword.operator.bitwise",
 					"punctuation.section.keyframes.begin",
-					"punctuation.section.keyframes.end"
+					"punctuation.section.keyframes.end",
+					"punctuation.definition.section.case-statement",
+					"punctuation.definition.binding-pattern.array",
+					"punctuation.destructuring"
 				],
 				"settings": {
 					"foreground": "#676867"
@@ -653,11 +657,101 @@
 				"settings": {
 					"foreground": "#D7BA7D"
 				}
+			},
+			// RUST LANGUAGE
+			{
+				"scope": [
+					"punctuation.brackets.round.rust",
+					"punctuation.comma.rust",
+					"punctuation.semi.rust",
+					"keyword.operator.key-value.rust",
+					"punctuation.brackets.curly.rust",
+					"punctuation.brackets.angle.rust"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// .. range operator
+			{
+				"scope": ["keyword.operator.range.rust"],
+				"settings": {
+					"foreground": "#C7444A"
+				}
+			},
+			// :: namespace
+			{
+				"scope": ["keyword.operator.namespace.rust"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// -= - assignment
+			{
+				"scope": [
+					"keyword.operator.assignment.rust",
+					"keyword.operator.math.rust",
+					"keyword.operator.borrow.and.rust"
+				],
+				"settings": {
+					"foreground": "#C7444A"
+				}
+			},
+			// attributes #[derive]
+			{
+				"scope": [
+					"punctuation.definition.attribute.rust",
+					"punctuation.brackets.attribute.rust"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// = - assignment equal
+			{
+				"scope": ["keyword.operator.assignment.equal.rust"],
+				"settings": {
+					"foreground": "#676867"
+				}
 			}
 		]
 	},
+	"editor.semanticTokenColorCustomizations": {
+		// RUST LANGUAGE
+
+		// https://medium.com/@danromans/how-to-customize-semantic-token-colorization-with-visual-studio-code-ac3eab96141b
+		// location - enabled - will enable it for all themes
+		"enabled": true,
+		"rules": {
+			"parameter": {
+				"foreground": "#078448be",
+				"fontStyle": "italic"
+			},
+			"operator": {
+				"foreground": "#676867",
+				"fontStyle": ""
+			},
+			"macro": {
+				"fontStyle": ""
+			},
+			"keyword": {
+				"foreground": "#9872A2",
+				"fontStyle": "italic"
+			},
+			"boolean": {
+				"foreground": "#408080",
+				"fontStyle": ""
+			},
+			"variable.mutable": {
+				"foreground": "#9CDCFE",
+				"fontStyle": ""
+			},
+			"property": "#9CDCFE"
+		}
+	},
 	// "files.autoSave": "afterDelay",
 	"editor.formatOnSave": true,
+	// "editor.lineNumbers": "relative",
 	"explorer.confirmPasteNative": false,
 	"vim.highlightedyank.enable": true,
 
@@ -674,6 +768,22 @@
 		}
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
+		// switch between buffers
+		{ "before": ["<S-h>"], "commands": [":bprevious"] },
+		{ "before": ["<S-l>"], "commands": [":bnext"] },
+
+		// terminal
+		{ "before": ["<S-l>"], "commands": [":bnext"] },
+		{ "before": ["<S-l>"], "commands": [":bnext"] },
+
+		// file tree
+		{
+			"before": ["leader", "e"],
+			"commands": ["workbench.explorer.fileView.focus"]
+		},
+
+		// splits
+		{ "before": ["leader", "v"], "commands": [":vsplit"] },
 		{
 			"before": ["<leader>", "d"],
 			"after": ["d", "d"]
@@ -687,24 +797,37 @@
 			"commands": ["lineBreakInsert"],
 			"silent": true
 		},
-		{
-			"before": ["<leader>", "e"],
-			"commands": ["workbench.action.toggleSidebarVisibility"],
-			"when": "sideBarFocus"
-		},
+		// {
+		// 	"before": ["<leader>", "e"],
+		// 	"commands": [
+		// 		// "workbench.action.toggleSidebarVisibility",
+		// 		"workbench.action.focusSideBar"
+		// 	],
+		// 	"when": "sideBarFocus"
+		// },
+		// fuzzy finder
 		{
 			"before": ["<leader>", "f"],
 			"commands": ["workbench.action.quickOpen"]
 		},
+		// command palette
 		{
 			"before": ["<leader>", "p"],
 			"commands": ["workbench.action.showCommands"]
 		}
 	],
+	"vim.visualModeKeyBindings": [
+		// toggle comment section
+		{
+			"before": ["<leader>", "c"],
+			"commands": ["editor.action.commentLine"]
+		}
+	],
 	"vim.leader": "<space>",
 	"vim.handleKeys": {
 		"<C-a>": false,
-		"<C-f>": false
+		"<C-f>": false,
+		"<C-w>": false
 	},
 
 	"extensions.experimental.affinity": {
