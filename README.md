@@ -1,5 +1,10 @@
 # dotfiles
+
+NVIDIA DRIVERS
+Устанавливать через `Driver Manager`
+
 My personall Shell for Linux
+
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Apps_that_I_use_0"></a>Apps that I use</h2>
 <ul>
 <li class="has-line-data" data-line-start="2" data-line-end="3">Visual Studio Code</li>
