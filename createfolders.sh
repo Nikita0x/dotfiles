@@ -1,0 +1,2 @@
+mkdir ~/Work
+mkdir ~/Github

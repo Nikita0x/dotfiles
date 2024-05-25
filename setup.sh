@@ -57,6 +57,22 @@ echo "Y" | sudo apt install cloc
 # install gnome-system-monitor (GUI for htop, basically)
 sudo apt-get install gnome-system-monitor
 
+# install chrome
+source ./chromeinstallation.sh
+
+# install vscode
+source ./vscodeinstallation.sh
+
+# install android studio + java sdk
+source ./androidstudio.sh
+
+# create/delete folders
+source ./createfolders.sh
+
+# add aliases (studio, etc..)
+source ./aliases.sh
+
+
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
 echo "********************************************************"
