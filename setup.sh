@@ -60,6 +60,9 @@ sudo apt-get install gnome-system-monitor -y
 # install chrome
 source ./chromeinstallation.sh
 
+#install telegram
+sudo apt install telegram-desktop -y
+
 # install vscode
 source ./vscodeinstallation.sh
 
