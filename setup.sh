@@ -40,7 +40,7 @@ sudo apt install htop -y
 sudo apt-get install sqlitebrowser -y
 
 # install yarn globally
-npm install --global yarn -y
+sudo npm install --global yarn -y
 
 # install PostgreSQL, so we can use psql
 sudo apt-get install postgresql postgresql-contrib -y
