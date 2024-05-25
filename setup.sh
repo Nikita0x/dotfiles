@@ -18,6 +18,9 @@ sudo apt install npm -y
 # Installing NVM (Node Version Manager) - to change versions of Node.
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash -y
 
+# update node from v12 to the latest v22+
+nvm install node
+
 # Install python
 sudo apt install python3 -y
 
