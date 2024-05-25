@@ -1,49 +1,49 @@
 #!/bin/bash
 
 # Update package manager
-sudo apt update
+sudo apt update -y
 
 # Upgrade any outdated packages
-sudo apt upgrade
+sudo apt upgrade  -y
 
 # Install gparted
-sudo apt install gparted
+sudo apt install gparted -y
 
 # Install git
-sudo apt install git
+sudo apt install git -y
 
 # Install npm
-sudo apt install npm
+sudo apt install npm -y
 
 # Installing NVM (Node Version Manager) - to change versions of Node.
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash -y
 
 # Install python
-sudo apt install python3
+sudo apt install python3 -y
 
 # Install python virtual environment
-sudo apt install python3.10-venv
+sudo apt install python3.10-venv -y
 
 # Install pip (package manager for python)
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 
 # Install django framework
-sudo apt install python3-django
+sudo apt install python3-django -y
 
 # Handly command to visualize the structure of the folder
-sudo apt install tree
+sudo apt install tree -y
 
 # Package to see and kill processes on Linux
-sudo apt install htop
+sudo apt install htop -y
 
 # SQLite browser
-sudo apt-get install sqlitebrowser
+sudo apt-get install sqlitebrowser -y
 
 # install yarn globally
-npm install --global yarn
+npm install --global yarn -y
 
 # install PostgreSQL, so we can use psql
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install postgresql postgresql-contrib -y
 
 # install Rust and Cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh /dev/stdin -y -c rustc
@@ -55,7 +55,7 @@ source "$HOME/.cargo/env"
 echo "Y" | sudo apt install cloc
 
 # install gnome-system-monitor (GUI for htop, basically)
-sudo apt-get install gnome-system-monitor
+sudo apt-get install gnome-system-monitor -y
 
 # install chrome
 source ./chromeinstallation.sh
