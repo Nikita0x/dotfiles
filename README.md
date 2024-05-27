@@ -3,6 +3,8 @@
 NVIDIA DRIVERS
 Устанавливать через `Driver Manager`
 
+так же, не забудь поставить в `/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf` `wifi.powersave = 2` вместо `wifi.powersave = 3`. (Чтобы вайфай не отрубался)
+
 My personall Shell for Linux
 
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Apps_that_I_use_0"></a>Apps that I use</h2>

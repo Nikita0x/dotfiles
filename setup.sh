@@ -21,6 +21,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash 
 # update node from v12 to the latest v22+
 nvm install node
 
+# install ionic cli globally
+npm install -g @ionic/cli
+
 # Install python
 sudo apt install python3 -y
 
