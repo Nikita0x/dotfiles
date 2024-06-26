@@ -547,9 +547,9 @@
 					"foreground": "#8080FF"
 				}
 			},
-			// async keyword
+			// async keyword, of operator
 			{
-				"scope": "storage.modifier.async",
+				"scope": "storage.modifier.async, keyword.operator.expression.of",
 				"settings": {
 					"foreground": "#9872A2"
 				}
@@ -849,6 +849,5 @@
 		"vscodevim.vim": 1
 	},
 	"github.copilot.editor.enableAutoCompletions": true,
-	"editor.folding": false,
 	"editor.stickyScroll.enabled": false
 }
