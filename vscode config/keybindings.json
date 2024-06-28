@@ -113,6 +113,29 @@
 			]
 		}
 	},
+	{
+		"key": "ctrl+e",
+		"command": "runCommands",
+		"when": "editorTextFocus",
+		"args": {
+			"commands": [
+				"workbench.action.toggleSidebarVisibility",
+				"workbench.view.explorer",
+				"workbench.action.focusSideBar"
+			]
+		}
+	},
+	{
+		"key": "ctrl+e",
+		"command": "runCommands",
+		"when": "editorIsOpen && !editorTextFocus && !view.terminal.visible && !panelFocus",
+		"args": {
+			"commands": [
+				"workbench.action.focusActiveEditorGroup",
+				"workbench.action.toggleSidebarVisibility"
+			]
+		}
+	},
 	// navigate to next opened file
 	{
 		"key": "alt+right",
@@ -173,10 +196,43 @@
 	{
 		"key": "alt+2",
 		"command": "workbench.action.focusSecondEditorGroup"
+	},
+
+	/* 
+    EMPTY KEYBINDS!
+    TESTING:ctrl + e - to toggle file explorer
+    ctrl + q
+    ctrl + r
+    
+    */
+
+	// Commands below remove the default keybinds with this config.
+	{
+		"key": "ctrl+1",
+		"command": "-workbench.action.focusFirstEditorGroup"
+	},
+	{
+		"key": "ctrl+0",
+		"command": "-workbench.action.focusSideBar"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action.quit"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+r",
+		"command": "-workbench.action.openRecent"
+	},
+	{
+		"key": "ctrl+alt+b",
+		"command": "-workbench.action.toggleAuxiliaryBar"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
 	}
-	// EMPTY
-	// {
-	// 	"key": "ctrl+b",
-	// 	"command": "-workbench.action.toggleSidebarVisibility"
-	// }
 ]
