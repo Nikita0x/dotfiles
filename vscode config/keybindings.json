@@ -72,6 +72,11 @@
 		"command": "explorer.newFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 	},
+	// create a new file while in the editor (you can specify the directory as well in the name: /src/test.js)
+	{
+		"key": "ctrl+n",
+		"command": "explorer.newFile"
+	},
 	// undo when sidebar is opened and focused
 	{
 		"key": "u",
@@ -189,17 +194,6 @@
 				"workbench.action.toggleSidebarVisibility"
 			]
 		}
-	},
-	// combination to open split screen
-	{
-		"key": "ctrl+n",
-		"command": "workbench.action.splitEditor",
-		"when": "!terminalFocus"
-	},
-	{
-		"key": "ctrl+up",
-		"command": "-workbench.action.terminal.focusAccessibleBuffer",
-		"when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported"
 	},
 	// alt 1-3 focus 1-3 split editor screen
 	{
