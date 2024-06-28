@@ -1,31 +1,27 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+	// when in editor - "delete" - deletes a line
 	{
 		"key": "delete",
 		"command": "editor.action.deleteLines",
 		"when": "textInputFocus && !editorReadonly"
 	},
+	// search files by name
 	{
-		"key": "ctrl+shift+k",
-		"command": "-editor.action.deleteLines",
-		"when": "textInputFocus && !editorReadonly"
+		"key": "insert",
+		"command": "workbench.action.quickOpen"
 	},
+	// command palette
 	{
 		"key": "ctrl+insert",
 		"command": "workbench.action.showCommands"
 	},
 	{
 		"key": "ctrl+shift+p",
-		"command": "-workbench.action.showCommands"
+		"command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
 	},
-	{
-		"key": "insert",
-		"command": "workbench.action.quickOpen"
-	},
-	{
-		"key": "ctrl+p",
-		"command": "-workbench.action.quickOpen"
-	},
+	// () => {} - snippet
 	{
 		"key": "numpad_add",
 		"command": "editor.action.insertSnippet",
@@ -34,221 +30,33 @@
 		},
 		"when": "textInputFocus && !editorReadonly"
 	},
-	{
-		"key": "Numpad5",
-		"command": "editor.action.insertSnippet",
-		"args": {
-			"snippet": "console.log($1);$0"
-		},
-		"when": "textInputFocus && !editorReadonly"
-	},
-	{
-		"key": "ctrl+tab",
-		"command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-		"when": "!activeEditorGroupEmpty"
-	},
-	{
-		"key": "shift+f10",
-		"command": "-editor.action.showContextMenu",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "end",
-		"command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
-		"when": "inFilesPicker && inQuickOpen"
-	},
-	{
-		"key": "ctrl+shift+p",
-		"command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
-		"when": "inFilesPicker && inQuickOpen"
-	},
-	{
-		"key": "end",
-		"command": "-cursorEnd",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "end",
-		"command": "-lastCompressedFolder",
-		"when": "explorerViewletCompressedFocus && filesExplorerFocus && foldersViewVisible && !explorerViewletCompressedLastFocus && !inputFocus"
-	},
-	{
-		"key": "end",
-		"command": "-notifications.focusLastToast",
-		"when": "notificationFocus && notificationToastsVisible"
-	},
-	{
-		"key": "end",
-		"command": "-workbench.statusBar.focusLast",
-		"when": "statusBarFocused"
-	},
-	{
-		"key": "end",
-		"command": "-list.focusLast",
-		"when": "listFocus && !inputFocus"
-	},
-	{
-		"key": "end",
-		"command": "-editor.action.goToBottomHover",
-		"when": "editorHoverFocused"
-	},
-	{
-		"key": "ctrl+shift+tab",
-		"command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
-		"when": "!activeEditorGroupEmpty"
-	},
-	{
-		"key": "ctrl+end",
-		"command": "-cursorBottom",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "ctrl+shift+end",
-		"command": "-cursorBottomSelect",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "ctrl+end",
-		"command": "-interactive.scrollToBottom",
-		"when": "activeEditor == 'workbench.editor.interactive'"
-	},
-	{
-		"key": "ctrl+end",
-		"command": "-notebook.focusBottom",
-		"when": "notebookEditorFocused && !inputFocus"
-	},
-	{
-		"key": "ctrl+end",
-		"command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
-	},
+
+	// go to definition
 	{
 		"key": "f2",
 		"command": "editor.action.revealDefinition",
 		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
 	},
-	{
-		"key": "f12",
-		"command": "-editor.action.revealDefinition",
-		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-	},
+	// go back from definiton
 	{
 		"key": "f3",
 		"command": "workbench.action.navigateBack",
 		"when": "canNavigateBack"
 	},
-	{
-		"key": "ctrl+alt+-",
-		"command": "-workbench.action.navigateBack",
-		"when": "canNavigateBack"
-	},
-	{
-		"key": "f1",
-		"command": "-workbench.action.showCommands"
-	},
+	// rename a file  / symbol
 	{
 		"key": "f1",
 		"command": "editor.action.rename",
 		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "f2",
-		"command": "-editor.action.rename",
-		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "f1",
-		"command": "debug.renameWatchExpression",
-		"when": "watchExpressionsFocused"
-	},
-	{
-		"key": "f2",
-		"command": "-debug.renameWatchExpression",
-		"when": "watchExpressionsFocused"
-	},
-	{
-		"key": "f1",
-		"command": "debug.setVariable",
-		"when": "variablesFocused"
-	},
-	{
-		"key": "f2",
-		"command": "-debug.setVariable",
-		"when": "variablesFocused"
-	},
-	{
-		"key": "f1",
-		"command": "remote.tunnel.label",
-		"when": "tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
-	},
-	{
-		"key": "f2",
-		"command": "-remote.tunnel.label",
-		"when": "tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
-	},
-	{
 		"key": "f1",
 		"command": "renameFile",
 		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
+	// collapse all folders
 	{
-		"key": "f2",
-		"command": "-renameFile",
-		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "f1",
-		"command": "workbench.action.terminal.renameActiveTab",
-		"when": "terminalHasBeenCreated && terminalTabsFocus && terminalTabsSingularSelection || terminalProcessSupported && terminalTabsFocus && terminalTabsSingularSelection"
-	},
-	{
-		"key": "f2",
-		"command": "-workbench.action.terminal.renameActiveTab",
-		"when": "terminalHasBeenCreated && terminalTabsFocus && terminalTabsSingularSelection || terminalProcessSupported && terminalTabsFocus && terminalTabsSingularSelection"
-	},
-	{
-		"key": "f4",
-		"command": "editor.action.nextMatchFindAction",
-		"when": "editorFocus"
-	},
-	{
-		"key": "f3",
-		"command": "-editor.action.nextMatchFindAction",
-		"when": "editorFocus"
-	},
-	{
-		"key": "f4",
-		"command": "workbench.action.terminal.findNext",
-		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-	},
-	{
-		"key": "f3",
-		"command": "-workbench.action.terminal.findNext",
-		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-	},
-	{
-		"key": "f4",
-		"command": "list.find",
-		"when": "listFocus && listSupportsFind"
-	},
-	{
-		"key": "f3",
-		"command": "-list.find",
-		"when": "listFocus && listSupportsFind"
-	},
-	{
-		"key": "f5",
-		"command": "workbench.actions.view.problems",
-		"when": "workbench.panel.markers.view.active"
-	},
-	{
-		"key": "ctrl+shift+m",
-		"command": "-workbench.actions.view.problems",
-		"when": "workbench.panel.markers.view.active"
-	},
-	// ctrl + b - чтобы открыть файл эксплорер + фокус на нем же, ctrl + b - фокус на редактор обратно
-	//f6 - old way
-	{
-		"key": "ctrl+[",
+		"key": "[",
 		"command": "workbench.files.action.collapseExplorerFolders",
 		"when": "sideBarFocus"
 	},
@@ -264,41 +72,24 @@
 		"command": "explorer.newFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 	},
+	// undo when sidebar is opened and focused
+	{
+		"key": "u",
+		"command": "undo",
+		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+	},
 	// delete file/folder when sidebar is opened and focused
-	// Delete file/folder when sidebar is opened and focused
 	{
 		"key": "d",
-		"command": "explorer.moveFileToTrash",
-		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+		"command": "moveFileToTrash",
+		"when": "explorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
 	},
 	{
 		"key": "delete",
 		"command": "-explorer.moveFileToTrash",
 		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 	},
-	// {
-	//     "key": "f6",
-	//     "command": "runCommands",
-	//     "when": "!sideBarFocus",
-	//     "args": {
-	//         "commands": [
-	//             "workbench.action.toggleSidebarVisibility",
-	//             "workbench.action.focusSideBar",
-	//         ]
-	//     }
-	// },
-	// {
-	//     "key": "f6",
-	//     "command": "runCommands",
-	//     "when": "sideBarFocus",
-	//     "args": {
-	//         "commands": [
-	//             "workbench.action.toggleSidebarVisibility",
-	//             "workbench.action.focusFirstEditorGroup",
-	//         ]
-	//     }
-	// },
-	//f6 - new way
+	// toggle sidebar + focus sidebar , close sidebar + focus editor
 	{
 		"key": "f4",
 		"command": "runCommands",
@@ -341,101 +132,39 @@
 		"when": "!terminalFocus"
 	},
 	{
-		"key": "/",
-		"command": "workbench.action.terminal.focusAccessibleBuffer",
-		"when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported"
-	},
-	{
 		"key": "ctrl+up",
 		"command": "-workbench.action.terminal.focusAccessibleBuffer",
 		"when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported"
 	},
-	{
-		"key": "ctrl+up",
-		"command": "editor.action.goToTopHover",
-		"when": "editorHoverFocused"
-	},
-	{
-		"key": "ctrl+up",
-		"command": "-editor.action.goToTopHover",
-		"when": "editorHoverFocused"
-	},
-	{
-		"key": "ctrl+up",
-		"command": "list.scrollUp",
-		"when": "listFocus && !inputFocus && listScrollAtBoundary != 'both' && listScrollAtBoundary != 'top'"
-	},
-	{
-		"key": "ctrl+up",
-		"command": "-list.scrollUp",
-		"when": "listFocus && !inputFocus && listScrollAtBoundary != 'both' && listScrollAtBoundary != 'top'"
-	},
-	{
-		"key": "shift+pageup",
-		"command": "workbench.action.terminal.scrollUpPage",
-		"when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
-	},
-	{
-		"key": "shift+pageup",
-		"command": "-workbench.action.terminal.scrollUpPage",
-		"when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
-	},
-	{
-		"key": "ctrl+down",
-		"command": "scrollPageDown",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "alt+pagedown",
-		"command": "-scrollPageDown",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "ctrl+up",
-		"command": "scrollPageUp",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "alt+pageup",
-		"command": "-scrollPageUp",
-		"when": "textInputFocus"
-	},
-	// if ctrl + down arrow / up arrow are pressed, the view and cursor jumps 1 page up / 1 page down (to quickly scroll the whole file, akin to Vim motion)
-	// For Ctrl + Up Arrow
+	// halfpage up
 	{
 		"key": "ctrl+up",
 		"command": "editorScroll",
 		"args": {
 			"to": "up",
-			"by": "page",
+			"by": "halfPage",
 			"revealCursor": true,
 			"value": 1 // page to scroll
 		},
 		"when": "editorTextFocus"
 	},
-	// For Ctrl + Down Arrow
+	// halfpage down
 	{
 		"key": "ctrl+down",
 		"command": "editorScroll",
 		"args": {
 			"to": "down",
-			"by": "page",
+			"by": "halfPage",
 			"revealCursor": true,
 			"value": 1 // page to scroll
 		},
 		"when": "editorTextFocus"
 	},
+	// show additioal info
 	{
-		"key": "d",
-		"command": "moveFileToTrash",
-		"when": "explorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+		"key": "f5",
+		"command": "editor.action.showHover"
 	},
-	{
-		"key": "delete",
-		"command": "-moveFileToTrash",
-		"when": "explorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
-	},
-
 	// alt 1-3 focus 1-3 split editor screen
 	{
 		"key": "alt+1",
@@ -444,19 +173,10 @@
 	{
 		"key": "alt+2",
 		"command": "workbench.action.focusSecondEditorGroup"
-	},
-	{
-		"key": "alt+3",
-		"command": "workbench.action.focusThirdEditorGroup"
-	},
-    // show addiitonal info
-    {
-		"key": "f6",
-		"command": "editor.action.showHover"
-	},
-    {
-        "key": "alt",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus && !suggestWidgetVisible"
-    }
+	}
+	// EMPTY
+	// {
+	// 	"key": "ctrl+b",
+	// 	"command": "-workbench.action.toggleSidebarVisibility"
+	// }
 ]
