@@ -90,29 +90,29 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 	},
 	// toggle sidebar + focus sidebar , close sidebar + focus editor
-	{
-		"key": "f4",
-		"command": "runCommands",
-		"when": "editorTextFocus",
-		"args": {
-			"commands": [
-				"workbench.action.toggleSidebarVisibility",
-				"workbench.view.explorer",
-				"workbench.action.focusSideBar"
-			]
-		}
-	},
-	{
-		"key": "f4",
-		"command": "runCommands",
-		"when": "editorIsOpen && !editorTextFocus && !view.terminal.visible && !panelFocus",
-		"args": {
-			"commands": [
-				"workbench.action.focusActiveEditorGroup",
-				"workbench.action.toggleSidebarVisibility"
-			]
-		}
-	},
+	// {
+	// 	"key": "f4",
+	// 	"command": "runCommands",
+	// 	"when": "editorTextFocus",
+	// 	"args": {
+	// 		"commands": [
+	// 			"workbench.action.toggleSidebarVisibility",
+	// 			"workbench.view.explorer",
+	// 			"workbench.action.focusSideBar"
+	// 		]
+	// 	}
+	// },
+	// {
+	// 	"key": "f4",
+	// 	"command": "runCommands",
+	// 	"when": "editorIsOpen && !editorTextFocus && !view.terminal.visible && !panelFocus",
+	// 	"args": {
+	// 		"commands": [
+	// 			"workbench.action.focusActiveEditorGroup",
+	// 			"workbench.action.toggleSidebarVisibility"
+	// 		]
+	// 	}
+	// },
 	{
 		"key": "ctrl+e",
 		"command": "runCommands",
@@ -185,7 +185,7 @@
 	},
 	// show additioal info
 	{
-		"key": "f5",
+		"key": "ctrl+r",
 		"command": "editor.action.showHover"
 	},
 	// alt 1-3 focus 1-3 split editor screen
@@ -200,9 +200,11 @@
 
 	/* 
     EMPTY KEYBINDS!
-    TESTING:ctrl + e - to toggle file explorer
+    TESTING:  ctrl + e - to toggle file
+    TESTING: ctrl + r - showHover
     ctrl + q
-    ctrl + r
+    ctrl + t
+    ctrl + b
     
     */
 
@@ -234,5 +236,14 @@
 	{
 		"key": "ctrl+b",
 		"command": "-workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "f5",
+		"command": "-workbench.action.debug.start",
+		"when": "debuggersAvailable && debugState == 'inactive'"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "-workbench.action.showAllSymbols"
 	}
 ]
