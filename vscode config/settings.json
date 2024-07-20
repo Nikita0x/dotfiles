@@ -347,7 +347,8 @@
 					"constant.language.boolean.true",
 					"constant.language.json.comments",
 					"constant.language.null",
-					"constant.language.undefined"
+					"constant.language.undefined",
+					"constant.language.json"
 				],
 				"settings": {
 					"foreground": "#408080"
@@ -635,7 +636,9 @@
 					"punctuation.section.property-list.end.bracket.curly.css",
 					"punctuation.section.function.begin.bracket.round.css",
 					"punctuation.section.function.end.bracket.round.css",
-					"keyword.other.unit"
+					"keyword.other.unit",
+					"punctuation.section.media.begin.bracket.curly",
+					"punctuation.section.media.end.bracket.curly"
 				],
 				"settings": {
 					"foreground": "#676867"
@@ -812,14 +815,14 @@
 			"commands": ["lineBreakInsert"],
 			"silent": true
 		},
-		// {
-		// 	"before": ["<leader>", "e"],
-		// 	"commands": [
-		// 		// "workbench.action.toggleSidebarVisibility",
-		// 		"workbench.action.focusSideBar"
-		// 	],
-		// 	"when": "sideBarFocus"
-		// },
+		{
+			"before": ["<leader>", "e"],
+			"commands": [
+				// "workbench.action.toggleSidebarVisibility",
+				"workbench.action.focusSideBar"
+			],
+			"when": "sideBarFocus"
+		},
 		// fuzzy finder
 		{
 			"before": ["<leader>", "f"],
