@@ -133,7 +133,7 @@
 	{
 		"key": "ctrl+e",
 		"command": "runCommands",
-		"when": "editorIsOpen && !editorTextFocus && !view.terminal.visible && !panelFocus",
+		"when": "!editorTextFocus",
 		"args": {
 			"commands": [
 				"workbench.action.focusActiveEditorGroup",
@@ -203,6 +203,11 @@
 	{
 		"key": "alt+2",
 		"command": "workbench.action.focusSecondEditorGroup"
+	},
+
+	{
+		"key": "ctrl+q",
+		"command": "editor.action.smartSelect.grow"
 	},
 
 	/* 
