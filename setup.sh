@@ -69,6 +69,9 @@ source ./chromeinstallation.sh
 # install steam
 sudo apt-get install steam -y
 
+# install paint-like program for simple editing
+sudo apt install kolourpaint -y
+
 # install vscode
 source ./vscodeinstallation.sh
 
