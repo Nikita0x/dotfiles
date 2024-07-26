@@ -24,6 +24,9 @@ nvm install node
 # install ionic cli globally
 npm install -g @ionic/cli
 
+# to check for updates in package.json via "ncu" and "ncu -u"
+npm install -g npm-check-updates
+
 # Install python
 sudo apt install python3 -y
 
