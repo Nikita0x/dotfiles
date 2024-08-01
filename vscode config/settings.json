@@ -547,9 +547,13 @@
 					"foreground": "#8080FF"
 				}
 			},
-			// async keyword, of operator
+			// async keyword, of operator, debugger
 			{
-				"scope": "storage.modifier.async, keyword.operator.expression.of",
+				"scope": [
+					"storage.modifier.async",
+					"keyword.operator.expression.of",
+					"keyword.other.debugger"
+				],
 				"settings": {
 					"foreground": "#9872A2"
 				}
@@ -878,5 +882,8 @@
 	},
 	"github.copilot.editor.enableAutoCompletions": true,
 	"editor.stickyScroll.enabled": false,
-	"breadcrumbs.enabled": false
+	"breadcrumbs.enabled": false,
+	"zig.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+	"zig.zls.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+	"zig.initialSetupDone": true
 }
