@@ -1,2 +1,2 @@
 mkdir ~/work
-mkdir ~/withub
+mkdir ~/github

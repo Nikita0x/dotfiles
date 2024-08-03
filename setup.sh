@@ -43,7 +43,7 @@ sudo apt install python3-django -y
 sudo apt install tree -y
 
 # Package to see and kill processes on Linux
-sudo apt install htop -y
+sudo apt install btop
 
 # SQLite browser
 sudo apt-get install sqlitebrowser -y
@@ -63,9 +63,6 @@ source "$HOME/.cargo/env"
 # install cloc - to count lines,commets,blank spaces in many languages
 echo "Y" | sudo apt install cloc
 
-# install gnome-system-monitor (GUI for htop, basically)
-sudo apt-get install gnome-system-monitor -y
-
 # install chrome
 source ./chromeinstallation.sh
 
@@ -77,6 +74,9 @@ sudo apt install kolourpaint -y
 
 # install vscode
 source ./vscodeinstallation.sh
+
+# install insomnia
+source ./insomnia.sh
 
 # install android studio + java sdk
 source ./androidstudio.sh
