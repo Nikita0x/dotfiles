@@ -75,9 +75,6 @@ sudo apt install kolourpaint -y
 # install vscode
 source ./vscodeinstallation.sh
 
-# install insomnia
-source ./insomnia.sh
-
 # install android studio + java sdk
 source ./androidstudio.sh
 
