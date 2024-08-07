@@ -553,7 +553,9 @@
 					"storage.modifier.async",
 					"keyword.operator.expression.of",
 					"keyword.other.debugger",
-					"storage.modifier"
+					"storage.modifier",
+					"keyword.operator.expression.import",
+					"keyword.operator.expression.in"
 				],
 				"settings": {
 					"foreground": "#9872A2"
