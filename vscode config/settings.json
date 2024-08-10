@@ -583,7 +583,8 @@
 					"keyword.operator.arithmetic",
 					"keyword.operator.decrement",
 					"keyword.operator.increment",
-					"keyword.operator.assignment.compound"
+					"keyword.operator.assignment.compound",
+					"keyword.operator.css"
 				],
 				"settings": {
 					"foreground": "#F92672"
