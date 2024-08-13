@@ -484,12 +484,13 @@
 					"foreground": "#676867"
 				}
 			},
-			// new operator, typeof operator, delete operator
+			// new operator, typeof operator, delete operator, instanceof operator
 			{
 				"scope": [
 					"keyword.operator.new",
 					"keyword.operator.expression.typeof",
-					"keyword.operator.expression.delete"
+					"keyword.operator.expression.delete",
+					"keyword.operator.expression.instanceof"
 				],
 				"settings": {
 					"foreground": "#676867"
