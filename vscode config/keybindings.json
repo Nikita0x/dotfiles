@@ -55,11 +55,11 @@
 		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	// collapse all folders
-	{
-		"key": "[",
-		"command": "workbench.files.action.collapseExplorerFolders",
-		"when": "sideBarFocus"
-	},
+	// {
+	// 	"key": "[",
+	// 	"command": "workbench.files.action.collapseExplorerFolders",
+	// 	"when": "sideBarFocus"
+	// },
 	// create new folder when sidebar is opened and focused
 	{
 		"key": "f",
@@ -141,15 +141,27 @@
 			]
 		}
 	},
+
 	// navigate to next opened file
 	{
 		"key": "alt+right",
 		"command": "workbench.action.nextEditor",
 		"when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
 	},
+	{
+		"key": "alt+l",
+		"command": "workbench.action.nextEditor",
+		"when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
+	},
 	// navigate to previous opened file
 	{
 		"key": "alt+left",
+		"command": "workbench.action.previousEditor",
+		"when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
+	},
+	//in VIM mode
+	{
+		"key": "alt+h",
 		"command": "workbench.action.previousEditor",
 		"when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
 	},
@@ -177,11 +189,10 @@
 		},
 		"when": "editorTextFocus"
 	},
-	// show additioal info
-	{
-		"key": "ctrl+r",
-		"command": "editor.action.showHover"
-	},
+	// {
+	// 	"key": "ctrl+r",
+	// 	"command": "editor.action.showHover"
+	// },
 	// close the file explorer when openin a file via "Enter"
 	{
 		"key": "enter",
@@ -205,10 +216,10 @@
 		"command": "workbench.action.focusSecondEditorGroup"
 	},
 
-	{
-		"key": "ctrl+q",
-		"command": "editor.action.smartSelect.grow"
-	},
+	// {
+	// 	"key": "ctrl+q",
+	// 	"command": "editor.action.smartSelect.grow"
+	// },
 
 	/* 
     EMPTY KEYBINDS!

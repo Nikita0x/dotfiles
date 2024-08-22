@@ -548,7 +548,7 @@
 					"foreground": "#8080FF"
 				}
 			},
-			// async keyword, of operator, debugger
+			// async keyword, of operator, debugger, instanceof
 			{
 				"scope": [
 					"storage.modifier.async",
@@ -829,43 +829,42 @@
 		{ "before": ["<S-l>"], "commands": [":bnext"] },
 
 		// file tree
-		{
-			"before": ["leader", "e"],
-			"commands": ["workbench.explorer.fileView.focus"]
-		},
+		// {
+		// 	"before": ["leader", "e"],
+		// 	"commands": ["workbench.explorer.fileView.focus"]
+		// },
 
 		// splits
 		{ "before": ["leader", "v"], "commands": [":vsplit"] },
+		//delete a line - GOOD
 		{
 			"before": ["<leader>", "d"],
 			"after": ["d", "d"]
 		},
+		// clear search pattern after you are done
 		{
 			"before": ["<C-l>"],
 			"commands": [":nohl"]
 		},
+		// fuzzy finder GOOD
 		{
-			"before": ["K"],
-			"commands": ["lineBreakInsert"],
-			"silent": true
-		},
-		{
-			"before": ["<leader>", "e"],
-			"commands": [
-				// "workbench.action.toggleSidebarVisibility",
-				"workbench.action.focusSideBar"
-			],
-			"when": "sideBarFocus"
-		},
-		// fuzzy finder
-		{
-			"before": ["<leader>", "f"],
+			"before": ["<leader>", "<leader>"],
 			"commands": ["workbench.action.quickOpen"]
 		},
-		// command palette
+		// command palette //GOOD!
 		{
 			"before": ["<leader>", "p"],
 			"commands": ["workbench.action.showCommands"]
+		},
+		// navigate to next opened file IN PROGRESS
+		{
+			"before": ["alt+l"],
+			"command": "workbench.action.nextEditor"
+		},
+		// navigate to previous opened file
+		{
+			"key": "alt+left",
+			"command": "workbench.action.previousEditor"
 		}
 	],
 	"vim.visualModeKeyBindings": [
@@ -879,9 +878,10 @@
 	"vim.handleKeys": {
 		"<C-a>": false,
 		"<C-f>": false,
-		"<C-w>": false
+		"<C-w>": false,
+		"<C-e>": true
 	},
-
+	"vim.showMarksInGutter": true,
 	"extensions.experimental.affinity": {
 		"vscodevim.vim": 1
 	},
@@ -890,5 +890,6 @@
 	"zig.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
 	"zig.zls.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
 	"zig.initialSetupDone": true,
-	"breadcrumbs.enabled": false
+	"breadcrumbs.enabled": false,
+	"scss.showErrors": true
 }
