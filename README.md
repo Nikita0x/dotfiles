@@ -1,7 +1,8 @@
 # dotfiles
 
 NVIDIA DRIVERS
-Устанавливать через `Driver Manager`
+Устанавливать через `Driver Manager`.
+`IMPORTANT`: Чтобы не зависала система на играх, выставить `Performance Mode`, а не `On Demand`.
 
 так же, не забудь поставить в `/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf` `wifi.powersave = 2` вместо `wifi.powersave = 3`. (Чтобы вайфай не отрубался)
 
