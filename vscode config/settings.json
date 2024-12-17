@@ -821,10 +821,7 @@
 			"before": ["<leader>", "p"],
 			"commands": ["workbench.action.showCommands"]
 		},
-		{
-			"before": ["U"],
-			"after": ["C-r"]
-		},
+		{ "before": ["U"], "after": ["C-r"] },
 		{
 			"before": ["<tab>"],
 			"commands": [

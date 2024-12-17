@@ -177,6 +177,21 @@
 	},
 	//in VIM mode
 	{
+		"key": "ctrl+j",
+		"command": "editor.action.insertCursorBelow",
+		"when": "editorTextFocus && vim.active"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "editor.action.insertCursorAbove",
+		"when": "editorTextFocus && vim.active"
+	},
+	{
+		"key": "alt+d",
+		"command": "editor.action.addSelectionToNextFindMatch",
+		"when": "editorTextFocus && vim.active"
+	},
+	{
 		"key": "alt+h",
 		"command": "workbench.action.previousEditor",
 		"when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
