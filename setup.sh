@@ -84,6 +84,8 @@ source ./createfolders.sh
 # add aliases (studio, etc..)
 source ./aliases.sh
 
+# tools for hackering
+source ./hackertools.sh
 
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
