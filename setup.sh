@@ -75,6 +75,9 @@ sudo apt install kolourpaint -y
 # install vscode
 source ./vscodeinstallation.sh
 
+# install zed
+curl -f https://zed.dev/install.sh | sh
+
 # install android studio + java sdk
 source ./androidstudio.sh
 
