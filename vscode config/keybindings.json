@@ -135,7 +135,7 @@
 	// 	}
 	// },
 	{
-		"key": "ctrl+e",
+		"key": "f4",
 		"command": "runCommands",
 		"when": "editorTextFocus",
 		"args": {
@@ -147,7 +147,7 @@
 		}
 	},
 	{
-		"key": "ctrl+e",
+		"key": "f4",
 		"command": "runCommands",
 		"when": "!editorTextFocus",
 		"args": {
@@ -196,27 +196,55 @@
 		"command": "workbench.action.previousEditor",
 		"when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
 	},
-	// halfpage up
+	// halfpage up - extension "multi-command" by ryuta46 needed - to make custom commands
 	{
 		"key": "ctrl+up",
-		"command": "editorScroll",
+		"command": "extension.multiCommand.execute",
 		"args": {
-			"to": "up",
-			"by": "halfPage",
-			"revealCursor": true,
-			"value": 1 // page to scroll
+			"sequence": [
+				{
+					"command": "editorScroll",
+					"args": {
+						"to": "up",
+						"by": "halfPage",
+						"revealCursor": true,
+						"value": 1 // page to scroll
+					},
+					"when": "editorTextFocus"
+				},
+				{
+					"command": "cursorMove",
+					"args": {
+						"to": "viewPortCenter"
+					}
+				}
+			]
 		},
 		"when": "editorTextFocus"
 	},
-	// halfpage down
+	// halfpage down - extension "multi-command" by ryuta46 needed - to make custom commands
 	{
 		"key": "ctrl+down",
-		"command": "editorScroll",
+		"command": "extension.multiCommand.execute",
 		"args": {
-			"to": "down",
-			"by": "halfPage",
-			"revealCursor": true,
-			"value": 1 // page to scroll
+			"sequence": [
+				{
+					"command": "editorScroll",
+					"args": {
+						"to": "down",
+						"by": "halfPage",
+						"revealCursor": true,
+						"value": 1 // page to scroll
+					},
+					"when": "editorTextFocus"
+				},
+				{
+					"command": "cursorMove",
+					"args": {
+						"to": "viewPortCenter"
+					}
+				}
+			]
 		},
 		"when": "editorTextFocus"
 	},
@@ -246,21 +274,6 @@
 		"key": "alt+2",
 		"command": "workbench.action.focusSecondEditorGroup"
 	},
-
-	// {
-	// 	"key": "ctrl+q",
-	// 	"command": "editor.action.smartSelect.grow"
-	// },
-
-	/* 
-    EMPTY KEYBINDS!
-    TESTING:  ctrl + e - to toggle file
-    TESTING: ctrl + r - showHover
-    ctrl + q
-    ctrl + t
-    ctrl + b
-    
-    */
 
 	// Commands below remove the default keybinds with this config.
 	{
@@ -349,5 +362,69 @@
 	{
 		"key": "ctrl+/",
 		"command": "editor.action.commentLine"
+	},
+
+	// BETA TEST
+	{
+		"key": "tab",
+		"command": "deleteWordRight",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+tab",
+		"command": "deleteAllRight",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+w",
+		"command": "deleteInsideWord",
+		"when": "editorTextFocus"
+	},
+
+	// TEST
+	{
+		"key": "alt+d",
+		"command": "select",
+		"when": "editorTextFocus"
+	},
+
+	{
+		"key": "alt",
+		"command": "deleteWordRight",
+		"when": "editorTextFocus"
+	},
+
+	{
+		"key": "ctrl+q",
+		"command": "not bound",
+		// "command": "extension.multiCommand.execute",
+		"args": {
+			"sequence": [
+				// {
+				// 	"command": "editorScroll",
+				// 	"args": {
+				// 		"to": "up",
+				// 		"by": "halfPage",
+				// 		"revealCursor": true,
+				// 		"value": 1 // page to scroll
+				// 	},
+				// 	"when": "editorTextFocus"
+				// },
+				// {
+				// 	"command": "cursorMove",
+				// 	"args": {
+				// 		"to": "viewPortCenter"
+				// 	}
+				// }
+			]
+		}
 	}
+
+	/*
+    EMPTY KEYBINDS!
+    ctrl + q
+    ctrl + t
+    ctrl + b
+    
+    */
 ]
