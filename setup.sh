@@ -43,7 +43,7 @@ sudo apt install python3-django -y
 sudo apt install tree -y
 
 # Package to see and kill processes on Linux
-sudo apt install btop
+sudo apt install btop -y
 
 # SQLite browser
 sudo apt-get install sqlitebrowser -y
@@ -89,6 +89,9 @@ source ./aliases.sh
 
 # tools for hackering
 source ./hackertools.sh
+
+# nvim
+source ./nviminstallation.sh
 
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
