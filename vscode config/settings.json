@@ -4,6 +4,8 @@
 	"window.titleBarStyle": "custom",
 	"window.customMenuBarAltFocus": false,
 
+	"workbench.layoutControl.enabled": false,
+	"window.commandCenter": false,
 	"typescript.suggest.autoImports": false,
 	"javascript.suggest.autoImports": false,
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -182,7 +184,9 @@
 					"constant.language.boolean.true",
 					"constant.language.json.comments",
 					"constant.language.null",
-					"constant.language.undefined"
+					"constant.language.undefined",
+					"constant.language.nan",
+					"constant.language.infinity"
 				],
 				"settings": {
 					"foreground": "#408080"
@@ -264,7 +268,8 @@
 					"punctuation.section.property-list.end.bracket.curly",
 					"punctuation.definition.binding-pattern",
 					"keyword.operator.type.ts",
-					"punctuation.definition.section.case-statement"
+					"punctuation.definition.section.case-statement",
+					"keyword.operator.bitwise"
 				],
 				"settings": {
 					"foreground": "#676867"
@@ -872,5 +877,7 @@
 	// 	}
 	// ],
 	"explorer.autoReveal": false,
-	"breadcrumbs.enabled": false
+	"breadcrumbs.enabled": false,
+	"gitlens.ai.model": "openai:gpt-4o",
+	"chat.commandCenter.enabled": false
 }
