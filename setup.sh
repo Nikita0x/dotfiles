@@ -93,6 +93,9 @@ source ./hackertools.sh
 # nvim
 source ./nviminstallation.sh
 
+# snapd packages
+source ./snapdpackages.sh
+
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
 echo "********************************************************"
