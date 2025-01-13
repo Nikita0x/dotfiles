@@ -4,11 +4,5 @@ vim.opt.scrolloff = 10
 vim.opt.shiftwidth = 4
 vim.opt.relativenumber = false
 
---Highlight on yanking - not needed with lazyvim
--- vim.api.nvim_create_autocmd("TextYankPost", {
--- 	desc = "Highlight when yanking (copying) text",
--- 	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
--- 	callback = function()
--- 		vim.highlight.on_yank()
--- 	end,
--- })
+vim.opt.langmap =
+  'йq,цw,уe,кr,еt,нy,гu,шi,щo,зp,х[,ъ],фa,ыs,вd,аf,пg,рh,оj,лk,дl,э\',ё`,ЯQ,ЦW,УE,КR,ЕT,НY,ГU,ШI,ЩO,ЗP,Х{,Ъ},ФA,ЫS,ВD,АF,ПG,РH,ОJ,ЛK,ДL,Э",Ё~'
