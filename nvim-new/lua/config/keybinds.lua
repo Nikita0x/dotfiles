@@ -1,9 +1,11 @@
 -- source current file
-vim.keymap.set('n', '<space><space>x', '<cmd>source %<CR>')
+-- vim.keymap.set('n', '<space><space>x', '<cmd>source %<CR>')
 --.lua - refers to the current line in the buffer
 vim.keymap.set('n', '<space>x', ':.lua<CR>')
 -- execute selected lines
 vim.keymap.set('v', '<space>x', ':lua<CR>')
+
+
 -- ctrl + s = save
 vim.keymap.set('n', '<C-s>', ':w<Return>')
 -- remove highlight after search
