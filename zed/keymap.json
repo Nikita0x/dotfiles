@@ -1,0 +1,32 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space space": "file_finder::Toggle",
+      // "ctrl-r": "editor::Hover"
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+      "alt-right": "pane::ActivateNextItem",
+      "alt-left": "pane::ActivatePrevItem",
+      "alt-l": "pane::ActivateNextItem",
+      "alt-h": "pane::ActivatePrevItem",
+      //not working properly
+      "ctrl-w": "pane::CloseActiveItem",
+      "\\": "workspace::ToggleRightDock"
+      // "tab": "pane::AlternateFile"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  }
+]
