@@ -1,9 +1,22 @@
+
+vim.api.nvim_set_hl(0, 'GitSignsAdd', { fg = '#00FF00' })  -- Green
+vim.api.nvim_set_hl(0, 'GitSignsChange', { fg = '#FFFF00' })  -- Yellow
+vim.api.nvim_set_hl(0, 'GitSignsChangedelete', { fg = '#FFA500' })  -- Orange
+vim.api.nvim_set_hl(0, 'GitSignsDelete', { fg = '#FF0000' })  -- Red
+vim.api.nvim_set_hl(0, 'GitSignsTopdelete', { fg = '#FF4500' })  -- Orange-Red
+
+
 -- Functions
 -- gui=underline 
 vim.cmd [[
   highlight Function gui=underline guifg=#d97706
 ]]
 
+
+-- Visual selection color
+vim.cmd [[
+  highlight Visual guibg=#000000 guifg=NONE
+]]
 
 vim.cmd [[
   highlight @function.builtin gui=underline guifg=#d97706
@@ -137,7 +150,12 @@ vim.api.nvim_set_hl(0, '@property.class.css', { link = 'HtmlAttribute'})
 vim.api.nvim_set_hl(0, '@property.scss', { link = 'Other'})
 vim.api.nvim_set_hl(0, '@string.scss', { link = 'ScssString'})
 vim.api.nvim_set_hl(0, '@string.css', { link = 'ScssString'})
+vim.api.nvim_set_hl(0, '@type.css', { link = 'HtmlAttribute'})
+vim.api.nvim_set_hl(0, '@tag.css', { link = 'HtmlTag'})
+vim.api.nvim_set_hl(0, '@variable.css', { link = 'Identifier'})
 vim.api.nvim_set_hl(0, '@property.css', { link = 'Other'})
+vim.api.nvim_set_hl(0, '@operator.css', { link = 'Other'})
+vim.api.nvim_set_hl(0, '@markup.link.label.vue', { link = 'None'})
 vim.api.nvim_set_hl(0, '@string.plain.css', { link = 'ScssString'})
 
 vim.api.nvim_set_hl(0, '@type.tag.scss', { link = 'HtmlAttribute'})
@@ -209,9 +227,10 @@ vim.api.nvim_set_hl(0, '@constant.typescript', { link = 'Identifier'})
 -- vim.api.nvim_set_hl(0, '@lsp.typemod.variable.readonly.javascript', { link = 'Constant'})
 -- vim.api.nvim_set_hl(0, '@lsp.mod.readonly.javascript', { link = 'Constant'})
 
-
+-- vim.api.nvim_set_hl(0, 'DirectiveHighlight', { fg = '#ff0000' })
 
 
 --LUA LANGAUGE
 vim.api.nvim_set_hl(0, '@variable.parameter.lua', { link = 'Argument'})
-
+vim.api.nvim_set_hl(0, '@punctuation', { link = 'Other'})
+vim.api.nvim_set_hl(0, '@constructor.lua', { link = 'Other'})

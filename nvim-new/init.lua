@@ -1,3 +1,5 @@
+-- workaround until fix - https://github.com/neovim/neovim/issues/31675
+vim.hl = vim.highlight
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -220,18 +222,45 @@ require('lazy').setup({
   { -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
-      signs = {
-        add = { text = '+' },
-        change = { text = '~' },
-        delete = { text = '_' },
-        topdelete = { text = '‾' },
-        changedelete = { text = '~' },
+   signs = {
+        add = { text = "┃" },
+        change = { text = "┃" },
+        delete = { text = "_" },
+        topdelete = { text = "‾" },
+        changedelete = { text = "~" },
+        untracked = { text = "┆" },
       },
+      -- signs = {
+      --   add = { text = '+' },
+      --   change = { text = '~' },
+      --   delete = { text = '_' },
+      --   topdelete = { text = '‾' },
+      --   changedelete = { text = '~' },
+      -- },
     },
   },
 
   -- { 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons' },
 
+{
+  'akinsho/bufferline.nvim',
+  version = '*',
+  dependencies = 'nvim-tree/nvim-web-devicons',
+  opts = {
+    options = {
+        diagnostics = "nvim_lsp",
+        always_show_bufferline = true,
+      -- numbers = "none",
+      -- close_command = "bdelete! %d",
+      -- right_mouse_command = "bdelete! %d",
+      -- left_mouse_command = "buffer %d",
+      -- offsets = {
+      --   { filetype = "NvimTree", text = "File Explorer", text_align = "center" },
+      -- },
+      -- separator_style = "slant",
+    },
+  },
+},
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
@@ -292,6 +321,8 @@ require('lazy').setup({
 
       preset = 'helix',
 
+      --TODO:  доделать бинд для Treesitter
+
       -- Document existing key chains
       spec = {
         { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
@@ -299,9 +330,17 @@ require('lazy').setup({
         { '<leader>r', group = '[R]ename' },
         { '<leader>s', group = '[S]earch' },
         { '<leader>w', group = '[W]orkspace' },
-        { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+        { '<leader>t', group = '[T]ree sitter', name = 'Tree Actions' },
       },
+      -- register = {
+      --    ["<leader>t"] = {
+      --     name = "[T]ree Actions",
+      --     s = "Toggle syntax tree",
+      --     r = "Refresh tree",
+      --     d = "Delete tree",
+      --   },
+      -- },
     },
   },
 
@@ -362,12 +401,17 @@ require('lazy').setup({
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
         --
-        -- defaults = {
-        --   mappings = {
-        --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-        --   },
-        -- },
-        -- pickers = {}
+        defaults = {
+          sorting_strategy = "ascending",
+          layout_config = {
+            prompt_position = "top"
+          }
+        },
+        pickers = {
+        colorscheme = {
+           enable_preview = true
+          },
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
@@ -391,7 +435,11 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
       vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
       -- vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = 'Open File Picker' })
-      vim.keymap.set('n', '<leader><leader>', builtin.find_files, { desc = 'Open file picker' })
+      vim.keymap.set('n', '<leader><leader>', function ()
+        require('telescope.builtin').find_files {
+          hidden = true,
+        }
+      end, { desc = 'Open file picker' })
 
       -- Slightly advanced example of overriding default behavior and theme
       vim.keymap.set('n', '<leader>/', function()
@@ -563,11 +611,11 @@ require('lazy').setup({
           -- code, if the language server you are using supports them
           --
           -- This may be unwanted, since they displace some of your code
-          if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
-            map('<leader>th', function()
-              vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf })
-            end, '[T]oggle Inlay [H]ints')
-          end
+          -- if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
+          --   map('<leader>th', function()
+          --     vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf })
+          --   end, '[T]oggle Inlay [H]ints')
+          -- end
         end,
       })
 
@@ -921,7 +969,7 @@ require('lazy').setup({
       end
 
       -- ... and there is more!
-      --  Check out: https://github.com/echasnovski/mini.nvim
+      --  Check out: https://github.com/chasnovski/mini.nvim
     end,
   },
   { -- Highlight, edit, and navigate code
@@ -965,7 +1013,10 @@ require('lazy').setup({
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitblame',
+  -- require 'kickstart.plugins.increname',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+  require 'kickstart.plugins.vimvisualmulti',
+  require 'kickstart.plugins.toggleterm'
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.

@@ -9,6 +9,7 @@ vim.keymap.set('v', '<space>x', ':lua<CR>')
 -- ctrl + s = save
 vim.keymap.set('n', '<C-s>', ':w<Return>')
 -- remove highlight after search
+--
 vim.keymap.set('n', '<esc>', '<cmd>nohlsearch<cr>')
 
 --Tabs
@@ -16,6 +17,11 @@ vim.keymap.set('n', '<A-h>', ':bprevious<CR>')
 vim.keymap.set('n', '<A-l>', ':bnext<CR>')
 vim.keymap.set('n', '<A-Left>', ':bprevious<CR>')
 vim.keymap.set('n', '<A-Right>', ':bnext<CR>')
+-- Close current buffer
+vim.api.nvim_set_keymap('n', '<C-w>', ':bd<CR>', { noremap = true, silent = true })
+
+--Alternate files
+vim.keymap.set('n', '<Tab>', ':b#<CR>', {desc = 'Switch to alternate file'})
 
 --Rename a symbol
 vim.keymap.set('n', '<F1>', vim.lsp.buf.rename, { noremap = true, silent = true, desc = 'Rename a symbol' })
@@ -33,7 +39,7 @@ vim.api.nvim_set_keymap('v', 'V', 'j', { noremap = true, silent = true })
 -- Undo
 vim.keymap.set('n', 'U', ':redo<CR>', { noremap = true, silent = true })
 -- Show info under cursor
-vim.keymap.set('n', '<C-r>', vim.lsp.buf.hover, { noremap = true, silent = true, desc = 'Show LSP hover documentation' })
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, { noremap = true, silent = true, desc = 'Show LSP hover documentation' })
 
 -- Move lines
 vim.keymap.set('n', '<A-k>', '<cmd>m .-2<cr>==', { desc = 'Move Up' })
@@ -47,7 +53,7 @@ vim.keymap.set('v', '<A-Up>', ":m '<-2<cr>gv=gv", { desc = 'Move Up' })
 
 -- Disabling joining Lines and something else
 vim.keymap.set('n', 'J', '<nop>', { desc = 'Disable Shift + J' })
-vim.keymap.set('n', 'K', '<nop>', { desc = 'Disable Shift + K' })
+-- vim.keymap.set('n', 'K', '<nop>', { desc = 'Disable Shift + K' })
 
 -- Indent and keep selection
 vim.keymap.set('v', '>', '>gv', { desc = 'Indent and keep selection' })
@@ -55,3 +61,9 @@ vim.keymap.set('v', '<', '<gv', { desc = 'Outdent and keep selection' })
 
 -- No op
 vim.keymap.set('n', '<C-e>', '<Nop>')
+
+
+-- inspect highlighting. :Inspect! - for now, fix :Inspect - later
+vim.api.nvim_set_keymap("n", "<leader>i", ":Inspect!<CR>", { noremap = true, silent = true, desc = "Inspect token" })
+
+
