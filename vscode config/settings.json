@@ -315,11 +315,12 @@
 					"foreground": "#676867"
 				}
 			},
-			// new operator, typeof operator
+			// new operator, typeof operator, delete operator
 			{
 				"scope": [
 					"keyword.operator.new",
-					"keyword.operator.expression.of"
+					"keyword.operator.expression.of",
+					"keyword.operator.expression.delete"
 				],
 				"settings": {
 					// "foreground": "#676867",

@@ -149,3 +149,4 @@ export HELIX_RUNTIME=/home/mykyta/.config/helix/runtime
 export EMSDK_PATH=~/emsdk
 export PATH="$EMSDK_PATH:$EMSDK_PATH/upstream/emscripten:$PATH"
 export PATH="$PATH:/usr/bin"
+export PATH=$HOME/go/bin:$PATH

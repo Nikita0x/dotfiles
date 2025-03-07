@@ -44,7 +44,7 @@
 		"when": "canNavigateBack",
 		"args": {
 			"commands": [
-				"workbench.action.closeActiveEditor",
+				// "workbench.action.closeActiveEditor",
 				"workbench.action.navigateBack"
 			]
 		}
@@ -78,10 +78,11 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 	},
 	// create new file when sidebar is opened and focused
+	// TODO: fix these two keybinds
 	{
 		"key": "n",
 		"command": "explorer.newFile",
-		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "a",
@@ -135,7 +136,7 @@
 	// 	}
 	// },
 	{
-		"key": "f4",
+		"key": "ctrl+e",
 		"command": "runCommands",
 		"when": "editorTextFocus",
 		"args": {
@@ -147,7 +148,7 @@
 		}
 	},
 	{
-		"key": "f4",
+		"key": "ctrl+e",
 		"command": "runCommands",
 		"when": "!editorTextFocus",
 		"args": {
@@ -196,7 +197,7 @@
 		"command": "workbench.action.previousEditor",
 		"when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
 	},
-	// halfpage up - extension "multi-command" by ryuta46 needed - to make custom commands
+	// halfpage up
 	{
 		"key": "ctrl+up",
 		"command": "extension.multiCommand.execute",
@@ -222,7 +223,7 @@
 		},
 		"when": "editorTextFocus"
 	},
-	// halfpage down - extension "multi-command" by ryuta46 needed - to make custom commands
+	// halfpage down
 	{
 		"key": "ctrl+down",
 		"command": "extension.multiCommand.execute",
@@ -327,6 +328,13 @@
 		"when": "editorTextFocus"
 	},
 	{
+		"key": "alt+w",
+		"command": "cursorMove",
+		"args": {
+			"to": "wrappedLineColumnCenter"
+		}
+	},
+	{
 		"key": "alt+f1",
 		"command": "-editor.action.accessibilityHelp",
 		"when": "!accessibilityHelpIsShown"
@@ -365,21 +373,21 @@
 	},
 
 	// BETA TEST
-	{
-		"key": "tab",
-		"command": "deleteWordRight",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "shift+tab",
-		"command": "deleteAllRight",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "alt+w",
-		"command": "deleteInsideWord",
-		"when": "editorTextFocus"
-	},
+	// {
+	// 	"key": "tab",
+	// 	"command": "deleteWordRight",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	// 	"key": "shift+tab",
+	// 	"command": "deleteWordLeft",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	// 	"key": "alt+w",
+	// 	"command": "deleteInsideWord",
+	// 	"when": "editorTextFocus"
+	// },
 
 	// TEST
 	{
@@ -387,38 +395,54 @@
 		"command": "select",
 		"when": "editorTextFocus"
 	},
-
+	// commands that might be helpful
+	// editor.action.selectToBracket
+	// {
+	// 	"key": "alt+w",
+	// 	"command": "editor.action.smartSelect.expand",
+	// 	"when": "editorTextFocus"
+	// },
 	{
-		"key": "alt",
-		"command": "deleteWordRight",
+		"key": "alt+s",
+		"command": "editor.action.smartSelect.shrink",
 		"when": "editorTextFocus"
 	},
-
 	{
 		"key": "ctrl+q",
-		"command": "not bound",
-		// "command": "extension.multiCommand.execute",
-		"args": {
-			"sequence": [
-				// {
-				// 	"command": "editorScroll",
-				// 	"args": {
-				// 		"to": "up",
-				// 		"by": "halfPage",
-				// 		"revealCursor": true,
-				// 		"value": 1 // page to scroll
-				// 	},
-				// 	"when": "editorTextFocus"
-				// },
-				// {
-				// 	"command": "cursorMove",
-				// 	"args": {
-				// 		"to": "viewPortCenter"
-				// 	}
-				// }
-			]
-		}
+		"command": "editor.action.scrollDownHover",
+		"when": "editorTextFocus"
 	}
+	// {
+	// 	"key": "ctrl+e",
+	// 	"command": "not bound",
+	// 	"when": "editorTextFocus"
+	// }
+
+	// {
+	// 	"key": "ctrl+q",
+	// 	"command": "not bound",
+	// 	// "command": "extension.multiCommand.execute",
+	// 	"args": {
+	// 		"sequence": [
+	// 			// {
+	// 			// 	"command": "editorScroll",
+	// 			// 	"args": {
+	// 			// 		"to": "up",
+	// 			// 		"by": "halfPage",
+	// 			// 		"revealCursor": true,
+	// 			// 		"value": 1 // page to scroll
+	// 			// 	},
+	// 			// 	"when": "editorTextFocus"
+	// 			// },
+	// 			// {
+	// 			// 	"command": "cursorMove",
+	// 			// 	"args": {
+	// 			// 		"to": "viewPortCenter"
+	// 			// 	}
+	// 			// }
+	// 		]
+	// 	}
+	// }
 
 	/*
     EMPTY KEYBINDS!
