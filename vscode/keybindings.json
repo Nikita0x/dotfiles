@@ -1,4 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
+// install extension 0 "multi-command" by ryuta46
+// available contexts - https://code.visualstudio.com/api/references/when-clause-contexts#available-context-keys
 [
 	// when in editor - "delete" - deletes a line
 	{
@@ -75,10 +77,9 @@
 	{
 		"key": "f",
 		"command": "explorer.newFolder",
-		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	// create new file when sidebar is opened and focused
-	// TODO: fix these two keybinds
 	{
 		"key": "n",
 		"command": "explorer.newFile",
@@ -87,12 +88,16 @@
 	{
 		"key": "a",
 		"command": "explorer.newFile",
-		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	// create a new file while in the editor (you can specify the directory as well in the name: /src/test.js)
 	{
 		"key": "ctrl+n",
-		"command": "explorer.newFile"
+		"command": "runCommands",
+		"when": "editorTextFocus",
+		"args": {
+			"commands": ["revealInExplorer", "explorer.newFile"]
+		}
 	},
 	// undo when sidebar is opened and focused
 	{
@@ -138,25 +143,29 @@
 	{
 		"key": "ctrl+e",
 		"command": "runCommands",
-		"when": "editorTextFocus",
+		"when": "editorTextFocus && !sideBarVisible",
 		"args": {
 			"commands": [
 				"workbench.action.toggleSidebarVisibility",
-				"workbench.view.explorer",
-				"workbench.action.focusSideBar"
+				"revealInExplorer"
 			]
 		}
 	},
 	{
 		"key": "ctrl+e",
 		"command": "runCommands",
-		"when": "!editorTextFocus",
+		"when": "sideBarFocus",
 		"args": {
 			"commands": [
 				"workbench.action.focusActiveEditorGroup",
 				"workbench.action.toggleSidebarVisibility"
 			]
 		}
+	},
+	{
+		"key": "ctrl+e",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "editorTextFocus && sideBarVisible"
 	},
 
 	// navigate to next opened file
@@ -175,6 +184,22 @@
 		"key": "alt+left",
 		"command": "workbench.action.previousEditor",
 		"when": "!terminalFocus && !listFocus && !suggestWidgetVisible && !inQuickOpen && !inputBoxFocus"
+	},
+	{
+		"key": "alt+left",
+		"command": "runCommands",
+		"when": "filesExplorerFocus",
+		"args": {
+			"commands": ["workbench.action.previousEditor"]
+		}
+	},
+	{
+		"key": "alt+right",
+		"command": "runCommands",
+		"when": "filesExplorerFocus",
+		"args": {
+			"commands": ["workbench.action.nextEditor"]
+		}
 	},
 	//in VIM mode
 	{
@@ -412,12 +437,39 @@
 		"command": "editor.action.scrollDownHover",
 		"when": "editorTextFocus"
 	}
+
 	// {
-	// 	"key": "ctrl+e",
-	// 	"command": "not bound",
-	// 	"when": "editorTextFocus"
+	// 	"key": "n",
+	// 	"command": "runCommands",
+	// 	"when": "inSearchEditor",
+	// 	"args": {
+	// 		"commands": ["gag"]
+	// 	}
 	// }
 
+	// {
+	// 	"key": "F9",
+	// 	"command": "runCommands",
+	// 	"when": "hasSearchResult || inSearchEditor",
+	// 	"args": {
+	// 		"commands": ["command1", "command2"]
+	// 	}
+	// },
+	// {
+	// 	"key": "F9",
+	// 	"command": "extension.multiCommand.execute",
+	// 	"when": "hasSearchResult || inSearchEditor",
+	// 	"args": {
+	// 		"interval": 3000,
+	// 		"sequence": ["cursorDown", "cursorDown", "cursorDown"]
+	// 	}
+	// }
+
+	// {
+	// 	"key": "F9",
+	// 	"command": "gwaga",
+	// 	"when": "hasSearchResult || inSearchEditor"
+	// }
 	// {
 	// 	"key": "ctrl+q",
 	// 	"command": "not bound",
