@@ -436,6 +436,17 @@
 		"key": "ctrl+q",
 		"command": "editor.action.scrollDownHover",
 		"when": "editorTextFocus"
+	},
+	// Select next / previous search result
+	{
+		"key": "alt+n",
+		"command": "search.action.focusNextSearchResult",
+		"when": "hasSearchResult"
+	},
+	{
+		"key": "alt+p",
+		"command": "search.action.focusPreviousSearchResult",
+		"when": "hasSearchResult"
 	}
 
 	// {
