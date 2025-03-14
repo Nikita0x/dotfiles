@@ -1,4 +1,4 @@
-theme = "mytheme"
+ theme = "mytheme"
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
@@ -14,11 +14,16 @@ tab = ["goto_last_accessed_file"]
 A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 
+
+[keys.insert]
+"C-space" = "completion"
+
 [keys.normal.space]
 i = ":tree-sitter-highlight-name"
 u = ":tree-sitter-scopes"
 o = ":tree-sitter-subtree"
-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+# adding custom Description is not currently supported - https://github.com/helix-editor/helix/issues/1752
+# g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 
 [editor]
 bufferline = "multiple"

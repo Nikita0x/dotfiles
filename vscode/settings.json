@@ -460,7 +460,8 @@
 					// "source.css.scss",
 					"keyword.operator.css",
 					"punctuation.section.function.scss",
-					"punctuation.separator.delimiter.scss"
+					"punctuation.separator.delimiter.scss",
+					"keyword.operator.combinator"
 				],
 				"settings": {
 					"foreground": "#676867"
