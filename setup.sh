@@ -42,6 +42,9 @@ sudo apt install python3-django -y
 # Handly command to visualize the structure of the folder
 sudo apt install tree -y
 
+# install whois - CLI tool to check if a domain is taken or free
+sudo apt install whois
+
 # Package to see and kill processes on Linux
 sudo apt install btop -y
 

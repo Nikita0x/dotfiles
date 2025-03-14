@@ -125,18 +125,20 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 alias android-studio='cd /opt/android-studio/bin && ./studio.sh'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias clipboard='xclip -selection clipboard'
 alias myapp="code ~/github/addiction-tracker"
 alias chat="cd ~/work/chat_app"
 alias c="cd"
 alias n="nvim"
+alias vim="nvim"
 alias z="zed"
 alias buildapk-chatapp='cd ~/work/chat_app/android && ./gradlew assembleDebug && mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/app-debug-chatapp-$(date +"%H-%M_%m-%d").apk'
 alias buildapk-180score='cd ~/work/score_mob/android && ./gradlew assembleDebug && mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/app-debug-180score-$(date +"%H-%M_%m-%d").apk'
 alias glp='git log --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'
+
+alias chatapp='/home/mykyta/work/chat_app'
+
+
 export PATH=$HOME/.local/bin:$PATH
 
 

@@ -486,7 +486,7 @@
 			},
 			// SCSS
 			{
-				"scope": ["keyword.other.important.scss"],
+				"scope": ["keyword.other.important"],
 				"settings": {
 					"foreground": "#9872A2"
 				}

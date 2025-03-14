@@ -20,8 +20,8 @@ inherits = "github_dark"
 "ui.text.focus" = { fg = "text" }
  
 # Gutter
-"ui.gutter" = { bg = "none" }
-"ui.linenr" = { bg = "none" }
+# "ui.gutter" = { bg = "none" }
+# "ui.linenr" = { bg = "none" }
 "ui.linenr.selected" = { modifiers = ["bold"] }
  
 # Cursor
@@ -52,7 +52,7 @@ inherits = "github_dark"
  
 ## SYNTAX HIGHLIGHTING
 "comment" = { fg = "other", modifiers = ["italic"] }
-"label" = "gray"
+"label" = "attribute"
 "constructor" = "type"
 "namespace" = "yellow"
 "operator" = "other"
@@ -62,7 +62,7 @@ inherits = "github_dark"
 # Constants
 "constant" = { fg = "identifier"}
 "constant.builtin" = { fg = "boolean" }
-"constant.builtin.boolean" = { fg = "orange", modifiers = ["italic"] }
+# "constant.builtin.boolean" = { fg = "orange", modifiers = ["italic"] }
 "constant.builtin.character" = { fg = "green", modifiers = ["italic"] }
 "constant.character" = "green"
 "constant.character.escape" = "blue"
@@ -100,7 +100,7 @@ inherits = "github_dark"
 "keyword" = { fg = "keyword" }
 "keyword.control.conditional" = { fg = "keyword" }
 "keyword.control.exception" = { fg = "keyword" }
-"keyword.control.repeat" = { fg = "purple", modifiers = ["italic"] }
+"keyword.control.repeat" = { fg = "purple" }
 "keyword.directive" = { fg = "purple", modifiers = ["italic"] }
 "keyword.function" = { fg = "keyword"}
 "keyword.operator" = { fg = "other" }
@@ -134,6 +134,8 @@ inherits = "github_dark"
 # Markup
 "markup.heading.marker" = "gray"
 "markup.heading.1" = { fg = "red", modifiers = ["bold"] }
+
+
 "markup.heading.2" = { fg = "orange", modifiers = ["bold"] }
 "markup.heading.3" = { fg = "yellow", modifiers = ["bold"] }
 "markup.heading.4" = { fg = "green", modifiers = ["bold"] }

@@ -147,6 +147,7 @@
 		"args": {
 			"commands": [
 				"workbench.action.toggleSidebarVisibility",
+				"workbench.files.action.collapseExplorerFolders", //collapse all folders when opening file tree
 				"revealInExplorer"
 			]
 		}

@@ -1,0 +1,57 @@
+# https://github.com/helix-editor/helix/wiki/Language-Server-Configurations#vue
+# https://github.com/helix-editor/helix/blob/master/languages.toml
+ 
+# [[language]]
+# name = "vue"
+# scope = "source.vue"
+# injection-regex = "vue"
+# file-types = ["vue"]
+# roots = ["package.json"]
+# block-comment-tokens = { start = "<!--", end = "-->" }
+# indent = { tab-width = 2, unit = "  " }
+# language-servers = [ "vuels" ]
+
+# [language-server.vuels]
+# command = "vue-language-server"
+# args = ["--stdio"]
+# config = { typescript = { tsdk = "/usr/lib/node_modules/typescript/lib/" } }
+
+# [[language]]
+# name = "typescript"
+# scope = "source.ts"
+# file-types = ["ts", "tsx"]
+# language-servers = ["typescript-language-server"]
+
+# [language-server.typescript-language-server]
+# command = "typescript-language-server"
+# args = ["--stdio"]
+# config = { tsdk = "/usr/lib/node_modules/typescript/lib/" }
+
+# THE BELOW IS WORKING! (with hybrid = false (no formatting) and hybrid = true (better)
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+[language-server.typescript-language-server.config]
+plugins = [{ name = "@vue/typescript-plugin", location = "/usr/lib/node_modules/@vue/language-server", languages = ["vue"] }]
+
+[language-server.vuels]
+command = "vue-language-server"
+args = ["--stdio"]
+
+[language-server.vuels.config]
+typescript = { tsdk = "/usr/lib/node_modules/typescript/lib/" }
+vue = { hybridMode = true }
+
+[[language]]
+name = "vue"
+scope = "source.vue"
+injection-regex = "vue"
+file-types = ["vue"]
+roots = ["package.json"]
+block-comment-tokens = { start = "<!--", end = "-->" }
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["typescript-language-server", "vuels"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "vue"] }
