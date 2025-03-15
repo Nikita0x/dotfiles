@@ -27,11 +27,12 @@ i = ":tree-sitter-highlight-name"
 u = ":tree-sitter-scopes"
 o = ":tree-sitter-subtree"
 # adding custom Description is not currently supported - https://github.com/helix-editor/helix/issues/1752
-# g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+# 1g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 
 [editor]
 bufferline = "multiple"
 true-color = true
+color-modes = true
 
 [editor.cursor-shape]
 insert = "bar"

@@ -103,10 +103,66 @@
 
 # Markup
 
+# Version control
+"diff.plus.gutter" = { fg = "#487E02"  }
+"diff.minus.gutter" = { fg = "red"  }
+"diff.delta.gutter" = { fg = "sky_blue" }
+# "diff.delta.moved" = { fg = "" }
+# "diff.delta.conflict" = { fg = "" }
+
+# Editor Interface (not working?)
+# 15
+# where is this used?
+"markup.normal.completion" = { fg = "sky_blue" }
+"markup.normal.hover" = { fg = "sky_blue" }
+"markup.heading.completion" = { fg = "sky_blue" }
+"markup.heading.hover" = { fg = "sky_blue" }
+"raw.inline.completion" = { fg = "sky_blue" }
+"raw.inline.hover" = { fg = "sky_blue" }
+
 # UI
-"ui.selection" = { fg = "red", bg = "green"}
 "ui.background" = { bg = "background"}
-"ui.bufferline.active" = { bg = "active" }
+"ui.background.separator" = { bg = "test"} #wtf is this?
+
+"ui.cursor" = { fg = "white",bg = "test"} 
+#not sure how the ones below cusros should work
+# "ui.cursor.normal" = { bg = "interface"} 
+# "ui.cursor.insert" = { bg = "test"} 
+# "ui.cursor.select" = { bg = "test"} 
+
+"ui.cursor.match" = { fg = "test"} 
+# "ui.cursor.primary" = { fg = "keyword"} 
+# "ui.cursor.primary.normal" = { fg = "keyword"} 
+# "ui.cursor.primary.insert" = { fg = "keyword"} 
+# "ui.cursor.primary.select" = { fg = "keyword"} 
+"ui.debug.breakpoint" = { fg = 'red' } 
+# "ui.debug.active" = { fg = 'red' } 
+
+#TBD
+"ui.gutter" = { fg = 'comment' } 
+"ui.gutter.selected" = { fg = 'white' } 
+# "ui.statusline" = { bg = '#000000' } 
+#TBD
+"ui.statusline.inactive" = { fg = "white", bg = 'pitch_black' } 
+# "ui.statusline.normal" = { fg = "white", bg = 'pitch_black' } 
+"ui.statusline.insert" = { fg = "white", bg = 'rustic_red' } 
+"ui.statusline.select" = { fg = "white", bg = 'pitch_black' } 
+# "ui.statusline.separator" = { fg = "test", bg = "string" }
+
+"ui.popup" = { bg = '#252525' } #when you try to pass an argument to a function
+"ui.popup.info" = { fg = "white", bg = '#252525' } #which menu
+
+"ui.picker.header" = { fg = "white", bg = '#252525' } #TBD - not sure where it applies
+"ui.picker.header.column" = { fg = "white", bg = '#252525' } #TBD - not sure where it applies
+"ui.picker.header.column.active" = { fg = "white", bg = '#252525' } #TBD - not sure where it applies
+
+"ui.window" = { bg = "red"} #TBD borderlines separating splits
+"ui.help" = { bg = "pitch_black"} #TBD #:command- info popup above it
+"ui.text" = { fg = "white"} #TBD
+"ui.text.focus" = { fg = "interface"} #TBD
+ 
+"ui.selection" = { bg = "selection"} #TBD
+"ui.bufferline.active" = { bg = "rustic_red" }
 # "ui.bufferline.active" = { bg = "pitch_black" }
 "ui.bufferline.background" = { bg = "background" }
 # "ui.bufferline.background" = { bg = "pitch_black" }
@@ -123,13 +179,15 @@ type = "#4EC9B0"
 attribute= "#D0B344"
 boolean = "#408080"
 htmlTag = "#569CD6"
-selection = "#FF0000"
+selection = "#000000" #170073 #pitch_black #450124
 argument = "#078448"
 escapeCharacter = "#8080FF"
 regexp = "#D16969"
 comment = "#525252"
 variableBuiltin = "#C7444A"
-test = "#0014FF"
-active = "#540B0C"
+red = "#F14C4C"
+rustic_red = "#540B0C"
 pitch_black = "#000000"
 namespace = "#e7c664"
+sky_blue = "#1B779A"
+test = "#053AA6"
