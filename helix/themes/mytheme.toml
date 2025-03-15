@@ -1,4 +1,6 @@
+# inherits = ""
 inherits = "github_dark"
+# inherits = "acme"
  
 ## EDITOR UI COLORS
  
@@ -53,7 +55,7 @@ inherits = "github_dark"
 ## SYNTAX HIGHLIGHTING
 "comment" = { fg = "other", modifiers = ["italic"] }
 "label" = "attribute"
-"constructor" = "type"
+# "constructor" = "type"
 "namespace" = "yellow"
 "operator" = "other"
 "special" = "yellow"
@@ -103,16 +105,16 @@ inherits = "github_dark"
 "keyword.control.repeat" = { fg = "purple" }
 "keyword.directive" = { fg = "purple", modifiers = ["italic"] }
 "keyword.function" = { fg = "keyword"}
-"keyword.operator" = { fg = "other" }
+"keyword.operator" = { fg = "keyword" }
 "keyword.return" = { fg = "purple", modifiers = ["italic"] }
 "keyword.storage.modifier" = { fg = "keyword" }
 "keyword.storage.type" = { fg = "keyword" }
  
 # Punctuation
-"punctuation" = "#676867"
-"punctuation.bracket" = "#676867"
-"punctuation.delimiter" = "#676867"
-"punctuation.special" = "#676867"
+"punctuation" = "other"
+"punctuation.bracket" = "other"
+"punctuation.delimiter" = "other"
+"punctuation.special" = "other"
  
 # Strings
 "string" = "string"
@@ -123,6 +125,7 @@ inherits = "github_dark"
 # Types
 "type" = "type"
 "type.builtin" = { fg = "boolean" }
+"type.enum.variant" = { fg = 'red' }
  
 # Variables
 "variable" = "identifier"
