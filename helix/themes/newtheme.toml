@@ -64,9 +64,52 @@
 "keyword.control.import" = {fg = "keyword", modifiers = ["italic"] }
 "keyword.control.return" = {fg = "keyword", modifiers = ["italic"] }
 "keyword.control.exception" = {fg = "keyword", modifiers = ["italic"] }
+#10
+"keyword.operator" = {fg = "test", modifiers = ["italic"] }
+
+# Directives
+# 11 - не уверен. Vue директивы не хайлатнулись. не понял на что оно влияет
+"keyword.directive" = {fg = "test", modifiers = ["italic"] }
+"keyword.function" = {fg = "keyword", modifiers = ["italic"] }
+# 12
+# Storage - Rust: enum, struct. TS: interface, enum, let, class ???
+# "keyword.storage.type" = {fg = "red", modifiers = ["italic"] }
+# 13
+# Rust: mut, &ref, move. TS: const, static 
+# "keyword.storage.modifier" = {fg = "red", modifiers = ["italic"] }
+
+# Operators
+# 14
+# Rust: =, +=, etc.., 1.. range operator, ->, =>, ||, & too? 
+# JS: все операторы, без разбора... Обычныые, а так же : =>, ++, --, ..., внутри регекспа так же
+# # хотя не должны внутри регекспа ловится   
+"operator" = { fg = "other"}
+
+# Functions
+"function.builtin" = { fg = "function", underline = { color = "function", style = "line" } }
+"function.method" = { fg = "function", underline = { color = "function", style = "line" } }
+"function.macro" = { fg = "function", underline = { color = "function", style = "line" } }
+"function.special" = { fg = "function", underline = { color = "function", style = "line" } }
+
+# Tags (HTML)
+"tag" = { fg = "htmlTag"  }
+"tag.builtin" = { fg = "htmlTag"  }
+
+# Namespace
+"namespace" = { fg = "namespace"  }
+
+# Special - Rust: derive
+"special" = { fg = "namespace"  }
+
+# Markup
 
 # UI
 "ui.selection" = { fg = "red", bg = "green"}
+"ui.background" = { bg = "background"}
+"ui.bufferline.active" = { bg = "active" }
+# "ui.bufferline.active" = { bg = "pitch_black" }
+"ui.bufferline.background" = { bg = "background" }
+# "ui.bufferline.background" = { bg = "pitch_black" }
 
 [palette]
 interface = "#53B20B"
@@ -87,3 +130,6 @@ regexp = "#D16969"
 comment = "#525252"
 variableBuiltin = "#C7444A"
 test = "#0014FF"
+active = "#540B0C"
+pitch_black = "#000000"
+namespace = "#e7c664"

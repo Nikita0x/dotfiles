@@ -18,6 +18,7 @@ A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befor
 
 [keys.insert]
 "C-space" = "completion"
+ C-s = ["normal_mode", ":w"]
 
 [keys.normal.space]
 tab = ":config-reload"
