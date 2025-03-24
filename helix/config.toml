@@ -14,28 +14,84 @@ tab = ["goto_last_accessed_file"]
 "C-s" = ":w"
 A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
-
+# C-g = [
+#     ":write-all",
+#     ":new",
+#     ":insert-output lazygit-gm",
+#     ":buffer-close!",
+#     ":redraw",
+#     ":reload-all"
+# ]
+"ret" = [
+    ":write-all",
+    ":new",
+    ":insert-output lazygit-gm",
+    ":buffer-close!",
+    ":redraw",
+    ":reload-all"
+]
 
 [keys.insert]
 "C-space" = "completion"
  C-s = ["normal_mode", ":w"]
+ j = { k = "normal_mode"}
 
 [keys.normal.space]
 tab = ":config-reload"
-q = [":o ~/.config/helix/themes/newtheme.toml", ":o ~/work/chat_app/src/components/modals/RatingModal.vue", ":o ~/work/chat_app/src/types/interfaces/strapi.interfaces.ts",":o ~/github/rustproject/src/main.rs"]
+q = [":o ~/.config/helix/themes/newtheme.toml", ":o ~/work/chat_app/src/components/modals/RatingModal.vue", ":o ~/work/chat_app/src/types/interfaces/strapi.interfaces.ts",":o ~/github/rustproject/src/main.rs", ":o ~/.config/helix/languages.toml"]
 i = ":tree-sitter-highlight-name"
 u = ":tree-sitter-scopes"
 o = ":tree-sitter-subtree"
-# adding custom Description is not currently supported - https://github.com/helix-editor/helix/issues/1752
-# 1g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+
+# e = [
+#   ":sh rm -f /tmp/unique-file-h21a434",
+#   ":insert-output yazi '%{buffer_name}' --chooser-file=/tmp/unique-file-h21a434",
+#   ":insert-output echo \"x1b[?1049h\" > /dev/tty",
+#   ":open %sh{cat /tmp/unique-file-h21a434}",
+#   ":redraw",
+#   ":set mouse false",
+#   ":set mouse true",
+# ]
+# E = [
+#   ":sh rm -f /tmp/unique-file-u41ae14",
+#   ":insert-output yazi '%{workspace_directory}' --chooser-file=/tmp/unique-file-u41ae14",
+#   ":insert-output echo \"x1b[?1049h\" > /dev/tty",
+#   ":open %sh{cat /tmp/unique-file-u41ae14}",
+#   ":redraw",
+#   ":set mouse false",
+#   ":set mouse true",
+# ]
 
 [editor]
 bufferline = "multiple"
 true-color = true
 color-modes = true
+continue-comments = false
+preview-completion-insert = false
+completion-trigger-len = 1
+# popup-border = "none"
+# end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+# cursor-line = "error"
+
+
+
+
+[editor.statusline]
+left =  ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+# total-line-numbers = true
+center = ["version-control"]
 
 [editor.cursor-shape]
 insert = "bar"
 
 [editor.soft-wrap]
 enable = true
+
+[editor.file-picker]
+# hidden = false
+
+[editor.lsp]
+display-messages = true
+display-progress-messages = true

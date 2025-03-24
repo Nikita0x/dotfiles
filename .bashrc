@@ -135,8 +135,8 @@ alias z="zed"
 alias buildapk-chatapp='cd ~/work/chat_app/android && ./gradlew assembleDebug && mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/app-debug-chatapp-$(date +"%H-%M_%m-%d").apk'
 alias buildapk-180score='cd ~/work/score_mob/android && ./gradlew assembleDebug && mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/app-debug-180score-$(date +"%H-%M_%m-%d").apk'
 alias glp='git log --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'
-
 alias chatapp='/home/mykyta/work/chat_app'
+alias lg="lazygit-gm"
 
 
 export PATH=$HOME/.local/bin:$PATH
@@ -146,9 +146,10 @@ export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.nvm/versions/node/v22.11.0/bin:$PATH
 
 # helix development
-export HELIX_RUNTIME=/home/mykyta/.config/helix/runtime
+export HELIX_RUNTIME=/home/mykyta/github/nikrev/helix/runtime
 
 export EMSDK_PATH=~/emsdk
 export PATH="$EMSDK_PATH:$EMSDK_PATH/upstream/emscripten:$PATH"
 export PATH="$PATH:/usr/bin"
 export PATH=$HOME/go/bin:$PATH
+export EDITOR=hx

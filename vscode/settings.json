@@ -214,7 +214,7 @@
 			},
 			// arguments/parameters to a function
 			{
-				"scope": ["variable.parameter"],
+				"scope": ["variable.parameter", "entity.name.type.parameter"],
 				"settings": {
 					"foreground": "#078448be",
 					"fontStyle": "italic"
@@ -315,16 +315,18 @@
 					"foreground": "#676867"
 				}
 			},
-			// new operator, typeof operator, delete operator
+			// new operator, typeof operator, delete operator, instanceof
 			{
 				"scope": [
 					"keyword.operator.new",
 					"keyword.operator.expression.of",
-					"keyword.operator.expression.delete"
+					"keyword.operator.expression.delete",
+					"keyword.operator.expression.instanceof"
 				],
 				"settings": {
 					// "foreground": "#676867",
-					"foreground": "#9872A2"
+					"foreground": "#9872A2",
+					"fontStyle": "italic"
 				}
 			},
 			// highlight key fields in object literals
@@ -882,5 +884,6 @@
 	"explorer.autoReveal": false,
 	"breadcrumbs.enabled": false,
 	"gitlens.ai.model": "openai:gpt-4o",
-	"chat.commandCenter.enabled": false
+	"chat.commandCenter.enabled": false,
+	"git.blame.statusBarItem.enabled": true
 }

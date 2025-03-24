@@ -40,6 +40,7 @@
 "comment.block.documentation" = {fg = "interface" }
 
 # Variables
+"variable" = {fg = "identifier" }
 "variable.builtin" = {fg = "variableBuiltin" }
 "variable.other" = {fg = "identifier" }
 "variable.other.member" = {fg = "identifier" }
@@ -57,6 +58,7 @@
 "punctuation.special" = {fg = "htmlTag" }
 
 # Keyword
+"keyword" = {fg = "keyword", modifiers = ["italic"] }
 "keyword.control.conditional" = {fg = "keyword", modifiers = ["italic"] }
 #8
 "keyword.control.repeat" = {fg = "keyword", modifiers = ["italic"] }
@@ -65,7 +67,7 @@
 "keyword.control.return" = {fg = "keyword", modifiers = ["italic"] }
 "keyword.control.exception" = {fg = "keyword", modifiers = ["italic"] }
 #10
-"keyword.operator" = {fg = "test", modifiers = ["italic"] }
+"keyword.operator" = {fg = "keyword", modifiers = ["italic"] }
 
 # Directives
 # 11 - не уверен. Vue директивы не хайлатнулись. не понял на что оно влияет
@@ -86,6 +88,7 @@
 "operator" = { fg = "other"}
 
 # Functions
+"function" = { fg = "function", underline = { color = "function", style = "line" } }
 "function.builtin" = { fg = "function", underline = { color = "function", style = "line" } }
 "function.method" = { fg = "function", underline = { color = "function", style = "line" } }
 "function.macro" = { fg = "function", underline = { color = "function", style = "line" } }
@@ -149,6 +152,9 @@
 "ui.statusline.select" = { fg = "white", bg = 'pitch_black' } 
 # "ui.statusline.separator" = { fg = "test", bg = "string" }
 
+"ui.bufferline.active" = { bg = "rustic_red" }
+"ui.bufferline.background" = { bg = "background" }
+
 "ui.popup" = { bg = '#252525' } #when you try to pass an argument to a function
 "ui.popup.info" = { fg = "white", bg = '#252525' } #which menu
 
@@ -160,12 +166,19 @@
 "ui.help" = { bg = "pitch_black"} #TBD #:command- info popup above it
 "ui.text" = { fg = "white"} #TBD
 "ui.text.focus" = { fg = "interface"} #TBD
+"ui.text.info" = { fg = "interface"} # color of the text in which key
  
 "ui.selection" = { bg = "selection"} #TBD
-"ui.bufferline.active" = { bg = "rustic_red" }
-# "ui.bufferline.active" = { bg = "pitch_black" }
-"ui.bufferline.background" = { bg = "background" }
-# "ui.bufferline.background" = { bg = "pitch_black" }
+"ui.menu" = { bg = "selection"} #TBD
+"ui.menu.selected" = { bg = "test"} #TBD
+# "ui.selection.primary" = { bg = "test"} #TBD
+
+"ui.menu.scroll" = { fg = "rustic_red", bg = "selection"} #TBD
+
+# Diagnostics
+
+"error" = {  fg = "red"} #TBD
+"warning" = {  fg = "yellow"} #TBD
 
 [palette]
 interface = "#53B20B"
