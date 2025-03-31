@@ -133,15 +133,15 @@
 	//Custom syntax highlighter
 	"editor.tokenColorCustomizations": {
 		"functions": {
-			"fontStyle": "underline",
+			// "fontStyle": "underline",
 			"foreground": "#d97706"
 		},
 		"numbers": {
 			"foreground": "#408080"
 		},
 		"keywords": {
-			"foreground": "#9872A2",
-			"fontStyle": "italic"
+			"foreground": "#9872A2"
+			// "fontStyle": "italic"
 		},
 		"strings": {
 			"foreground": "#9AA83A",
@@ -325,8 +325,8 @@
 				],
 				"settings": {
 					// "foreground": "#676867",
-					"foreground": "#9872A2",
-					"fontStyle": "italic"
+					"foreground": "#9872A2"
+					// "fontStyle": "italic"
 				}
 			},
 			// highlight key fields in object literals
@@ -387,8 +387,16 @@
 			{
 				"scope": "storage.type.function.arrow",
 				"settings": {
-					"foreground": "#d97706",
-					"fontStyle": "underline"
+					"foreground": "#676867"
+					// "foreground": "#d97706"
+					// "fontStyle": "underline"
+				}
+			},
+			// .value (vuejs)
+			{
+				"scope": "variable.other.constant.property",
+				"settings": {
+					"foreground": "#9CDCFE"
 				}
 			},
 			// arithmetic operators

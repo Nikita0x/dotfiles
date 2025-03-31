@@ -428,9 +428,21 @@
 	// 	"command": "editor.action.smartSelect.expand",
 	// 	"when": "editorTextFocus"
 	// },
+	// expand or shrink selection
 	{
-		"key": "alt+s",
+		"key": "alt+i",
 		"command": "editor.action.smartSelect.shrink",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+o",
+		"command": "editor.action.smartSelect.expand",
+		"when": "editorTextFocus"
+	},
+	// open a link in browser with highlight
+	{
+		"key": "alt+g",
+		"command": "gitlens.openFileInRemote",
 		"when": "editorTextFocus"
 	},
 	{
