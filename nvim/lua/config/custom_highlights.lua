@@ -6,9 +6,9 @@ vim.api.nvim_set_hl(0, 'GitSignsChangedelete', { fg = '#FFA500' }) -- Orange
 vim.api.nvim_set_hl(0, 'GitSignsDelete', { fg = '#FF0000' }) -- Red
 vim.api.nvim_set_hl(0, 'GitSignsTopdelete', { fg = '#FF4500' }) -- Orange-Red
 
--- Functions
+-- Functions gui=underline
 vim.cmd [[
-  highlight Function gui=underline guifg=#d97706
+highlight Function guifg=#d97706
 ]]
 
 -- Visual selection color #050d45

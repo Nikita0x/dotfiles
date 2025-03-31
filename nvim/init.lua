@@ -1065,16 +1065,16 @@ require('lazy').setup({
   },
 
   -- Add vscode.nvim to your LazyVim configuration
-  --   {
+  -- {
   --   'Mofiqul/vscode.nvim',
   --   config = function()
-  --     require('vscode').setup({
+  --     require('vscode').setup {
   --       theme = 'vscode-dark',
   --       -- theme = 'vscode-light',
-  --     })
+  --     }
   --     -- Force colorscheme setting if not loaded
-  --     vim.cmd('colorscheme vscode')
-  --   end
+  --     vim.cmd 'colorscheme vscode'
+  --   end,
   -- },
   {
     'petertriho/nvim-scrollbar',
