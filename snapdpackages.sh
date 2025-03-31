@@ -1,1 +1,1 @@
-# nothing here so far
+sudo snap install go --classic
