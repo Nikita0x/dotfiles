@@ -3,7 +3,7 @@ name = "vue"
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "vue"] }
 # language-servers = ["typescript-language-server", "vuels" ]
-language-servers = ["typescript-language-server"]
+language-servers = ["typescript-language-server", "tailwindcss-ls"]
 
 # [language-server.typescript-language-server]
 # command = "typescript-language-server"
@@ -26,3 +26,26 @@ plugins = [{ name = "@vue/typescript-plugin", location = "/usr/lib/node_modules/
 typescript = { tsdk = "/usr/lib/node_modules/typescript/lib/" }
 vue = { hybridMode = true }
 
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]

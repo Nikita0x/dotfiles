@@ -14,6 +14,7 @@ tab = ["goto_last_accessed_file"]
 "C-s" = ":w"
 A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+C-e = [":new", ":insert-output lf -selection-path=/dev/stdout", "split_selection_on_newline", "goto_file", "goto_last_modification", "goto_last_modified_file", ":buffer-close!", ":redraw"]
 # C-g = [
 #     ":write-all",
 #     ":new",
@@ -21,7 +22,7 @@ A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befor
 #     ":buffer-close!",
 #     ":redraw",
 #     ":reload-all"
-# ]
+# ] 
 "ret" = [
     ":write-all",
     ":new",
@@ -90,7 +91,7 @@ insert = "bar"
 enable = true
 
 [editor.file-picker]
-# hidden = false
+hidden = false
 
 [editor.lsp]
 display-messages = true

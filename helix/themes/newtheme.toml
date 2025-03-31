@@ -58,21 +58,21 @@
 "punctuation.special" = {fg = "htmlTag" }
 
 # Keyword
-"keyword" = {fg = "keyword", modifiers = ["italic"] }
-"keyword.control.conditional" = {fg = "keyword", modifiers = ["italic"] }
+"keyword" = {fg = "keyword", modifiers = [""] }
+"keyword.control.conditional" = {fg = "keyword", modifiers = [""] }
 #8
-"keyword.control.repeat" = {fg = "keyword", modifiers = ["italic"] }
+"keyword.control.repeat" = {fg = "keyword", modifiers = [""] }
 #9 import works but export not?
-"keyword.control.import" = {fg = "keyword", modifiers = ["italic"] }
-"keyword.control.return" = {fg = "keyword", modifiers = ["italic"] }
-"keyword.control.exception" = {fg = "keyword", modifiers = ["italic"] }
+"keyword.control.import" = {fg = "keyword", modifiers = [""] }
+"keyword.control.return" = {fg = "keyword", modifiers = [""] }
+"keyword.control.exception" = {fg = "keyword", modifiers = [""] }
 #10
-"keyword.operator" = {fg = "keyword", modifiers = ["italic"] }
+"keyword.operator" = {fg = "keyword", modifiers = [""] }
 
 # Directives
 # 11 - не уверен. Vue директивы не хайлатнулись. не понял на что оно влияет
-"keyword.directive" = {fg = "test", modifiers = ["italic"] }
-"keyword.function" = {fg = "keyword", modifiers = ["italic"] }
+"keyword.directive" = {fg = "test", modifiers = [""] }
+"keyword.function" = {fg = "keyword", modifiers = [""] }
 # 12
 # Storage - Rust: enum, struct. TS: interface, enum, let, class ???
 # "keyword.storage.type" = {fg = "red", modifiers = ["italic"] }
@@ -88,11 +88,11 @@
 "operator" = { fg = "other"}
 
 # Functions
-"function" = { fg = "function", underline = { color = "function", style = "line" } }
-"function.builtin" = { fg = "function", underline = { color = "function", style = "line" } }
-"function.method" = { fg = "function", underline = { color = "function", style = "line" } }
-"function.macro" = { fg = "function", underline = { color = "function", style = "line" } }
-"function.special" = { fg = "function", underline = { color = "function", style = "line" } }
+"function" = { fg = "function", underline = { color = "function", style = "" } }
+"function.builtin" = { fg = "function", underline = { color = "function", style = "" } }
+"function.method" = { fg = "function", underline = { color = "function", style = "" } }
+"function.macro" = { fg = "function", underline = { color = "function", style = "" } }
+"function.special" = { fg = "function", underline = { color = "function", style = "" } }
 
 # Tags (HTML)
 "tag" = { fg = "htmlTag"  }
