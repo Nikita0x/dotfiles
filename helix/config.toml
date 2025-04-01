@@ -37,6 +37,11 @@ C-e = [":new", ":insert-output lf -selection-path=/dev/stdout", "split_selection
  C-s = ["normal_mode", ":w"]
  j = { k = "normal_mode"}
 
+ 
+[keys.select]
+"A-q" = "goto_line_start"
+"A-e" = "goto_line_end"
+
 [keys.normal.space]
 tab = ":config-reload"
 q = [":o ~/.config/helix/themes/newtheme.toml", ":o ~/work/chat_app/src/components/modals/RatingModal.vue", ":o ~/work/chat_app/src/types/interfaces/strapi.interfaces.ts",":o ~/github/rustproject/src/main.rs", ":o ~/.config/helix/languages.toml"]

@@ -146,7 +146,7 @@ export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.nvm/versions/node/v22.11.0/bin:$PATH
 
 # helix development
-export HELIX_RUNTIME=/home/mykyta/github/nikrev/helix/runtime
+export HELIX_RUNTIME=~/github/helix/runtime
 
 export EMSDK_PATH=~/emsdk
 export PATH="$EMSDK_PATH:$EMSDK_PATH/upstream/emscripten:$PATH"

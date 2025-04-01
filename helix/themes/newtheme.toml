@@ -55,24 +55,24 @@
 # Punctuation
 "punctuation.delimiter" = {fg = "other" }
 "punctuation.bracket" = {fg = "other" }
-"punctuation.special" = {fg = "htmlTag" }
+"punctuation.special" = {fg = "other" }
 
 # Keyword
-"keyword" = {fg = "keyword", modifiers = [""] }
-"keyword.control.conditional" = {fg = "keyword", modifiers = [""] }
+"keyword" = {fg = "keyword"  }
+"keyword.control.conditional" = {fg = "keyword"  }
 #8
-"keyword.control.repeat" = {fg = "keyword", modifiers = [""] }
+"keyword.control.repeat" = {fg = "keyword"  }
 #9 import works but export not?
-"keyword.control.import" = {fg = "keyword", modifiers = [""] }
-"keyword.control.return" = {fg = "keyword", modifiers = [""] }
-"keyword.control.exception" = {fg = "keyword", modifiers = [""] }
+"keyword.control.import" = {fg = "keyword"  }
+"keyword.control.return" = {fg = "keyword"  }
+"keyword.control.exception" = {fg = "keyword"  }
 #10
-"keyword.operator" = {fg = "keyword", modifiers = [""] }
+"keyword.operator" = {fg = "keyword"  }
 
 # Directives
 # 11 - не уверен. Vue директивы не хайлатнулись. не понял на что оно влияет
-"keyword.directive" = {fg = "test", modifiers = [""] }
-"keyword.function" = {fg = "keyword", modifiers = [""] }
+"keyword.directive" = {fg = "test"  }
+"keyword.function" = {fg = "keyword"  }
 # 12
 # Storage - Rust: enum, struct. TS: interface, enum, let, class ???
 # "keyword.storage.type" = {fg = "red", modifiers = ["italic"] }
