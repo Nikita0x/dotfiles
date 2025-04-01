@@ -4,6 +4,7 @@
 # "attribute" = { fg = "escapeCharacter" }
 
 # Types
+"type" = {fg = "type" }
 "type.builtin" = {fg = "type" }
 "type.parameter" = {fg = "argument", modifiers = ["italic"] }
 #1 
@@ -12,11 +13,12 @@
 
 # Constructor
 #2
-# "constructor" = {fg = "argument", modifiers = ["italic"] }
-
+# "constructor" = {fg = "type", modifiers = ["italic"] }
+"constructor" = {fg = "htmlTagDarker"}
 # Constant
+"constant" = {fg = "boolean" }
 #3
-# "constant.builtin.boolean" = {fg = "boolean" }
+"constant.builtin.boolean" = {fg = "boolean" }
 #4
 # Escape characters
 "constant.character.escape" = {fg = "escapeCharacter" }
@@ -42,12 +44,14 @@
 # Variables
 "variable" = {fg = "identifier" }
 "variable.builtin" = {fg = "variableBuiltin" }
-"variable.other" = {fg = "identifier" }
-"variable.other.member" = {fg = "identifier" }
-#7
-"variable.other.private" = {fg = "function" }
-# Function parameters/arguments
 "variable.parameter" = {fg = "argument", modifiers = ["italic"] }
+"variable.other" = {fg = "identifier" }
+
+#possibly a bug too?
+"variable.other.member" = {fg = "identifier" }
+# "variable.other.member" = {fg = "rustic_red" }
+# 7
+"variable.other.private" = {fg = "function" }
 
 # CSS classes
 "label" = {fg = "attribute" }
@@ -151,8 +155,8 @@
 "ui.statusline.insert" = { fg = "white", bg = 'rustic_red' } 
 "ui.statusline.select" = { fg = "white", bg = 'pitch_black' } 
 # "ui.statusline.separator" = { fg = "test", bg = "string" }
-
-"ui.bufferline.active" = { bg = "rustic_red" }
+"ui.bufferline" = { bg = "pitch_black" }
+"ui.bufferline.active" = { fg = "white" ,bg = "rustic_red" }
 "ui.bufferline.background" = { bg = "background" }
 
 "ui.popup" = { bg = '#252525' } #when you try to pass an argument to a function
@@ -192,6 +196,7 @@ type = "#4EC9B0"
 attribute= "#D0B344"
 boolean = "#408080"
 htmlTag = "#569CD6"
+htmlTagDarker = "#3B8CB8"
 selection = "#000000" #170073 #pitch_black #450124
 argument = "#078448"
 escapeCharacter = "#8080FF"
