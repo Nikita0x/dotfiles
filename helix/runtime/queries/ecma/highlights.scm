@@ -91,7 +91,6 @@
   "of"
   "as"
   "in"
-  ; "is"
 ] @keyword.operator
 
 [
