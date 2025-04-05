@@ -43,6 +43,21 @@ echo
 
 sudo apt install adb -y
 
+echo "********************************************************"
+echo Installing simplescreenrecorder
+echo "********************************************************"
+echo 
+
+sudo apt install simplescreenrecorder -y
+
+
+echo "********************************************************"
+echo Installing gpick
+echo "********************************************************"
+echo 
+
+sudo apt install gpick -y
+
 # Install npm
 sudo apt install npm -y
 
