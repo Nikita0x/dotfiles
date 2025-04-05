@@ -13,3 +13,10 @@ echo "********************************************************"
 echo 
 
 sudo snap install go --classic
+
+echo "********************************************************"
+echo Installing helix
+echo "********************************************************"
+echo 
+
+sudo snap install helix --classic
