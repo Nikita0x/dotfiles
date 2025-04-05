@@ -1,3 +1,8 @@
+echo "********************************************************"
+echo Installing lf 
+echo "********************************************************"
+echo 
+
 # terminal file manager
 # can be configurable in lfrc file
 # https://github.com/gokcehan/lf/blob/master/etc/lfrc.example

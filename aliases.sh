@@ -1,3 +1,8 @@
+echo "********************************************************"
+echo Adding aliases
+echo "********************************************************"
+echo 
+
 echo "alias android-studio='cd /opt/android-studio/bin && ./studio.sh'" >> ~/.bashrc
 echo "alias clipboard='xclip -selection clipboard'" >> ~/.bashrc
 # Inform the user to source .bashrc
