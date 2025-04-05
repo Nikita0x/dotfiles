@@ -29,6 +29,20 @@ echo Installing npm
 echo "********************************************************"
 echo 
 
+echo "********************************************************"
+echo Installing xclip
+echo "********************************************************"
+echo 
+
+sudo apt install xclip
+
+echo "********************************************************"
+echo Installing adb
+echo "********************************************************"
+echo 
+
+sudo apt install adb -y
+
 # Install npm
 sudo apt install npm -y
 
