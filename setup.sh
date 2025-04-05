@@ -211,6 +211,8 @@ source ./hackertools.sh
 # nvim
 source ./nviminstallation.sh
 
+source ./flathub.sh
+
 # snapd packages
 source ./snapdpackages.sh
 
