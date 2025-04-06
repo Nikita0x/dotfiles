@@ -1,9 +1,23 @@
-echo "********************************************************"
-echo Adding aliases
-echo "********************************************************"
-echo 
+#!/bin/bash
 
-echo "alias android-studio='cd /opt/android-studio/bin && ./studio.sh'" >> ~/.bashrc
-echo "alias clipboard='xclip -selection clipboard'" >> ~/.bashrc
-# Inform the user to source .bashrc
+echo "********************************************************"
+echo "Adding aliases (only if they don't already exist)"
+echo "********************************************************"
+echo
+
+add_alias_if_missing() {
+  local alias_line="$1"
+  local alias_name=$(echo "$alias_line" | cut -d'=' -f1 | awk '{print $2}')
+  if ! grep -Fxq "$alias_line" ~/.bashrc; then
+    echo "$alias_line" >> ~/.bashrc
+    echo "✔️ Added: $alias_name"
+  else
+    echo "⚠️ Already exists: $alias_name"
+  fi
+}
+
+add_alias_if_missing "alias android-studio='cd /opt/android-studio/bin && ./studio.sh'"
+add_alias_if_missing "alias clipboard='xclip -selection clipboard'"
+
+echo
 echo "Please run 'source ~/.bashrc' to apply the changes or open a new terminal."
