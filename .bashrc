@@ -116,40 +116,33 @@ if ! shopt -oq posix; then
   fi
 fi
 . "$HOME/.cargo/env"
-export ANDROID_HOME=~/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export ANDROID_HOME=/opt/android-studio
 export CAPACITOR_ANDROID_STUDIO_PATH="/opt/android-studio/bin/studio.sh"
-export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH=$PATH:$ANDROID_HOME/bin
+export PATH=$PATH:$HOME/go/bin
+
+export ANDROID_HOME=/home/lulz/Android/Sdk
+export ANDROID_SDK_ROOT=/home/lulz/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias android-studio='cd /opt/android-studio/bin && ./studio.sh'
-
 alias clipboard='xclip -selection clipboard'
-alias myapp="code ~/github/addiction-tracker"
-alias chat="cd ~/work/chat_app"
-alias c="cd"
-alias n="nvim"
-alias vim="nvim"
-alias z="zed"
-alias buildapk-chatapp='cd ~/work/chat_app/android && ./gradlew assembleDebug && mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/app-debug-chatapp-$(date +"%H-%M_%m-%d").apk'
-alias buildapk-180score='cd ~/work/score_mob/android && ./gradlew assembleDebug && mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/app-debug-180score-$(date +"%H-%M_%m-%d").apk'
+alias c='cd'
+alias bashrc='hx ~/.bashrc'
+alias dotfiles='code ~/github/dotfiles'
+alias buildapk-chat='
+  (cd ~/work/chat_app/android && \
+  ./gradlew assembleDebug && \
+  mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/chat-debug-$(date +%m_%d_%H_%M).apk)
+'
+alias buildapk-180score='
+  (cd ~/work/score_mob/android && \
+  ./gradlew assembleDebug && \
+  mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/180score-debug-$(date +%m_%d_%H_%M).apk)
+'
 alias glp='git log --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'
-alias chatapp='/home/mykyta/work/chat_app'
-alias lg="lazygit-gm"
-
-
-export PATH=$HOME/.local/bin:$PATH
-
-
-
-export PATH=$HOME/.nvm/versions/node/v22.11.0/bin:$PATH
-
-# helix development
-export HELIX_RUNTIME=~/github/helix/runtime
-
-export EMSDK_PATH=~/emsdk
-export PATH="$EMSDK_PATH:$EMSDK_PATH/upstream/emscripten:$PATH"
-export PATH="$PATH:/usr/bin"
-export PATH=$HOME/go/bin:$PATH
-export EDITOR=hx
