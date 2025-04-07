@@ -20,3 +20,11 @@ echo "********************************************************"
 echo 
 
 sudo snap install helix --classic
+
+
+echo "********************************************************"
+echo Installing gradle
+echo "********************************************************"
+echo 
+
+sudo snap install gradle --classic

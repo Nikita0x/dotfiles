@@ -1,11 +1,11 @@
 # Install Java SDK for android studio
 echo "********************************************************"
-echo Installing openjdk-11-jdk
+echo Installing openjdk-17-jdk
 echo "********************************************************"
 echo 
 
 sudo apt update
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-17-jdk -y
 
 # download android studio
 
