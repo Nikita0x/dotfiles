@@ -1,0 +1,897 @@
+{
+	//these 3 are needed to disable annying Alt key behavior.
+	"window.enableMenuBarMnemonics": false,
+	"window.titleBarStyle": "custom",
+	"window.customMenuBarAltFocus": false,
+
+	"workbench.layoutControl.enabled": false,
+	"window.commandCenter": false,
+	"typescript.suggest.autoImports": false,
+	"javascript.suggest.autoImports": false,
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"editor.fontSize": 15,
+	"editor.fontFamily": "Monospace",
+	"editor.fontLigatures": true,
+	"editor.linkedEditing": true,
+	"editor.insertSpaces": true,
+	"editor.tabSize": 4,
+	"explorer.confirmDragAndDrop": false,
+	"emmet.includeLanguages": {
+		"vue": "html",
+		"vue-html": "html",
+		"javascript": "javascriptreact",
+		"django-html": "html"
+	},
+	"workbench.list.smoothScrolling": true,
+	"terminal.integrated.smoothScrolling": true,
+	"editor.smoothScrolling": false,
+	"editor.scrollBeyondLastLine": false,
+	"editor.semanticHighlighting.enabled": true,
+	"editor.guides.highlightActiveBracketPair": true,
+	"editor.links": false,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.cursorStyle": "line-thin",
+	"editor.cursorWidth": 3,
+	"editor.cursorBlinking": "phase",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.guides.bracketPairs": "active",
+	"workbench.colorCustomizations": {
+		"tab.activeBackground": "#00000090",
+		"editorCursor.foreground": "#fff",
+		"editor.background": "#1e1e1e",
+		"editor.selectionBackground": "#000",
+		"editorLineNumber.foreground": "#676867",
+		"editorLineNumber.activeForeground": "#fff",
+		"editorBracketHighlight.foreground1": "#ffffff80",
+		"editorBracketHighlight.foreground2": "#ffffff80",
+		"editorBracketHighlight.foreground3": "#ffffff80",
+		"editorBracketHighlight.foreground4": "#ffffff80",
+		"editorBracketHighlight.foreground5": "#ffffff80",
+		"editorBracketHighlight.foreground6": "#ffffff80",
+		// "editorBracketHighlight.foreground6": "#676867",
+		"statusBar.background": "#005f5f",
+		"statusBar.noFolderBackground": "#005f5f",
+		"statusBar.debuggingBackground": "#005f5f",
+		"statusBar.foreground": "#ffffff",
+		"statusBar.debuggingForeground": "#ffffff"
+	},
+	"editor.formatOnSave": true,
+	"explorer.confirmPasteNative": false,
+	"workbench.sideBar.location": "right",
+	"editor.stickyScroll.enabled": false,
+	"editor.minimap.enabled": false,
+
+	"security.workspace.trust.untrustedFiles": "open",
+	"liveServer.settings.host": "localhost",
+	"liveServer.settings.donotVerifyTags": true,
+	"editor.detectIndentation": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.wordWrap": "bounded",
+	"emmet.preferences": {},
+	"errorLens.enabledDiagnosticLevels": [
+		"error",
+		"warning"
+		// "info"
+	],
+	"git.openRepositoryInParentFolders": "never",
+	"cSpell.languageSettings": [],
+	"workbench.startupEditor": "none",
+	"editor.fontVariations": false,
+	"terminal.integrated.env.windows": {},
+	"workbench.settings.useSplitJSON": true,
+	"json.schemas": [],
+	"explorer.openEditors.visible": 1,
+	"cSpell.allowedSchemas": [
+		"file",
+		"gist",
+		"sftp",
+		"untitled",
+		"vscode-notebook-cell",
+		"vscode-scm",
+		"vscode-userdata",
+		"html"
+	],
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"[jsonc]": {},
+	"javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+	"githubPullRequests.createOnPublishBranch": "never",
+	"git.openAfterClone": "always",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"ecsstractor_port.bem_nesting": true,
+	"ecsstractor_port.attributes": "className",
+	"javascript.inlayHints.parameterNames.enabled": "all",
+	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+	"typescript.inlayHints.enumMemberValues.enabled": true,
+	"javascript.inlayHints.variableTypes.enabled": true,
+	"typescript.inlayHints.parameterNames.enabled": "all",
+	"typescript.inlayHints.parameterTypes.enabled": true,
+	"editor.inlayHints.padding": true,
+	"workbench.colorTheme": "Default Dark+",
+	"prettier.tabWidth": 4,
+	"prettier.singleAttributePerLine": true,
+	"prettier.trailingComma": "all",
+	"prettier.useTabs": true,
+	"prettier.vueIndentScriptAndStyle": true,
+
+	"editor.codeLensFontFamily": "PT Sans Narrow",
+	"editor.multiCursorModifier": "ctrlCmd",
+	"terminal.integrated.fontFamily": "monospace",
+	"editor.cursorSurroundingLines": 8,
+	"notebook.confirmDeleteRunningCell": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmUndo": "verbose",
+	"[rust]": {
+		"editor.defaultFormatter": "rust-lang.rust-analyzer"
+	},
+	"editor.hideCursorInOverviewRuler": true,
+	"editor.inlayHints.enabled": "off",
+
+	"terminal.integrated.env.linux": {},
+	"git.ignoreRebaseWarning": true,
+	//Custom syntax highlighter
+	"editor.tokenColorCustomizations": {
+		"functions": {
+			// "fontStyle": "underline",
+			"foreground": "#d97706"
+		},
+		"numbers": {
+			"foreground": "#408080"
+		},
+		"keywords": {
+			"foreground": "#9872A2"
+			// "fontStyle": "italic"
+		},
+		"strings": {
+			"foreground": "#9AA83A",
+			"fontStyle": ""
+		},
+		"comments": "#525252",
+		// Javascript / Typescript
+		"textMateRules": [
+			{
+				"scope": "entity.name.type.class",
+				"settings": {
+					"foreground": "#4EC9B0",
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": ["entity.name.type.interface"],
+				"settings": {
+					"foreground": "#53b20b",
+					"fontStyle": ""
+				}
+			},
+			{
+				"scope": ["entity.name.type"],
+				"settings": {
+					"foreground": "#53b20b",
+					"fontStyle": ""
+				}
+			},
+			// types
+			{
+				"scope": ["support.type"],
+				"settings": {
+					"foreground": "#4EC9B0",
+					"fontStyle": ""
+				}
+			},
+			// colors for true / false
+			{
+				"scope": [
+					"constant.language.boolean.false",
+					"constant.language.boolean.true",
+					"constant.language.json.comments",
+					"constant.language.null",
+					"constant.language.undefined",
+					"constant.language.nan",
+					"constant.language.infinity"
+				],
+				"settings": {
+					"foreground": "#408080"
+				}
+			},
+			// const
+			{
+				"scope": ["variable.other.constant"],
+				"settings": {
+					"foreground": "#3b8cb8"
+				}
+			},
+			// this keyword, spread operator
+			{
+				"scope": [
+					"variable.language.this",
+					"keyword.operator.spread",
+					"keyword.operator.rest"
+				],
+				"settings": {
+					"foreground": "#C7444A"
+				}
+			},
+			// arguments/parameters to a function
+			{
+				"scope": ["variable.parameter", "entity.name.type.parameter"],
+				"settings": {
+					"foreground": "#078448be",
+					"fontStyle": "italic"
+				}
+			},
+			// enum
+			{
+				"scope": ["entity.name.type.enum"],
+				"settings": {
+					"foreground": "#ffc85a"
+				}
+			},
+			// enum member
+			{
+				"scope": ["variable.other.enummember"],
+				"settings": {
+					"foreground": "#9CDCFE"
+				}
+			},
+			// IN PROGRESS: console, Math,
+			// {
+			// 	"scope": ["support.variable"],
+			// 	"settings": {
+			// 		"foreground": "#0d9c00"
+			// 	}
+			// },
+			// other
+			{
+				"scope": [
+					"punctuation.accessor",
+					"punctuation.terminator.statement",
+					"punctuation.definition.parameters.begin",
+					"punctuation.definition.parameters.end",
+					"punctuation.definition.typeparameters.begin",
+					"punctuation.definition.typeparameters.end",
+					"meta.brace.round",
+					"meta.type.annotation",
+					"punctuation.definition.block",
+					"keyword.operator.type.annotation",
+					"punctuation.separator.comma",
+					"punctuation.separator.parameter",
+					"keyword.operator.assignment",
+					"meta.brace.square",
+					"punctuation.definition.interpolation.begin.html.vue",
+					"punctuation.definition.interpolation.end.html.vue",
+					"punctuation.definition.binding-pattern.object.js",
+					"punctuation.separator.key-value",
+					"punctuation.terminator.rule",
+					"punctuation.section.keyframes.begin.bracket.curly",
+					"punctuation.section.keyframes.end.bracket.curly",
+					"meta.property-value",
+					"punctuation.section.property-list.begin.bracket.curly",
+					"punctuation.section.property-list.end.bracket.curly",
+					"punctuation.definition.binding-pattern",
+					"keyword.operator.type.ts",
+					"punctuation.definition.section.case-statement",
+					"keyword.operator.bitwise"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			//logical operators: ||, &&, ??
+			{
+				"scope": ["keyword.operator.logical"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// ternary operators: ?, :
+			{
+				"scope": ["keyword.operator.ternary"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// relational operators: >, <
+			{
+				"scope": ["keyword.operator.relational"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// comparison operators: !==, !=,  ==, ===
+			{
+				"scope": ["keyword.operator.comparison"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// html tags < and >, />
+			{
+				"scope": [
+					"punctuation.definition.tag.begin.html",
+					"punctuation.definition.tag.end.html"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// new operator, typeof operator, delete operator, instanceof
+			{
+				"scope": [
+					"keyword.operator.new",
+					"keyword.operator.expression.of",
+					"keyword.operator.expression.delete",
+					"keyword.operator.expression.instanceof"
+				],
+				"settings": {
+					// "foreground": "#676867",
+					"foreground": "#9872A2"
+					// "fontStyle": "italic"
+				}
+			},
+			// highlight key fields in object literals
+			// {
+			// 	// "scope": [
+			// 	// 	"variable.other.property",
+			// 	// 	"variable.other.property.js",
+			// 	// 	"variable.other.object.property.js"
+			// 	// ],
+			// 	// "settings": {
+			// 	// 	"foreground": "#ff0015",
+			// 	// 	"fontStyle": "underline strikethrough"
+			// 	// }
+			// },
+
+			// escape character
+			{
+				"scope": "constant.character.escape",
+				"settings": {
+					"foreground": "#8080FF"
+				}
+			},
+			// keyword "in", dynamic import
+			{
+				"scope": [
+					"keyword.operator.expression.in",
+					"keyword.operator.expression.import",
+					"keyword.operator.expression.typeof",
+					"keyword.operator.expression.keyof.ts"
+				],
+				"settings": {
+					"foreground": "#9872A2"
+				}
+			},
+			// extends keyword
+			{
+				"scope": "storage.modifier",
+				"settings": {
+					"foreground": "#9872A2"
+				}
+			},
+			// async keyword
+			{
+				"scope": "storage.modifier.async",
+				"settings": {
+					"foreground": "#9872A2"
+				}
+			},
+			// optional ? in func signature
+			{
+				"scope": "keyword.operator.optional",
+				"settings": {
+					"foreground": "#676867"
+					// "fontStyle": "strikethrough",
+				}
+			},
+			// arrow function
+			{
+				"scope": "storage.type.function.arrow",
+				"settings": {
+					"foreground": "#676867"
+					// "foreground": "#d97706"
+					// "fontStyle": "underline"
+				}
+			},
+			// .value (vuejs)
+			{
+				"scope": "variable.other.constant.property",
+				"settings": {
+					"foreground": "#9CDCFE"
+				}
+			},
+			// arithmetic operators
+			{
+				"scope": [
+					"keyword.operator.arithmetic",
+					"keyword.operator.increment",
+					"keyword.operator.decrement"
+				],
+				"settings": {
+					"foreground": "#F92672"
+				}
+			},
+			// html attributes color
+			{
+				"scope": [
+					"entity.other.attribute-name.html.vue",
+					"entity.other.attribute-name.html",
+					"punctuation.separator.key-value.html",
+					"punctuation.definition.string.begin.html.vue",
+					"punctuation.definition.string.end.html.vue",
+					"punctuation.attribute-shorthand.event.html.vue",
+					"punctuation.attribute-shorthand.bind.html.vue",
+					"meta.attribute.directive.vue"
+				],
+				"settings": {
+					"foreground": "#D0B344"
+				}
+			},
+			// json settings
+			{
+				"scope": [
+					"punctuation.definition.dictionary.begin.json.comments",
+					"punctuation.definition.dictionary.end.json.comments",
+					"punctuation.definition.array.begin.json.comments",
+					"punctuation.definition.array.end.json.comments",
+					"punctuation.separator.dictionary.key-value.json.comments"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// CSS settings
+			{
+				"scope": [
+					"entity.other.attribute-name.class.css",
+					"meta.property-list.css",
+					"entity.name.tag.css"
+				],
+				"settings": {
+					"foreground": "#D0B344"
+				}
+			},
+			{
+				"scope": "support.type.property-name.css",
+				"settings": {
+					"foreground": "#676867",
+					"fontStyle": ""
+				}
+			},
+			{
+				"scope": [
+					"punctuation.section.property-list.begin.bracket.curly.css",
+					"punctuation.section.property-list.end.bracket.curly.css",
+					"punctuation.section.property-list.end.bracket.curly.css",
+					"punctuation.section.function.begin.bracket.round.css",
+					"punctuation.section.function.end.bracket.round.css",
+					"keyword.other.unit",
+					"punctuation.section.keyframes.begin.scss",
+					"punctuation.section.keyframes.end.scss",
+					// "source.css.scss",
+					"keyword.operator.css",
+					"punctuation.section.function.scss",
+					"punctuation.separator.delimiter.scss",
+					"keyword.operator.combinator"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			{
+				"scope": ["support.constant.property-value.css"],
+				"settings": {
+					"foreground": "#C7444A"
+				}
+			},
+			{
+				"scope": ["constant.other.color.rgb-value.hex.css"],
+				"settings": {
+					"foreground": "#8080FF"
+				}
+			},
+			{
+				"scope": ["meta.selector.css"],
+				"settings": {
+					"foreground": "#D7BA7D"
+				}
+			},
+			// SCSS
+			{
+				"scope": ["keyword.other.important"],
+				"settings": {
+					"foreground": "#9872A2"
+				}
+			},
+			// C langauge
+			{
+				"scope": [
+					"punctuation.section.arguments.begin.bracket.round.c",
+					"punctuation.section.arguments.end.bracket.round.c",
+					"punctuation.section.parens.begin.bracket.round.c",
+					"punctuation.section.parens.end.bracket.round.c",
+					"punctuation.section.block.begin.bracket.curly.c",
+					"punctuation.section.block.end.bracket.curly.c",
+					"punctuation.separator.delimiter.c",
+					"punctuation.section.parameters.begin.bracket.round.c",
+					"punctuation.section.parameters.end.bracket.round.c",
+					"keyword.operator.c"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// Dart Langauge
+
+			{
+				"scope": [
+					"punctuation.comma.dart",
+					"punctuation.terminator.dart",
+					"punctuation.dot.dart",
+					"keyword.operator.ternary.dart",
+					"keyword.operator.bitwise.dart"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			{
+				"scope": ["keyword.operator.closure.dart"],
+				"settings": {
+					"fontStyle": "underline",
+					"foreground": "#d97706"
+				}
+			},
+			{
+				"scope": ["storage.type.annotation.dart"],
+				"settings": {
+					"foreground": "#23c000",
+					"fontStyle": ""
+				}
+			},
+			{
+				"scope": "keyword.operator.increment-decrement.dart",
+				"settings": {
+					"foreground": "#F92672"
+				}
+			}
+		]
+	},
+	"editor.semanticTokenColorCustomizations": {
+		"enabled": true,
+		"rules": {
+			"keyword": {
+				"foreground": "#9872A2",
+				"fontStyle": ""
+			},
+			"boolean": {
+				"foreground": "#408080",
+				"fontStyle": ""
+			}
+		}
+	},
+
+	"zig.initialSetupDone": true,
+	"zig.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+	"zig.zls.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+	"[dart]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.rulers": [80],
+		"editor.selectionHighlight": false,
+		"editor.tabCompletion": "onlySnippets",
+		"editor.wordBasedSuggestions": "off"
+	},
+	"cmake.pinnedCommands": [
+		"workbench.action.tasks.configureTaskRunner",
+		"workbench.action.tasks.runTask"
+	],
+	"dart.hotReloadOnSave": "manual",
+	"workbench.settings.applyToAllProfiles": [
+		"dart.flutterHotReloadOnSave",
+		"dart.hotReloadOnSave"
+	],
+	"search.smartCase": true,
+	"dart.debugExternalPackageLibraries": true,
+	"dart.debugSdkLibraries": false,
+	"cmake.showOptionsMovedNotification": false,
+	"dart.renameFilesWithClasses": "prompt",
+	"dart.flutterCustomEmulators": [],
+	"dart.hotReloadProgress": "statusBar",
+	"cSpell.userWords": [
+		"admob",
+		"Appsflyer",
+		"APPSTORE",
+		"axios",
+		"betapi",
+		"chartjs",
+		"cordova",
+		"cutecat",
+		"devo",
+		"drymobile",
+		"fullscreen",
+		"haptics",
+		"homescreen",
+		"iaptic",
+		"instantsearch",
+		"ionicons",
+		"LEADERBOARD",
+		"leptos",
+		"lerp",
+		"meilisearch",
+		"onclick",
+		"REVENUECAT",
+		"SUSP",
+		"swiper",
+		"todos",
+		"typeparameters",
+		"VITE",
+		"vspx",
+		"vuex",
+		"Yleagues",
+		"Ymatches",
+		"Yposition",
+		"Yteams",
+		"Аккордеон",
+		"аккордеона",
+		"Базовый",
+		"баннер",
+		"блока",
+		"блоками",
+		"Блюр",
+		"Бордер",
+		"бордера",
+		"браузера",
+		"будет",
+		"быть",
+		"ввода",
+		"вертикально",
+		"видео",
+		"визуально",
+		"внутри",
+		"возможные",
+		"вручную",
+		"вставки",
+		"второстепенные",
+		"выбран",
+		"выбрать",
+		"Высота",
+		"галки",
+		"горизонтально",
+		"груп",
+		"данные",
+		"дефолтные",
+		"Добавит",
+		"добавится",
+		"добавляем",
+		"должен",
+		"других",
+		"другой",
+		"если",
+		"Жирность",
+		"закрывать",
+		"закрыт",
+		"Значение",
+		"ивент",
+		"Иконка",
+		"иконки",
+		"иконок",
+		"инпут",
+		"инпута",
+		"инпутом",
+		"использовать",
+		"Используется",
+		"ищет",
+		"картинка",
+		"картинки",
+		"картинку",
+		"картинок",
+		"класс",
+		"клике",
+		"Кнопка",
+		"кнопки",
+		"кнопкой",
+		"кнопку",
+		"кнопок",
+		"когда",
+		"комменты",
+		"компонент",
+		"конвертировать",
+		"конец",
+		"Контент",
+		"контента",
+		"котик",
+		"кружка",
+		"Лейбл",
+		"лейблом",
+		"либо",
+		"линии",
+		"линию",
+		"линия",
+		"логов",
+		"Максимальная",
+		"Максимальное",
+		"Массив",
+		"между",
+		"Минимальное",
+		"Модальное",
+		"Можно",
+		"наводке",
+		"нажатию",
+		"нажать",
+		"Название",
+		"найдена",
+		"начале",
+		"ниже",
+		"нужно",
+		"обертка",
+		"объектов",
+		"обычный",
+		"окно",
+		"Описание",
+		"опции",
+		"остаток",
+		"отдельно",
+		"открыт",
+		"открыть",
+		"папке",
+		"передается",
+		"передан",
+		"перехода",
+		"Подсказка",
+		"Позиционирование",
+		"Показать",
+		"Показывать",
+		"Полное",
+		"пользователя",
+		"попапа",
+		"Португальский",
+		"представить",
+		"применятся",
+		"пробела",
+		"пробелы",
+		"пропс",
+		"пропсы",
+		"прямой",
+		"прямоугольник",
+		"радио",
+		"Радиус",
+		"Разделительная",
+		"Размер",
+		"разметки",
+		"Расстояние",
+		"рекламы",
+		"Русский",
+		"ручного",
+		"сайт",
+		"сама",
+		"связки",
+		"себе",
+		"символов",
+		"скринридеров",
+		"скрыть",
+		"Состояние",
+		"Ссылка",
+		"ссылку",
+		"ставит",
+		"Стандартный",
+		"статусы",
+		"стили",
+		"Стиль",
+		"Текст",
+		"текста",
+		"телеграм",
+		"тема",
+		"титула",
+		"убираем",
+		"убрать",
+		"Українська",
+		"Уникальный",
+		"фокусе",
+		"фона",
+		"Функция",
+		"ховере",
+		"хотим",
+		"Цвет",
+		"центру",
+		"чекбокс",
+		"чекбокса",
+		"через",
+		"чисел",
+		"числа",
+		"ширина",
+		"шрифта",
+		"элементы",
+		"этот"
+	],
+	"cmake.showConfigureWithDebuggerNotification": false,
+	"dart.flutterSdkPath": "/home/mykyta/work/secret_flutter_project/lib/flutter",
+	"workbench.iconTheme": "vscode-icons",
+	// show indicators for widgets or not
+	"dart.previewFlutterUiGuides": true,
+	"[dart]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "always"
+		}
+	},
+	"liveServer.settings.fullReload": true,
+	"liveServer.settings.port": 0,
+	// ======================VIM SETTINGS===========================
+	"vim.incsearch": true,
+	"vim.leader": "<space>",
+	"vim.hlsearch": true,
+	"vim.highlightedyank.enable": true,
+	"vim.langmap": "йq,цw,уe,кr,еt,нy,гu,шi,щo,зp,х[,їъ],фa,іыs,вd,аf,пg,рh,оj,лk,дl,ж;,єэ',яz,чx,сc,мv,иb,тn,ьm,б.,ю/",
+	"vim.showMarksInGutter": true,
+	"vim.showmodename": true,
+	// might be hard on performance
+	"vim.statusBarColorControl": false,
+	"vim.useSystemClipboard": true,
+	"vim.handleKeys": {
+		"<C-a>": false,
+		"<C-f>": false,
+		"<C-w>": false
+	},
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "j"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<leader>", "f"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{ "before": ["U"], "after": ["C-r"] },
+		{
+			"before": ["<tab>"],
+			"commands": [
+				"workbench.action.quickOpenPreviousEditor",
+				"workbench.action.acceptSelectedQuickOpenItem"
+			]
+		},
+		{
+			"before": ["<C-c>"],
+			"commands": ["editor.action.commentLine"]
+		}
+
+		// {
+		// 	"before": ["<leader>", "e"],
+		// 	"commands": [
+		// 		"workbench.action.toggleSidebarVisibility",
+		// 		"workbench.view.explorer",
+		// 		"workbench.action.focusSideBar"
+		// 	]
+		// }
+		// {
+		// 	"before": ["<leader>", "e"],
+		// 	"commands": [
+		// 		"workbench.action.toggleSidebarVisibility",
+		// 		"workbench.view.explorer",
+		// 		"workbench.action.focusSideBar"
+		// 	]
+		// },
+		// {
+		// 	"before": ["<leader>", "e"],
+		// 	"commands": [
+		// 		"workbench.action.focusActiveEditorGroup",
+		// 		"workbench.action.toggleSidebarVisibility"
+		// 	]
+		// }
+	],
+	// "vim.visualModeKeyBindings": [
+	// 	{
+	// 		"before": ["<C-c>"],
+	// 		"commands": ["editor.action.commentLine"]
+	// 	}
+	// ],
+	"explorer.autoReveal": false,
+	"breadcrumbs.enabled": false,
+	"gitlens.ai.model": "openai:gpt-4o",
+	"chat.commandCenter.enabled": false,
+	"git.blame.statusBarItem.enabled": true
+}
