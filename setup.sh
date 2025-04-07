@@ -220,7 +220,10 @@ echo
 # install zed
 curl -f https://zed.dev/install.sh | sh
 
-# install android studio + java sdk
+# install openjdk
+source ./scripts/openjdk.sh
+
+# install android studio
 source ./scripts/androidstudio.sh
 
 # create/delete folders

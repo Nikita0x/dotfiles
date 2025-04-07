@@ -1,14 +1,4 @@
-# Install Java SDK for android studio
-echo "********************************************************"
-echo Installing openjdk-17-jdk
-echo "********************************************************"
-echo 
-
-sudo apt update
-sudo apt install openjdk-17-jdk -y
-
 # download android studio
-
 echo "********************************************************"
 echo Downloading android studio
 echo "********************************************************"
@@ -36,6 +26,3 @@ echo 'export ANDROID_HOME=/opt/android-studio' >> ~/.bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/bin' >> ~/.bashrc
 echo 'export CAPACITOR_ANDROID_STUDIO_PATH="/opt/android-studio/bin/studio.sh"' >> ~/.bashrc
 source ~/.bashrc
-
-
-

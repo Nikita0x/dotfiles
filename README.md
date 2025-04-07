@@ -5,6 +5,8 @@
 
 Так же включить `Accessibility` ->  `Large Text`.
 
+Так же, необходимо принять все  лицензии для gradlew (чтобы можно было билдить через cli). (TODO)
+
 так же, не забудь поставить в `/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf` `wifi.powersave = 2` вместо `wifi.powersave = 3`. (Чтобы вайфай не отрубался)
 
 <p class="has-line-data" data-line-start="11" data-line-end="12">2023</p>
