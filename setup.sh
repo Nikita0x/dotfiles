@@ -188,10 +188,10 @@ echo
 echo "Y" | sudo apt install cloc
 
 # install chrome
-source ./chromeinstallation.sh
+source ./scripts/chromeinstallation.sh
 
 # install brave
-source ./bravebrowser.sh
+source ./scripts/bravebrowser.sh
 
 echo "********************************************************"
 echo Installing steam
@@ -210,7 +210,7 @@ echo
 sudo apt install kolourpaint -y
 
 # install vscode
-source ./vscodeinstallation.sh
+source ./scripts/vscodeinstallation.sh
 
 echo "********************************************************"
 echo Installing Zed
@@ -221,27 +221,30 @@ echo
 curl -f https://zed.dev/install.sh | sh
 
 # install android studio + java sdk
-source ./androidstudio.sh
+source ./scripts/androidstudio.sh
 
 # create/delete folders
-source ./createfolders.sh
+source ./scripts/createfolders.sh
 
 # add aliases (studio, etc..)
 source ./aliases.sh
 
 # tools for hackering
-source ./hackertools.sh
+source ./scripts/hackertools.sh
 
 # nvim
-source ./nviminstallation.sh
+source ./scripts/nviminstallation.sh
 
-source ./flathub.sh
+source ./scripts/flathub.sh
 
 # snapd packages
-source ./snapdpackages.sh
+source ./scripts/snapdpackages.sh
 
 # go specific packages
-source ./gotools.sh
+source ./scripts/gotools.sh
+
+# install firebase cli for Flutter
+source ./scripts/firebasecli.sh
 
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
