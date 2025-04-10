@@ -553,6 +553,21 @@
 				"settings": {
 					"foreground": "#F92672"
 				}
+			},
+			// Rust
+			{
+				"scope": [
+					"punctuation.comma.rust",
+					"punctuation.semi.rust",
+					"punctuation.brackets.curly.rust",
+					"punctuation.brackets.round.rust",
+					"keyword.operator.key-value.rust",
+					"punctuation.brackets.angle.rust",
+					"keyword.operator.borrow.and.rust"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
 			}
 		]
 	},
@@ -566,6 +581,9 @@
 			"boolean": {
 				"foreground": "#408080",
 				"fontStyle": ""
+			},
+			"operator": {
+				"foreground": "#676867"
 			}
 		}
 	},
@@ -892,7 +910,6 @@
 	"explorer.autoReveal": false,
 	"breadcrumbs.enabled": false,
 	"gitlens.ai.model": "openai:gpt-4o",
-	"chat.commandCenter.enabled": false,
-    "git.blame.statusBarItem.enabled": true,
-    "git.autofetch": true
+	"git.blame.statusBarItem.enabled": true,
+	"git.autofetch": true
 }

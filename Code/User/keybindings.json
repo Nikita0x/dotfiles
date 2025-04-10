@@ -454,13 +454,29 @@
 	{
 		"key": "alt+n",
 		"command": "search.action.focusNextSearchResult",
-		"when": "hasSearchResult"
+		"when": "hasSearchResult && searchViewletVisible"
 	},
 	{
-		"key": "alt+p",
-		"command": "search.action.focusPreviousSearchResult",
-		"when": "hasSearchResult"
+		"key": "ctrl+enter",
+		"command": "-github.copilot.generate",
+		"when": "editorTextFocus && github.copilot.activated && !commentEditorFocused"
 	}
+	// TODO: добавить так же для просмотра изменений в гите
+	// {
+	// 	"key": "alt+p",
+	// 	"command": "search.action.focusPreviousSearchResult",
+	// 	"when": "hasSearchResult && searchViewletVisible"
+	// },
+	// {
+	// 	"key": "alt+z",
+	// 	"command": "workbench.scm.action",
+	// 	"when": "workbench.scm.active"
+	// }
+	// {
+	// 	"key": "alt+x",
+	// 	"command": "workbench.scm.focusPreviousChange",
+	// 	"when": "scmRepository"
+	// }
 
 	// {
 	// 	"key": "n",

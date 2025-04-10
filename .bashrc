@@ -125,6 +125,7 @@ export PATH=$PATH:$HOME/go/bin
 export ANDROID_HOME=/home/lulz/Android/Sdk
 export ANDROID_SDK_ROOT=/home/lulz/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export EDITOR="hx"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

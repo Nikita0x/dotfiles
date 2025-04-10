@@ -28,3 +28,10 @@ echo "********************************************************"
 echo 
 
 sudo snap install gradle --classic
+
+echo "********************************************************"
+echo Installing lnav
+echo "********************************************************"
+echo 
+
+sudo snap install lnav --classic
