@@ -249,6 +249,9 @@ source ./scripts/gotools.sh
 # install firebase cli for Flutter
 source ./scripts/firebasecli.sh
 
+# installing nixpkgs package manager
+source ./scripts/nixpkgs.sh
+
 echo "********************************************************"
 echo "Setup complete! Close and reopen the terminal to take effect."
 echo "********************************************************"
