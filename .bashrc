@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# to allow ctrl+backspace - to delete whole words in a terminal
+stty werase \^H
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
