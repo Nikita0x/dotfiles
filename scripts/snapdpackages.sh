@@ -35,3 +35,11 @@ echo "********************************************************"
 echo 
 
 sudo snap install lnav --classic
+
+
+echo "********************************************************"
+echo Installing postman
+echo "********************************************************"
+echo 
+
+sudo snap install postman
