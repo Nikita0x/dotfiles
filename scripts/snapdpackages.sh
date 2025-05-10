@@ -50,3 +50,10 @@ echo "********************************************************"
 echo 
 
 sudo snap install ffmpeg
+
+echo "********************************************************"
+echo Installing flutter
+echo "********************************************************"
+echo 
+
+sudo snap install flutter --classic

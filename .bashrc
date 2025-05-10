@@ -149,4 +149,4 @@ alias buildapk-180score='
   ./gradlew assembleDebug && \
   mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/180score-debug-$(date +%m_%d_%H_%M).apk)
 '
-alias glp='git log --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'
+export PATH="$PATH:/home/lulz/flutter/bin"

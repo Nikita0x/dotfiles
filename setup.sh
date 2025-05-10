@@ -45,6 +45,8 @@ echo
 
 sudo apt install simplescreenrecorder -y
 
+sudo apt install mpv libmpv-dev
+
 
 echo "********************************************************"
 echo Installing gpick
