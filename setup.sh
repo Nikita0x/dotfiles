@@ -245,6 +245,9 @@ source ./scripts/flathub.sh
 # snapd packages
 source ./scripts/snapdpackages.sh
 
+# cargo packages
+source ./scripts/cargo.sh
+
 # go specific packages
 source ./scripts/gotools.sh
 

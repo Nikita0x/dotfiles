@@ -1,0 +1,25 @@
+{
+  "Dart model with json_serializable": {
+    "prefix": "model",
+    "body": [
+      "import 'package:json_annotation/json_annotation.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@JsonSerializable()",
+      "class ${1:$TM_FILENAME_BASE} {",
+      "  const ${1:ClassName}({",
+      "    required this.name,",
+      "    required this.email,",
+      "  });",
+      "",
+      "  final String name;",
+      "  final String email;",
+      "",
+      "  factory ${1:ClassName}.fromJson(Map<String, dynamic> json) => _\\$${1:ClassName}FromJson(json);",
+      "  Map<String, dynamic> toJson() => _\\$${1:ClassName}ToJson(this);",
+      "}"
+    ],
+    "description": "Create a Dart model class with json_serializable boilerplate"
+  }
+}
