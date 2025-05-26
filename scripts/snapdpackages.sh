@@ -57,3 +57,10 @@ echo "********************************************************"
 echo 
 
 sudo snap install flutter --classic
+
+echo "********************************************************"
+echo Installing zig
+echo "********************************************************"
+echo 
+
+sudo snap install zig --edge --classic

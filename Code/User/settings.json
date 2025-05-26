@@ -321,7 +321,8 @@
 					"keyword.operator.new",
 					"keyword.operator.expression.of",
 					"keyword.operator.expression.delete",
-					"keyword.operator.expression.instanceof"
+					"keyword.operator.expression.instanceof",
+					"keyword.operator.expression.infer"
 				],
 				"settings": {
 					// "foreground": "#676867",
