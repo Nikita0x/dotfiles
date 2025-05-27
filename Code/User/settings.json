@@ -590,8 +590,6 @@
 			}
 		}
 	},
-
-	"zig.initialSetupDone": true,
 	"zig.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
 	"zig.zls.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
 	"[dart]": {
@@ -914,5 +912,6 @@
 	"git.blame.statusBarItem.enabled": true,
 	"git.autofetch": true,
 	"breadcrumbs.enabled": false,
-	"chat.commandCenter.enabled": false
+	"chat.commandCenter.enabled": false,
+	"zig.zls.enabled": "on"
 }
