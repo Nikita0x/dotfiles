@@ -20,7 +20,7 @@
       "ctrl-c": ["editor::ToggleComments", { "advance_downwards": false }],
       "space k": "editor::Hover",
       "ctrl-w": "pane::CloseActiveItem",
-      "space space": "file_finder::Toggle",
+      // "space space": "file_finder::Toggle",
       "alt-j": "editor::MoveLineDown",
       "alt-k": "editor::MoveLineUp",
       "alt-right": "pane::ActivateNextItem",
