@@ -211,6 +211,10 @@ echo
 # install paint-like program for simple editing
 sudo apt install kolourpaint -y
 
+# dependecy for audio (rodio)
+sudo apt-get install libasound2-dev
+sudo apt-get install pkg-config
+
 # install vscode
 source ./scripts/vscodeinstallation.sh
 
