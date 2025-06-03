@@ -7,20 +7,42 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "project_panel": {
-    "dock": "right",
-    "default_width": 370
-  },
-  "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "soft_wrap": "preferred_line_length",
-  "preferred_line_length": 80,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "VScode Dark Plus"
-  },
-  "current_line_highlight": "none",
-  "cursor_blink": false
+	"icon_theme": "VSCode Icons (Dark)",
+	"tab_size": 4,
+	"show_edit_predictions": false,
+	"project_panel": {
+		"dock": "right",
+		"default_width": 370,
+		"entry_spacing": "standard"
+	},
+	"vim_mode": true,
+	"ui_font_size": 16,
+	// "ui_font_family": "FreeMono",
+	// WWW
+	// 111
+	"buffer_font_family": "DejaVu Sans Mono",
+	// "buffer_font_family": "Liberation Mono",
+	// "buffer_font_family": "Tlwg Mono",
+	// "buffer_font_family": "Noto Mono",
+	"buffer_font_size": 16,
+	"soft_wrap": "preferred_line_length",
+	"preferred_line_length": 100,
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "VScode Dark Plus"
+	},
+	"current_line_highlight": "none",
+	"cursor_blink": false,
+	"selection_highlight": true,
+	// "cursor_shape": "hollow",
+	"tabs": {
+		"file_icons": true
+	},
+	"toolbar": {
+		"breadcrumbs": false,
+		"agent_review": false,
+		"selections_menu": false,
+		"quick_actions": false
+	}
 }
