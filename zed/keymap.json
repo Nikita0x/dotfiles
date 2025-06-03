@@ -58,6 +58,10 @@
 	{
 		"context": "vim_mode == normal",
 		"bindings": {
+			"m": "vim::Matching",
+			"alt-e": "vim::EndOfLine",
+			"alt-q": "vim::StartOfLine",
+			"alt-w": "vim::MiddleOfLine"
 			// "space": "command_palette::Toggle" // leader key
 			// "space f": "file_finder::Toggle" // open a file finder
 			// "space b b": "tab_switcher::Toggle", // switch to another open file
@@ -70,6 +74,16 @@
 			// "space s s": "buffer_search::Deploy" // search current buffer
 		}
 	},
+	{
+		"context": "vim_mode == visual",
+		"bindings": {
+			"m": "vim::Matching",
+			"alt-e": "vim::EndOfLine",
+			"alt-q": "vim::StartOfLine",
+			"alt-w": "vim::MiddleOfLine"
+		}
+	},
+
 	{
 		"context": "vim_mode == insert",
 		"bindings": {

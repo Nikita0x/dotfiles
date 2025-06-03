@@ -44,5 +44,54 @@
 		"agent_review": false,
 		"selections_menu": false,
 		"quick_actions": false
+	},
+	"lsp_highlight_debounce": 999999999,
+	"experimental.theme_overrides": {
+		// "editor.background": "#ffffff"
+		// "editor.document_highlight.read_background": "#000000",
+		// "editor.document_highlight.write_background": "#000000",
+		"hint": "#494949", //git blame color
+		"syntax": {
+			"keyword": {
+				"color": "#9872A2"
+			},
+			"function": {
+				"color": "#d97706"
+			},
+			"string": {
+				"color": "#9AA83A"
+			},
+			"punctuation": {
+				"color": "#676867"
+			},
+			"punctuation.bracket": {
+				"color": "#676867"
+			},
+			"punctuation.delimiter": {
+				"color": "#676867"
+			},
+			"punctuation.special": {
+				"color": "#676867"
+			},
+			"operator": {
+				"color": "#676867"
+			},
+			"number": {
+				"color": "#408080"
+			},
+			"boolean": {
+				"color": "#408080"
+			},
+			// not working?
+			"attribute": {
+				// "color": "#D0B344"
+			},
+			"comment": {
+				"color": "#525252"
+			},
+			"comment.doc": {
+				"color": "#525252"
+			}
+		}
 	}
 }
