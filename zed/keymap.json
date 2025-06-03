@@ -29,7 +29,8 @@
 			"alt-h": "pane::ActivatePreviousItem",
 			"U": "vim::Redo",
 			"ctrl-e": "workspace::ToggleRightDock",
-			"space": "command_palette::Toggle"
+			"space": "command_palette::Toggle",
+			"f1": "editor::Rename"
 		}
 	},
 	{
@@ -46,7 +47,12 @@
 		"context": "(ProjectPanel && not_editing)",
 		"bindings": {
 			"space": "command_palette::Toggle",
-			"space f": "file_finder::Toggle"
+			"space f": "file_finder::Toggle",
+			"d": "project_panel::Delete",
+			"f": "project_panel::NewDirectory",
+			"n": "project_panel::NewFile",
+			"r": "project_panel::Rename",
+			"f1": "project_panel::Rename"
 		}
 	},
 	{
