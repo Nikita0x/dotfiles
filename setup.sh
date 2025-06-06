@@ -215,6 +215,8 @@ sudo apt install kolourpaint -y
 sudo apt-get install libasound2-dev
 sudo apt-get install pkg-config
 
+sudo apt install filezilla -y
+
 #  deps for building Zed from source
 sudo apt install clang
 sudo apt install mold
