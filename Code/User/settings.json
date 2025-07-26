@@ -610,6 +610,32 @@
 				"settings": {
 					"foreground": "#676867"
 				}
+			},
+			//Go (Golang)
+			{
+				"scope": [
+					"keyword.package.go",
+					"keyword.function.go",
+					"keyword.var.go"
+				],
+				"settings": {
+					"foreground": "#9872A2"
+				}
+			},
+			{
+				"scope": [
+					"punctuation.definition.begin.bracket.round.go",
+					"punctuation.definition.end.bracket.round.go",
+					"punctuation.definition.begin.bracket.curly.go",
+					"punctuation.definition.end.bracket.curly.go",
+					"punctuation.other.period.go",
+					"punctuation.definition.begin.bracket.square.go",
+					"punctuation.definition.end.bracket.square.go",
+					"punctuation.other.comma.go"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
 			}
 		]
 	},
@@ -626,6 +652,9 @@
 			},
 			"operator": {
 				"foreground": "#676867"
+			},
+			"string.format": {
+				"foreground": "#9CDCFE"
 			}
 		}
 	},
@@ -952,5 +981,9 @@
 	"git.autofetch": true,
 	"breadcrumbs.enabled": false,
 	"chat.commandCenter.enabled": false,
-	"zig.zls.enabled": "on"
+	"zig.zls.enabled": "on",
+	// Golang settings
+	"gopls": {
+		"ui.semanticTokens": true
+	}
 }
