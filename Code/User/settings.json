@@ -631,7 +631,9 @@
 					"punctuation.other.period.go",
 					"punctuation.definition.begin.bracket.square.go",
 					"punctuation.definition.end.bracket.square.go",
-					"punctuation.other.comma.go"
+					"punctuation.other.comma.go",
+					"punctuation.definition.imports.begin.bracket.round.go",
+					"punctuation.definition.imports.end.bracket.round.go"
 				],
 				"settings": {
 					"foreground": "#676867"
