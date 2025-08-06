@@ -64,3 +64,10 @@ echo "********************************************************"
 echo 
 
 sudo snap install zig --edge --classic
+
+echo "********************************************************"
+echo Installing docker
+echo "********************************************************"
+echo 
+
+sudo snap install docker
