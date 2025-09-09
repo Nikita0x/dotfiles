@@ -73,7 +73,6 @@
 	"explorer.confirmPasteNative": false,
 	"workbench.sideBar.location": "right",
 	"editor.stickyScroll.enabled": false,
-	"editor.minimap.enabled": false,
 
 	"security.workspace.trust.untrustedFiles": "open",
 	"liveServer.settings.host": "localhost",
@@ -94,6 +93,15 @@
 	"terminal.integrated.env.windows": {},
 	"workbench.settings.useSplitJSON": true,
 	"json.schemas": [],
+	// CONVENTIONAL COMMITS SETTIGS
+	// Skip prompts you don't want
+	"conventionalCommits.promptScopes": false, // no scope step
+	"conventionalCommits.promptFooter": false, // no footer (incl. BREAKING CHANGE / issues)
+	"conventionalCommits.promptBody": false, // no body
+	"conventionalCommits.gitmoji": false, // no emoji picker
+
+	// optional: just fill message, don’t auto-commit
+	"conventionalCommits.autoCommit": true,
 	"explorer.openEditors.visible": 1,
 	"cSpell.allowedSchemas": [
 		"file",
@@ -284,7 +292,8 @@
 					"punctuation.definition.binding-pattern",
 					"keyword.operator.type.ts",
 					"punctuation.definition.section.case-statement",
-					"keyword.operator.bitwise"
+					"keyword.operator.bitwise",
+					"keyword.operator.type.tsx"
 				],
 				"settings": {
 					"foreground": "#676867"
@@ -638,6 +647,44 @@
 				"settings": {
 					"foreground": "#676867"
 				}
+			},
+			// Zig
+			{
+				"scope": ["keyword"],
+				"settings": {
+					"foreground": "#9872A2"
+				}
+			},
+			{
+				"scope": ["source.zig"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// Gleam
+			{
+				"scope": ["keyword.operator"],
+				"settings": {
+					"foreground": "#9872A2"
+				}
+			},
+			{
+				"scope": [
+					"punctuation.braces.begin.gleam",
+					"punctuation.braces.end.gleam",
+					"punctuation.brackets.begin.gleam",
+					"punctuation.brackets.end.gleam"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// splat (spread) keyword
+			{
+				"scope": "keyword.operator.splat.gleam",
+				"settings": {
+					"foreground": "#C7444A"
+				}
 			}
 		]
 	},
@@ -660,8 +707,8 @@
 			}
 		}
 	},
-	"zig.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
-	"zig.zls.path": "/home/nikita/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+	// "zig.zls.path": "/usr/bin/zls",
+	// "zig.path": "/snap/bin/zig",
 	"[dart]": {
 		"editor.formatOnSave": true,
 		"editor.formatOnType": true,
@@ -981,11 +1028,13 @@
 	"gitlens.ai.model": "openai:gpt-4o",
 	"git.blame.statusBarItem.enabled": true,
 	"git.autofetch": true,
-	"breadcrumbs.enabled": false,
 	"chat.commandCenter.enabled": false,
 	"zig.zls.enabled": "on",
 	// Golang settings
 	"gopls": {
 		"ui.semanticTokens": true
-	}
+	},
+	"workbench.editor.empty.hint": "hidden",
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": false
 }
