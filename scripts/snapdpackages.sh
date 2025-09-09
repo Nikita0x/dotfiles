@@ -71,3 +71,10 @@ echo "********************************************************"
 echo 
 
 sudo snap install docker
+
+echo "********************************************************"
+echo Installing telegram-desktop
+echo "********************************************************"
+echo 
+
+sudo snap install telegram-desktop
