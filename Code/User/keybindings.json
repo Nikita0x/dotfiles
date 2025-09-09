@@ -461,6 +461,18 @@
 		"command": "search.action.focusPreviousSearchResult",
 		"when": "hasSearchResult && searchViewletVisible"
 	},
+
+	// Select next / previous search when focus is on the editor
+	{
+		"key": "alt+n",
+		"command": "editor.action.nextMatchFindAction",
+		"when": "editorTextFocus && findWidgetVisible"
+	},
+	{
+		"key": "alt+p",
+		"command": "editor.action.previousMatchFindAction",
+		"when": "editorTextFocus && findWidgetVisible"
+	},
 	{
 		"key": "ctrl+enter",
 		"command": "-github.copilot.generate",
