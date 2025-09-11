@@ -642,7 +642,9 @@
 					"punctuation.definition.end.bracket.square.go",
 					"punctuation.other.comma.go",
 					"punctuation.definition.imports.begin.bracket.round.go",
-					"punctuation.definition.imports.end.bracket.round.go"
+					"punctuation.definition.imports.end.bracket.round.go",
+					"punctuation.other.colon.go",
+					"punctuation.terminator.go"
 				],
 				"settings": {
 					"foreground": "#676867"
@@ -657,6 +659,27 @@
 			},
 			{
 				"scope": ["source.zig"],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// JSON
+			{
+				"scope": "constant.language.json",
+				"settings": {
+					"foreground": "#408080"
+				}
+			},
+			{
+				"scope": [
+					"punctuation.separator.dictionary.key-value.json",
+					"punctuation.definition.dictionary.begin.json",
+					"punctuation.definition.dictionary.end.json",
+					"punctuation.definition.array.begin.json",
+					"punctuation.definition.array.end.json",
+					"punctuation.separator.dictionary.pair.json",
+					"punctuation.separator.array.json"
+				],
 				"settings": {
 					"foreground": "#676867"
 				}
@@ -704,6 +727,9 @@
 			},
 			"string.format": {
 				"foreground": "#9CDCFE"
+			},
+			"variable.readonly.defaultLibrary": {
+				"foreground": "#408080"
 			}
 		}
 	},
