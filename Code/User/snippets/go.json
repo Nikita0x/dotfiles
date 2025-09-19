@@ -1,0 +1,16 @@
+{
+	"Go Main": {
+		"scope": "go",
+		"prefix": "main",
+		"body": [
+			"package main",
+			"",
+			"import \"fmt\"",
+			"",
+			"func main() {",
+			"    fmt.Println(\"Hello, Go!\")",
+			"}"
+		],
+		"description": "Basic Go main function with Hello World"
+	}
+}

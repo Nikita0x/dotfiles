@@ -1,6 +1,6 @@
 echo "********************************************************"
-echo Installing Chrome
+echo Installing watchexec
 echo "********************************************************"
 echo 
 
-cargo install jj-cli
+cargo install watchexec-cli

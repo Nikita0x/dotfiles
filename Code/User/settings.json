@@ -696,7 +696,11 @@
 					"punctuation.braces.begin.gleam",
 					"punctuation.braces.end.gleam",
 					"punctuation.brackets.begin.gleam",
-					"punctuation.brackets.end.gleam"
+					"punctuation.brackets.end.gleam",
+					"punctuation.parens.begin.gleam",
+					"punctuation.parens.end.gleam",
+					"punctuation.colon.gleam",
+					"comment.unused.gleam"
 				],
 				"settings": {
 					"foreground": "#676867"
@@ -704,9 +708,23 @@
 			},
 			// splat (spread) keyword
 			{
-				"scope": "keyword.operator.splat.gleam",
+				"scope": ["keyword.operator.splat.gleam"],
 				"settings": {
 					"foreground": "#C7444A"
+				}
+			},
+			{
+				"scope": [
+					// "punctuation.parens.begin.gleam",
+					// "punctuation.parens.end.gleam",
+					// "punctuation.colon.gleam"
+					"attributes.deprecated.gleam",
+					"attributes.external.gleam"
+				],
+				"settings": {
+					// "foreground": "#c50913",
+					"foreground": "#44d0b9",
+					"fontStyle": "italic"
 				}
 			}
 		]
@@ -1062,5 +1080,14 @@
 	},
 	"workbench.editor.empty.hint": "hidden",
 	"editor.minimap.enabled": false,
-	"breadcrumbs.enabled": false
+	"breadcrumbs.enabled": false,
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"[gleam]": {
+		"editor.defaultFormatter": "gleam.gleam"
+	}
 }
