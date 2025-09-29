@@ -12,5 +12,15 @@
 			"}"
 		],
 		"description": "Basic Go main function with Hello World"
+	},
+    "Lala": {
+		"scope": "go",
+		"prefix": "iferr",
+		"body": [
+			"if err != nil {",
+			"    log.Fatal(err)",
+			"}"
+		],
+		"description": "Basic Go main function with Hello World"
 	}
 }

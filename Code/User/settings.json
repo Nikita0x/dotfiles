@@ -726,6 +726,19 @@
 					"foreground": "#44d0b9",
 					"fontStyle": "italic"
 				}
+			},
+			// Elixir
+			{
+				"scope": [
+					"punctuation.section.array.elixir",
+					"punctuation.section.function.elixir",
+					"punctuation.separator.method.elixir",
+					"punctuation.separator.object.elixir"
+				],
+				"settings": {
+					// "foreground": "#c50913",
+					"foreground": "#676867"
+				}
 			}
 		]
 	},
@@ -1089,5 +1102,8 @@
 	},
 	"[gleam]": {
 		"editor.defaultFormatter": "gleam.gleam"
+	},
+	"[go]": {
+		"editor.defaultFormatter": "golang.go"
 	}
 }
