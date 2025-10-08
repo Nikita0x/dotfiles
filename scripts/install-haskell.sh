@@ -13,6 +13,21 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_H
 # Load ghcup environment for this session
 source ~/.ghcup/env
 
+# --- Add ghcup to shell config automatically ---
+if [ -n "$ZSH_VERSION" ]; then
+  SHELL_RC="$HOME/.zshrc"
+elif [ -n "$BASH_VERSION" ]; then
+  SHELL_RC="$HOME/.bashrc"
+else
+  SHELL_RC="$HOME/.profile"
+fi
+
+if ! grep -q 'source ~/.ghcup/env' "$SHELL_RC"; then
+  echo "🔧 Adding 'source ~/.ghcup/env' to $SHELL_RC"
+  echo 'source ~/.ghcup/env' >> "$SHELL_RC"
+fi
+# ------------------------------------------------
+
 # Install recommended components
 ghcup install ghc recommended
 ghcup install cabal recommended
