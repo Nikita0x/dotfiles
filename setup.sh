@@ -267,6 +267,9 @@ source ./scripts/firebasecli.sh
 # installing nixpkgs package manager
 source ./scripts/nixpkgs.sh
 
+# installing haskell
+source ./scripts/install-haskell.sh
+
 # adding user to input group - so that we can use kmonad to remap keyboard
 source ./keyboardaccess.sh
 

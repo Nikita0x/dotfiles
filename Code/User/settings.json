@@ -293,7 +293,8 @@
 					"keyword.operator.type.ts",
 					"punctuation.definition.section.case-statement",
 					"keyword.operator.bitwise",
-					"keyword.operator.type.tsx"
+					"keyword.operator.type.tsx",
+					"punctuation.destructuring.tsx"
 				],
 				"settings": {
 					"foreground": "#676867"
