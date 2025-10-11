@@ -1151,5 +1151,7 @@
 	"haskell.formattingProvider": "brittany",
 	"[haskell]": {
 		"editor.defaultFormatter": "haskell.haskell"
-	}
+    },
+    "haskell.ghcupExecutablePath": "/home/lulz/.ghcup/bin/ghcup",
+    "haskell.serverExecutablePath": "/home/lulz/.ghcup/bin/haskell-language-server-wrapper"
 }
