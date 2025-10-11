@@ -3,11 +3,11 @@
 // available contexts - https://code.visualstudio.com/api/references/when-clause-contexts#available-context-keys
 [
 	// when in editor - "delete" - deletes a line
-	{
-		"key": "delete",
-		"command": "editor.action.deleteLines",
-		"when": "textInputFocus && !editorReadonly"
-	},
+	// {
+	// 	"key": "delete",
+	// 	"command": "editor.action.deleteLines",
+	// 	"when": "textInputFocus && !editorReadonly"
+	// },
 	// search files by name
 	{
 		"key": "insert",

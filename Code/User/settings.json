@@ -740,6 +740,45 @@
 					// "foreground": "#c50913",
 					"foreground": "#676867"
 				}
+			},
+			// Haskell
+			{
+				"scope": [
+					"punctuation.paren.haskell",
+					"punctuation.bracket.haskell",
+					"punctuation.brace.haskell",
+					"punctuation.comma.haskell",
+					"meta.deriving.haskell"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			// Elm
+			{
+				"scope": ["storage.type.elm"],
+				"settings": {
+					"foreground": "#53b20b"
+				}
+			},
+			{
+				"scope": [
+					"punctuation.definition.list.elm",
+					"punctuation.bracket.elm",
+					"punctuation.section.braces.begin",
+					"punctuation.section.braces.end",
+					"punctuation.parens.module-export.elm",
+					"meta.function.type-record.elm"
+				],
+				"settings": {
+					"foreground": "#676867"
+				}
+			},
+			{
+				"scope": ["constant.type-constructor.elm"],
+				"settings": {
+					"foreground": "#ffc85a"
+				}
 			}
 		]
 	},
@@ -1106,5 +1145,7 @@
 	},
 	"[go]": {
 		"editor.defaultFormatter": "golang.go"
-	}
+	},
+	"haskell.manageHLS": "GHCup",
+	"haskell.plugin.semanticTokens.globalOn": true
 }
