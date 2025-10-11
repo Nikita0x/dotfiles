@@ -31,13 +31,11 @@ fi
 # Install recommended components
 ghcup install ghc recommended
 ghcup install cabal recommended
-ghcup install stack recommended
 ghcup install hls recommended
 
 # Set default versions
 ghcup set ghc recommended
 ghcup set cabal recommended
-ghcup set stack recommended
 
 echo "✅ Haskell installation complete!"
 

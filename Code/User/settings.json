@@ -78,7 +78,7 @@
 	"liveServer.settings.host": "localhost",
 	"liveServer.settings.donotVerifyTags": true,
 	"editor.detectIndentation": false,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.defaultFormatter": "justusadam.language-haskell",
 	"editor.wordWrap": "bounded",
 	"emmet.preferences": {},
 	"errorLens.enabledDiagnosticLevels": [
@@ -1147,5 +1147,9 @@
 		"editor.defaultFormatter": "golang.go"
 	},
 	"haskell.manageHLS": "GHCup",
-	"haskell.plugin.semanticTokens.globalOn": true
+	"haskell.plugin.semanticTokens.globalOn": true,
+	"haskell.formattingProvider": "brittany",
+	"[haskell]": {
+		"editor.defaultFormatter": "haskell.haskell"
+	}
 }
