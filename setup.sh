@@ -221,6 +221,9 @@ sudo apt install filezilla -y
 sudo apt install clang
 sudo apt install mold
 
+# other stuff for GUI apps on Linux
+sudo apt-get install libgl1-mesa-dev libx11-dev libxext-dev libxrandr-dev
+
 # install vscode
 source ./scripts/vscodeinstallation.sh
 
