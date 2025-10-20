@@ -11,4 +11,4 @@ echo Installing xremap
 echo "********************************************************"
 echo 
 
-cargo install watch
+cargo install xremap
