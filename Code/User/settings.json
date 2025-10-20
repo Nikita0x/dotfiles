@@ -1153,5 +1153,8 @@
 		"editor.defaultFormatter": "haskell.haskell"
     },
     "haskell.ghcupExecutablePath": "/home/lulz/.ghcup/bin/ghcup",
-    "haskell.serverExecutablePath": "/home/lulz/.ghcup/bin/haskell-language-server-wrapper"
+    "haskell.serverExecutablePath": "/home/lulz/.ghcup/bin/haskell-language-server-wrapper",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
