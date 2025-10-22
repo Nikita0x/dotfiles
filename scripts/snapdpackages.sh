@@ -78,3 +78,11 @@ echo "********************************************************"
 echo 
 
 sudo snap install telegram-desktop
+
+
+echo "********************************************************"
+echo Installing brave
+echo "********************************************************"
+echo 
+
+sudo snap install brave

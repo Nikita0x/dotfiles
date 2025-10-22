@@ -192,14 +192,6 @@ echo "Y" | sudo apt install cloc
 # install chrome
 source ./scripts/chromeinstallation.sh
 
-# install brave
-source ./scripts/bravebrowser.sh
-
-echo "********************************************************"
-echo Installing steam
-echo "********************************************************"
-echo 
-
 # install steam
 sudo apt-get install steam -y
 
