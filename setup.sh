@@ -23,13 +23,7 @@ echo
 # Install git
 sudo apt install git -y
 
-echo "********************************************************"
-echo Removing annoying keyring prompt
-echo "********************************************************"
-echo 
 
-sudo apt remove gnome-keyring
-sudo apt remove seahorse
 
 
 echo "********************************************************"
