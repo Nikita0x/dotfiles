@@ -818,7 +818,11 @@
 		"workbench.action.tasks.configureTaskRunner",
 		"workbench.action.tasks.runTask"
 	],
-	"dart.hotReloadOnSave": "manual",
+    //  "files.autoSave": "afterDelay",
+    // "files.autoSaveDelay": 500,         // задержка перед автосохранением, мс
+    "dart.flutterHotReloadOnSave": "all", // включаем автоматический hot reload на save,
+    	// show indicators for widgets or not
+	"dart.previewFlutterUiGuides": true,
 	"workbench.settings.applyToAllProfiles": [
 		"dart.flutterHotReloadOnSave",
 		"dart.hotReloadOnSave"
@@ -1038,8 +1042,6 @@
 	],
 	"cmake.showConfigureWithDebuggerNotification": false,
 	"workbench.iconTheme": "vscode-icons",
-	// show indicators for widgets or not
-	"dart.previewFlutterUiGuides": true,
 	"[dart]": {
 		"editor.codeActionsOnSave": {
 			"source.fixAll": "always"
@@ -1159,5 +1161,15 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "dart.devToolsLocation": {
+        "default": "beside",
+        "inspector": "sidebar"
     }
 }

@@ -477,16 +477,13 @@
 		"key": "ctrl+enter",
 		"command": "-github.copilot.generate",
 		"when": "editorTextFocus && github.copilot.activated && !commentEditorFocused"
-	},
-	{
-		"key": "f4",
-		"command": "workbench.action.chat.open",
-		"when": "!chatSetupHidden"
-	},
-	// TBD?
-	{
-		"key": "ctrl+alt+i",
-		"command": "-workbench.action.chat.open",
-		"when": "!chatSetupHidden"
-	}
+    },
+    {
+        "key": "f4",
+        "command": "workbench.view.extension.codexViewContainer"
+    },
+    {
+        "key": "f4",
+        "command": "chatgpt.addToThread"
+    }
 ]
