@@ -485,5 +485,17 @@
     {
         "key": "f4",
         "command": "chatgpt.addToThread"
-    }
+    },
+	// Move editor tab left
+	{
+		"key": "meta+alt+left",
+		"command": "workbench.action.moveEditorLeftInGroup",
+		"when": "editorTextFocus"
+	},
+	// Move editor tab right
+	{
+		"key": "meta+alt+right",
+		"command": "workbench.action.moveEditorRightInGroup",
+		"when": "editorTextFocus"
+	}
 ]
