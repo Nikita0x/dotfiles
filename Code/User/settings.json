@@ -801,6 +801,9 @@
 			},
 			"variable.readonly.defaultLibrary": {
 				"foreground": "#408080"
+			},
+            "source.interpolation": {
+				"foreground": "#569CD6"
 			}
 		}
 	},
