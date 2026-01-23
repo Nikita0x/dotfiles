@@ -2,13 +2,12 @@
   input  (device-file "/dev/input/by-id/usb-SEMICO_USB_Keyboard-event-kbd")  ;; Path to your keyboard
   output (uinput-sink "kmonad-kbd")                                          ;; Output device for key events
   fallthrough true                                                           ;; if true - fallbacks to default keys if not specified
-  )  
-
-;; Custom key aliases
+)
 
 (defalias
-  cst (layer-toggle custom)
+  capsnav (tap-hold-next-release 150 home end)
 )
+
 
 ;; Physical keyboard representation
 (defsrc
@@ -20,21 +19,13 @@
   lctl  lmet lalt      spc       ralt cmps rctl                 left   down   rght
 )
 
-;; Base layer with custom key aliases
+;; Base layer
 (deflayer base
   esc   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11   f12    pause  prnt  ins  del
   `     1    2    3    4    5    6    7    8    9    0    -     =      bspc              home
   tab   q    w    e    r    t    y    u    i    o    p    [     ]      ret               pgup
-  esc   a    s    d    f    g    h    j    k    l    ;    '     \                        pgdn
-  lsft  z    x    c    v    b    n    m    ,    .    /    rsft         up                end
-  lctl  lmet @cst      spc       ralt cmps rctl                 left   down   rght
-)
-
-(deflayer custom
-  esc   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11   f12    pause  prnt  ins  del
-  `     1    2    3    4    5    6    7    8    9    0    -     =      bspc              home
-  tab    home w    end  r    t    y    u    i    o    p    [     ]      ret               pgup
-  esc   a    s    d    f    g    h    j    k    l    ;    '     \                        pgdn
+  @capsnav  a    s    d    f    g    h    j    k    l    ;    '     \                     pgdn
   lsft  z    x    c    v    b    n    m    ,    .    /    rsft         up                end
   lctl  lmet lalt      spc       ralt cmps rctl                 left   down   rght
 )
+
