@@ -294,7 +294,8 @@
 					"punctuation.definition.section.case-statement",
 					"keyword.operator.bitwise",
 					"keyword.operator.type.tsx",
-					"punctuation.destructuring.tsx"
+					"punctuation.destructuring.tsx",
+                    "punctuation.separator.label"
 				],
 				"settings": {
 					"foreground": "#676867"
