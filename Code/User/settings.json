@@ -295,7 +295,8 @@
 					"keyword.operator.bitwise",
 					"keyword.operator.type.tsx",
 					"punctuation.destructuring.tsx",
-                    "punctuation.separator.label"
+                    "punctuation.separator.label",
+                    "punctuation.separator.label.ts"
 				],
 				"settings": {
 					"foreground": "#676867"
