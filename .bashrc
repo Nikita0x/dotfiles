@@ -134,19 +134,29 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+alias св='cd'
+alias см='cat ~/Documents/cover_letter.txt | clipboard'
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias android-studio='cd /opt/android-studio/bin && ./studio.sh'
-alias clipboard='xclip -selection clipboard'
-alias c='cd'
 alias bashrc='hx ~/.bashrc'
+alias c='cd'
+alias clipboard='xclip -selection clipboard'
+alias cv='cat ~/Documents/cover_letter.txt | clipboard'
 alias dotfiles='code ~/github/dotfiles'
-alias buildapk-chat='
-  (cd ~/work/chat_app/android && \
-  ./gradlew assembleDebug && \
-  mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/chat-debug-$(date +%m_%d_%H_%M).apk)
-'
-alias buildapk-180score='
-  (cd ~/work/score_mob/android && \
-  ./gradlew assembleDebug && \
-  mv app/build/outputs/apk/debug/app-debug.apk ~/Downloads/180score-debug-$(date +%m_%d_%H_%M).apk)
-'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias head='head -n 20'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias lock='cinnamon-screensaver-command --lock'
+alias ls='ls --color=auto'
+alias tail='tail -n 20'
+alias upwork='cat ~/Documents/upwork.txt | clipboard'
+alias wgoff='sudo wg-quick down wg0'
+alias wgon='sudo wg-quick up wg0'
+alias wgstatus='sudo wg show'
+alias work='cd ~/work/keepsolid'
+
 export PATH="$PATH:/home/lulz/flutter/bin"
