@@ -483,11 +483,6 @@
         "command": "workbench.view.extension.codexViewContainer"
     },
     {
-        "key": "f4",
-        "command": "chatgpt.addToThread"
-    },
-	// Move editor tab left
-	{
 		"key": "meta+alt+left",
 		"command": "workbench.action.moveEditorLeftInGroup",
 		"when": "editorTextFocus"
@@ -497,5 +492,9 @@
 		"key": "meta+alt+right",
 		"command": "workbench.action.moveEditorRightInGroup",
 		"when": "editorTextFocus"
-	}
+    },
+    {
+        "key": "f4",
+        "command": "github.copilot.chat.attachSelection"
+    }
 ]

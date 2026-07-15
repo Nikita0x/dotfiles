@@ -129,7 +129,7 @@
 	"typescript.inlayHints.parameterNames.enabled": "all",
 	"typescript.inlayHints.parameterTypes.enabled": true,
 	"editor.inlayHints.padding": true,
-	"workbench.colorTheme": "Default Dark+",
+	"workbench.colorTheme": "Dark+",
 	"prettier.tabWidth": 4,
 	"prettier.singleAttributePerLine": true,
 	"prettier.trailingComma": "all",
@@ -348,7 +348,8 @@
 					"keyword.operator.expression.delete",
 					"keyword.operator.expression.instanceof",
 					"keyword.operator.expression.infer",
-					"keyword.operator.expression.is.ts"
+					"keyword.operator.expression.is.ts",
+                    "keyword.operator.expression.void.ts"
 				],
 				"settings": {
 					// "foreground": "#676867",
