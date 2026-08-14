@@ -19,6 +19,7 @@
 				{ "advance_downwards": false }
 			],
 			"space k": "editor::Hover",
+			"ctrl-r": "editor::Hover",
 			"ctrl-w": "pane::CloseActiveItem",
 			// "space space": "file_finder::Toggle",
 			"alt-j": "editor::MoveLineDown",
@@ -28,40 +29,46 @@
 			"alt-l": "pane::ActivateNextItem",
 			"alt-h": "pane::ActivatePreviousItem",
 			"U": "vim::Redo",
-			"ctrl-e": "workspace::ToggleRightDock",
-			"space": "command_palette::Toggle",
+			"ctrl-e": "project_panel::Toggle",
+			"space p": "command_palette::Toggle",
 			"f1": "editor::Rename"
 		}
 	},
 	{
 		"context": "Workspace",
 		"bindings": {
-			"ctrl-`": "workspace::ToggleBottomDock",
-			// "space space": "command_palette::Toggle",
-			"space": "command_palette::Toggle",
-			"ctrl-e": "workspace::ToggleRightDock",
+			"ctrl-e": "project_panel::Toggle",
 			"space f": "file_finder::Toggle"
 		}
 	},
+
 	{
 		"context": "(ProjectPanel && not_editing)",
 		"bindings": {
-			"space": "command_palette::Toggle",
+			"space p": "command_palette::Toggle",
 			"space f": "file_finder::Toggle",
 			"d": "project_panel::Delete",
 			"f": "project_panel::NewDirectory",
 			"n": "project_panel::NewFile",
 			"r": "project_panel::Rename",
-			"f1": "project_panel::Rename"
+			"f1": "project_panel::Rename",
+			"0": "file_finder::Toggle",
+			"insert": "file_finder::Toggle"
 		}
 	},
 	{
-		"context": "vim_mode == normal",
+		"context": "vim_mode == helix_normal",
 		"bindings": {
 			"m": "vim::Matching",
 			"alt-e": "vim::EndOfLine",
 			"alt-q": "vim::StartOfLine",
-			"alt-w": "vim::MiddleOfLine"
+			"alt-w": "vim::MiddleOfLine",
+			"ctrl-s": "workspace::Save",
+			"escape": "editor::Cancel",
+			"0": "file_finder::Toggle",
+			"insert": "file_finder::Toggle",
+			"ctrl-insert": "command_palette::Toggle",
+			"ctrl-0": "command_palette::Toggle"
 			// "space": "command_palette::Toggle" // leader key
 			// "space f": "file_finder::Toggle" // open a file finder
 			// "space b b": "tab_switcher::Toggle", // switch to another open file
@@ -83,12 +90,14 @@
 			"alt-w": "vim::MiddleOfLine"
 		}
 	},
-
 	{
 		"context": "vim_mode == insert",
 		"bindings": {
 			"ctrl-s": ["workspace::SendKeystrokes", "escape : w enter"],
-			"space": null
+			"alt-e": "vim::EndOfLine",
+			"alt-q": "vim::StartOfLine",
+			"alt-w": "vim::MiddleOfLine",
+			"ctrl-v": "editor::Paste"
 		}
 	}
 ]
