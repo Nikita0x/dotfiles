@@ -1232,5 +1232,10 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.externalBrowser": "/usr/bin/google-chrome"
+    "workbench.externalBrowser": "/usr/bin/google-chrome",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.defaultInterpreterPath": "/home/lulz/test-godlike/.venv/bin/python"
 }
