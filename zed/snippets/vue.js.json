@@ -1,0 +1,15 @@
+{
+    "Vue Component (with TypeScript Setup)": {
+        "prefix": "sfc",
+        "body": [
+            "<template>",
+            "  hello",
+            "$0",
+            "</template>",
+            "",
+            "<script lang=\"ts\" setup>",
+            "</script>"
+        ],
+        "description": "Vue.js component with TypeScript setup"
+    }
+}

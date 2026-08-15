@@ -38,6 +38,7 @@
 		"context": "Workspace",
 		"bindings": {
 			"ctrl-e": "project_panel::Toggle",
+			"space g": "git_panel::Toggle",
 			"space f": "file_finder::Toggle"
 		}
 	},
