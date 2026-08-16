@@ -96,6 +96,9 @@
             "alt-w": "vim::MiddleOfLine",
             "ctrl-v": "editor::Paste",
             "shift-u": null,
+            "space f": null,
+            "space g": null,
+            "space p": null,
         },
     },
 ]
