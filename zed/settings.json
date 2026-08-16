@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+    "format_on_save": "on",
     "cli_default_open_behavior": "existing_window",
     "ui_font_family": "Noto Mono",
     "terminal": {
@@ -24,14 +25,14 @@
             },
             {
                 "token_type": "enum",
-                "foreground_color":"#ffc85a"
+                "foreground_color": "#ffc85a",
             },
 
             {
                 "token_type": "enumMember",
-                "foreground_color":"#ffc85a",
-                "font_style":"normal"
-            }
+                "foreground_color": "#ffc85a",
+                "font_style": "normal",
+            },
         ],
     },
 
@@ -68,7 +69,7 @@
         "default_mode": "normal",
     },
 
-    "ui_font_size": 16,
+    "ui_font_size": 15.0,
     "buffer_font_family": "DejaVu Sans Mono",
     "buffer_font_size": 14,
     "preferred_line_length": 100,
@@ -94,6 +95,8 @@
         // "editor.background": "#ffffff"
         // "editor.document_highlight.read_background": "#000000",
         // "editor.document_highlight.write_background": "#000000",
+        "version_control.added": "#487E02",
+        "version_control.modified": "#1B81A8",
         "hint": "#494949", //git blame color
         "syntax": {
             "keyword": {
