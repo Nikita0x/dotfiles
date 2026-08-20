@@ -6,6 +6,17 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
+    // Переключение вкладок работает везде (в коде, настройках, превью и т.д.)
+    {
+        "context": "Pane",
+        "bindings": {
+            "alt-right": "pane::ActivateNextItem",
+            "alt-left": "pane::ActivatePreviousItem",
+            "alt-l": "pane::ActivateNextItem",
+            "alt-h": "pane::ActivatePreviousItem",
+        },
+    },
+    // Бинды только для редактора кода
     {
         "context": "Editor",
         "bindings": {
@@ -15,13 +26,8 @@
             "space k": "editor::Hover",
             "ctrl-r": "editor::Hover",
             "ctrl-w": "pane::CloseActiveItem",
-            // "space space": "file_finder::Toggle",
             "alt-j": "editor::MoveLineDown",
             "alt-k": "editor::MoveLineUp",
-            "alt-right": "pane::ActivateNextItem",
-            "alt-left": "pane::ActivatePreviousItem",
-            "alt-l": "pane::ActivateNextItem",
-            "alt-h": "pane::ActivatePreviousItem",
             "U": "vim::Redo",
             "ctrl-e": "project_panel::Toggle",
             "space p": "command_palette::Toggle",

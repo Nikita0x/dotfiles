@@ -7,6 +7,24 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+    "soft_wrap": "editor_width",
+    "lsp": {
+        "vtsls": {
+            "settings": {
+                "typescript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                },
+                "javascript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                },
+            },
+            "enable_lsp_tasks": true,
+        },
+    },
     "format_on_save": "on",
     "cli_default_open_behavior": "existing_window",
     "ui_font_family": "Noto Mono",
@@ -55,7 +73,7 @@
     "git_panel": {
         "dock": "right",
     },
-    "icon_theme": "VSCode Icons for Zed (Light Angular)",
+    "icon_theme": "Material Icon Theme",
     "tab_size": 4,
     "show_edit_predictions": false,
     "project_panel": {
@@ -74,7 +92,7 @@
     "buffer_font_size": 14,
     "preferred_line_length": 100,
     "theme": {
-        "mode": "system",
+        "mode": "dark",
         "light": "One Light",
         "dark": "VSCode Dark Polished",
     },
