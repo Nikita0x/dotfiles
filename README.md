@@ -1,12 +1,13 @@
-# NVIDIA DRIVERS
+Так же включить `Accessibility` -> `Large Text`.
 
-Устанавливать через `Driver Manager`.
-`IMPORTANT`: Чтобы не зависала система на играх, выставить `Performance Mode`, а не `On Demand`.
+You also need to generate new SSH key for Github (after fresh install)
 
-Так же включить `Accessibility` ->  `Large Text`.
+1. `ssh-keygen -t ed25519 -C "email@gmail.com"` //generate new key
+2. Enter
+3. Enter
+4. Enter
+5. `cd ~/.ssh && cat id_ed25519.pub | xclip -selection clipboard` //enter directory and copy the insides of the key
 
-Так же, необходимо принять все  лицензии для gradlew (чтобы можно было билдить через cli). (TODO)
+6) Github -> Profile -> Settings -> SSH and GPG keys -> New SSH key
 
-так же, не забудь поставить в `/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf` `wifi.powersave = 2` вместо `wifi.powersave = 3`. (Чтобы вайфай не отрубался)
-
-<p class="has-line-data" data-line-start="11" data-line-end="12">2023</p>
+<p class="has-line-data" data-line-start="11" data-line-end="12">2026</p>

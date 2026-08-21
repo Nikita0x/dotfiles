@@ -16,11 +16,11 @@ add_alias_if_missing() {
   fi
 }
 
-add_alias_if_missing "alias android-studio='cd /opt/android-studio/bin && ./studio.sh'"
 add_alias_if_missing "alias clipboard='xclip -selection clipboard'"
 add_alias_if_missing "alias c='cd'"
-add_alias_if_missing "alias dotfiles='code ~/github/dotfiles'"
-add_alias_if_missing "alias bashrc='hx ~/.bashrc'"
+add_alias_if_missing "alias св='cd'"
+add_alias_if_missing "alias dotfiles='zed ~/github/dotfiles'"
+add_alias_if_missing "alias lock='cinnamon-screensaver-command --lock'"
 
 echo
 echo "Please run 'source ~/.bashrc' to apply the changes or open a new terminal."
