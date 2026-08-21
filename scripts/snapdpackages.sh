@@ -86,3 +86,11 @@ echo "********************************************************"
 echo 
 
 sudo snap install brave
+
+
+echo "********************************************************"
+echo Installing VSCode
+echo "********************************************************"
+echo 
+
+sudo snap install code --classic

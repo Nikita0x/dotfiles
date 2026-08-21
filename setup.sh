@@ -9,7 +9,7 @@ sudo apt upgrade  -y
 echo "********************************************************"
 echo Installing gparted
 echo "********************************************************"
-echo 
+echo
 
 # Install gparted
 sudo apt install gparted -y
@@ -18,7 +18,7 @@ sudo apt install gparted -y
 echo "********************************************************"
 echo Installing git
 echo "********************************************************"
-echo 
+echo
 
 # Install git
 sudo apt install git -y
@@ -29,31 +29,31 @@ sudo apt install git -y
 echo "********************************************************"
 echo Installing xclip
 echo "********************************************************"
-echo 
+echo
 
 sudo apt install xclip
 
 echo "********************************************************"
 echo Installing adb
 echo "********************************************************"
-echo 
+echo
 
 sudo apt install adb -y
 
 echo "********************************************************"
 echo Installing simplescreenrecorder
 echo "********************************************************"
-echo 
+echo
 
 sudo apt install simplescreenrecorder -y
 
-sudo apt install mpv libmpv-dev
+sudo apt install mpv libmpv-dev -y
 
 
 echo "********************************************************"
 echo Installing gpick
 echo "********************************************************"
-echo 
+echo
 
 sudo apt install gpick -y
 
@@ -63,7 +63,7 @@ sudo apt install npm -y
 echo "********************************************************"
 echo Installing NVM - Node Version Manager
 echo "********************************************************"
-echo 
+echo
 
 # Installing NVM (Node Version Manager) - to change versions of Node.
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash -y
@@ -71,7 +71,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash 
 echo "********************************************************"
 echo Updating node to latest version
 echo "********************************************************"
-echo 
+echo
 
 # update node from v12 to the latest v22+
 nvm install node
@@ -79,7 +79,7 @@ nvm install node
 echo "********************************************************"
 echo Installing ionic cli globally
 echo "********************************************************"
-echo 
+echo
 
 # install ionic cli globally
 npm install -g @ionic/cli
@@ -87,7 +87,7 @@ npm install -g @ionic/cli
 echo "********************************************************"
 echo Installing utils for npm for updates
 echo "********************************************************"
-echo 
+echo
 
 # to check for updates in package.json via "ncu" and "ncu -u"
 npm install -g npm-check-updates
@@ -95,7 +95,7 @@ npm install -g npm-check-updates
 echo "********************************************************"
 echo Installing python
 echo "********************************************************"
-echo 
+echo
 
 # Install python
 sudo apt install python3 -y
@@ -103,7 +103,7 @@ sudo apt install python3 -y
 echo "********************************************************"
 echo Installing python virtual environment
 echo "********************************************************"
-echo 
+echo
 
 # Install python virtual environment
 sudo apt install python3.10-venv -y
@@ -111,7 +111,7 @@ sudo apt install python3.10-venv -y
 echo "********************************************************"
 echo Installing pip - python package manager
 echo "********************************************************"
-echo 
+echo
 
 # Install pip (package manager for python)
 sudo apt install python3-pip -y
@@ -119,7 +119,7 @@ sudo apt install python3-pip -y
 echo "********************************************************"
 echo Installing django
 echo "********************************************************"
-echo 
+echo
 
 # Install django framework
 sudo apt install python3-django -y
@@ -127,7 +127,7 @@ sudo apt install python3-django -y
 echo "********************************************************"
 echo Installing tree cli command
 echo "********************************************************"
-echo 
+echo
 
 # Handly command to visualize the structure of the folder
 sudo apt install tree -y
@@ -135,7 +135,7 @@ sudo apt install tree -y
 echo "********************************************************"
 echo Installing whois
 echo "********************************************************"
-echo 
+echo
 
 # install whois - CLI tool to check if a domain is taken or free
 sudo apt install whois
@@ -143,7 +143,7 @@ sudo apt install whois
 echo "********************************************************"
 echo Installing btop
 echo "********************************************************"
-echo 
+echo
 
 # Package to see and kill processes on Linux
 sudo apt install btop -y
@@ -151,7 +151,7 @@ sudo apt install btop -y
 echo "********************************************************"
 echo Installing SQLite browser
 echo "********************************************************"
-echo 
+echo
 
 # SQLite browser
 sudo apt-get install sqlitebrowser -y
@@ -159,7 +159,7 @@ sudo apt-get install sqlitebrowser -y
 echo "********************************************************"
 echo Installing yarn - globally
 echo "********************************************************"
-echo 
+echo
 
 # install yarn globally
 sudo npm install --global yarn -y
@@ -167,7 +167,7 @@ sudo npm install --global yarn -y
 echo "********************************************************"
 echo Installing PostgreSQL
 echo "********************************************************"
-echo 
+echo
 
 # install PostgreSQL, so we can use psql
 sudo apt-get install postgresql postgresql-contrib -y
@@ -175,7 +175,7 @@ sudo apt-get install postgresql postgresql-contrib -y
 echo "********************************************************"
 echo Installing Rust and Cargo
 echo "********************************************************"
-echo 
+echo
 
 # install Rust and Cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh /dev/stdin -y -c rustc
@@ -186,7 +186,7 @@ source "$HOME/.cargo/env"
 echo "********************************************************"
 echo Installing cloc
 echo "********************************************************"
-echo 
+echo
 
 # install cloc - to count lines,commets,blank spaces in many languages
 echo "Y" | sudo apt install cloc
@@ -200,7 +200,7 @@ sudo apt-get install steam -y
 echo "********************************************************"
 echo Installing kolourpaint
 echo "********************************************************"
-echo 
+echo
 
 # install paint-like program for simple editing
 sudo apt install kolourpaint -y
@@ -212,11 +212,8 @@ sudo apt-get install pkg-config
 sudo apt install filezilla -y
 
 #  deps for building Zed from source
-sudo apt install clang
-sudo apt install mold
-
-# other stuff for GUI apps on Linux
-sudo apt-get install libgl1-mesa-dev libx11-dev libxext-dev libxrandr-dev
+sudo apt install clang -y
+sudo apt install mold -y
 
 # install vscode
 source ./scripts/vscodeinstallation.sh
@@ -224,7 +221,7 @@ source ./scripts/vscodeinstallation.sh
 echo "********************************************************"
 echo Installing Zed
 echo "********************************************************"
-echo 
+echo
 
 # install zed
 curl -f https://zed.dev/install.sh | sh
@@ -233,7 +230,7 @@ curl -f https://zed.dev/install.sh | sh
 source ./scripts/openjdk.sh
 
 # install android studio
-source ./scripts/androidstudio.sh
+# source ./scripts/androidstudio.sh
 
 # create/delete folders
 source ./scripts/createfolders.sh
