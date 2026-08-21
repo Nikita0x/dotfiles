@@ -66,7 +66,7 @@ echo "********************************************************"
 echo
 
 # Installing NVM (Node Version Manager) - to change versions of Node.
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash -y
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 echo "********************************************************"
 echo Updating node to latest version
