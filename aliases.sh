@@ -22,5 +22,8 @@ add_alias_if_missing "alias св='cd'"
 add_alias_if_missing "alias dotfiles='zed ~/github/dotfiles'"
 add_alias_if_missing "alias lock='cinnamon-screensaver-command --lock'"
 
+# Line below enables ctrl+backspace - to delete whole word in terminal (without it only alt+backspace works)
+echo "stty werase '^H'" >> ~/.bashrc
+
 echo
 echo "Please run 'source ~/.bashrc' to apply the changes or open a new terminal."

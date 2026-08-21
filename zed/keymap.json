@@ -1,10 +1,3 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
-// documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
     // Переключение вкладок работает везде (в коде, настройках, превью и т.д.)
     {
@@ -39,8 +32,9 @@
         "context": "Workspace",
         "bindings": {
             "ctrl-e": "project_panel::Toggle",
-            "space g": "git_panel::Toggle",
             "space f": "file_finder::Toggle",
+            "ctrl-`": ["action::Sequence", ["terminal_panel::Toggle"]],
+            "space g": ["action::Sequence", ["git_panel::Toggle"]],
         },
     },
 
@@ -61,7 +55,7 @@
     {
         "context": "vim_mode == helix_normal",
         "bindings": {
-            // "m": "vim::Matching",
+            // "m": "workspace::ToggleHelixMode",
             "alt-e": "vim::EndOfLine",
             "alt-q": "vim::StartOfLine",
             "alt-w": "vim::MiddleOfLine",
@@ -104,6 +98,16 @@
             "shift-u": null,
             "space f": null,
             "space g": null,
+            "space p": null,
+            "space d": null,
+            "space k": null,
+        },
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "space g": null,
+            "space f": null,
             "space p": null,
         },
     },
