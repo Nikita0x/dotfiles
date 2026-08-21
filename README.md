@@ -1,3 +1,6 @@
+NVIDIA:
+`IMPORTANT`: Чтобы не зависала система на играх, выставить `Performance Mode`, а не `On Demand`.
+
 Так же включить `Accessibility` -> `Large Text`.
 
 You also need to generate new SSH key for Github (after fresh install)
