@@ -1,5 +1,5 @@
 # Add self to the input and uinput groups
-sudo usermod -aG input $USER 
+sudo usermod -aG input $USER
 sudo groupadd uinput
 sudo usermod -aG uinput $USER
 

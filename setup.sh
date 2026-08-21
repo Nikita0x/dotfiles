@@ -229,20 +229,12 @@ curl -f https://zed.dev/install.sh | sh
 # install openjdk
 source ./scripts/openjdk.sh
 
-# install android studio
-# source ./scripts/androidstudio.sh
-
 # create/delete folders
 source ./scripts/createfolders.sh
 
 # add aliases (studio, etc..)
 source ./aliases.sh
 
-# tools for hackering
-source ./scripts/hackertools.sh
-
-# nvim
-source ./scripts/nviminstallation.sh
 
 source ./scripts/flathub.sh
 
@@ -251,9 +243,6 @@ source ./scripts/snapdpackages.sh
 
 # cargo packages
 source ./scripts/cargo.sh
-
-# go specific packages
-source ./scripts/gotools.sh
 
 # install firebase cli for Flutter
 source ./scripts/firebasecli.sh
