@@ -1,183 +1,166 @@
-// Zed settings
+// // Zed settings
+// //
+// // For information on how to configure Zed, see the Zed
+// // documentation: https://zed.dev/docs/configuring-zed
+// //
+// // To see all of Zed's default settings without changing your
+// // custom settings, run `zed: open default settings` from the
+// // command palette (cmd-shift-p / ctrl-shift-p)
 //
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
-    "soft_wrap": "editor_width",
-    "lsp": {
-        "vtsls": {
-            "settings": {
-                "typescript": {
-                    "updateImportsOnFileMove": {
-                        "enabled": "always",
-                    },
-                },
-                "javascript": {
-                    "updateImportsOnFileMove": {
-                        "enabled": "always",
-                    },
-                },
-            },
-            "enable_lsp_tasks": true,
+  "helix_mode": true,
+  "soft_wrap": "editor_width",
+  "format_on_save": "on",
+
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
         },
-    },
-    "format_on_save": "on",
-    "cli_default_open_behavior": "existing_window",
-    "ui_font_family": "Noto Mono",
-    "terminal": {
-        "font_size": 15.0,
-        "font_family": "Noto Mono",
-    },
-    "semantic_tokens": "combined",
-    "lsp_highlight_debounce": 300,
-    "global_lsp_settings": {
-        "semantic_token_rules": [
-            {
-                "token_type": "parameter",
-                "foreground_color": "#0D6A3D",
-                "font_style": "italic",
-            },
-            {
-                "token_type": "enum",
-                "foreground_color": "#ffc85a",
-            },
-
-            {
-                "token_type": "enumMember",
-                "foreground_color": "#ffc85a",
-                "font_style": "normal",
-            },
-        ],
-    },
-
-    "which_key": {
-        "enabled": true,
-    },
-    "outline_panel": {
-        "button": false,
-        "dock": "left",
-    },
-    "collaboration_panel": {
-        "button": false,
-        "dock": "left",
-    },
-    "agent": {
-        "dock": "right",
-        "favorite_models": [],
-        "model_parameters": [],
-    },
-    "git_panel": {
-        "dock": "right",
-    },
-    "icon_theme": "Material Icon Theme",
-    "tab_size": 4,
-    "show_edit_predictions": false,
-    "project_panel": {
-        "dock": "right",
-        "default_width": 370,
-        "entry_spacing": "standard",
-    },
-    "helix_mode": true,
-    "vim_mode": true,
-    "vim": {
-        "default_mode": "normal",
-    },
-
-    "ui_font_size": 15.0,
-    "buffer_font_family": "DejaVu Sans Mono",
-    "buffer_font_size": 14,
-    "preferred_line_length": 100,
-    "theme": {
-        "mode": "dark",
-        "light": "One Light",
-        "dark": "VSCode Dark Modern",
-    },
-    "current_line_highlight": "none",
-    "cursor_blink": false,
-    "selection_highlight": true,
-    // "cursor_shape": "hollow",
-    "tabs": {
-        "file_icons": true,
-    },
-    "toolbar": {
-        "breadcrumbs": false,
-        "agent_review": false,
-        "selections_menu": false,
-        "quick_actions": false,
-    },
-    "experimental.theme_overrides": {
-        // "editor.background": "#ffffff"
-        // "editor.document_highlight.read_background": "#000000",
-        // "editor.document_highlight.write_background": "#000000",
-        "version_control.added": "#487E02",
-        "version_control.modified": "#1B81A8",
-        "hint": "#494949", //git blame color
-        "syntax": {
-            "keyword": {
-                "color": "#9872A2",
-            },
-            "function": {
-                "color": "#d97705",
-            },
-            "string": {
-                "color": "#9AA83A",
-            },
-            "punctuation": {
-                "color": "#676867",
-            },
-            "punctuation.bracket": {
-                "color": "#676867",
-            },
-            "punctuation.delimiter": {
-                "color": "#676867",
-            },
-            "punctuation.special": {
-                "color": "#676867",
-            },
-            "operator": {
-                "color": "#676867",
-            },
-            "number": {
-                "color": "#408080",
-            },
-            "boolean": {
-                "color": "#408080",
-            },
-            // not working?
-            "attribute": {
-                // "color": "#D0B344"
-            },
-
-            "comment": {
-                "color": "#525252",
-            },
-            "comment.doc": {
-                "color": "#525252",
-            },
-            //null, undefined
-            "constant.builtin": {
-                "color": "#408080",
-            },
-            // this, super
-            "variable.special": {
-                "color": "#C7444A",
-            },
-            // TESTING HERE
-            // needs to be contributed
-            // https://github.com/zed-industries/zed/blob/main/crates/languages/src/javascript/highlights.scm
-            "enum": {
-                "color": "#ff0000",
-            },
-            "enum.member": {
-                "color": "#ff0000",
-            },
-            "pattern.identifier": {
-                "color": "#C7444A",
-            },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
         },
+      },
+      "enable_lsp_tasks": true,
     },
+  },
+  "ui_font_family": "Noto Mono",
+  "terminal": {
+    "font_size": 15.0,
+    "font_family": "Noto Mono",
+  },
+  "cursor_blink": false,
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+    "show_diagnostics": "all", //possible contribution? missing those "three values" in the description (all, errors, off)
+  },
+  "toolbar": {
+    "code_actions": false,
+    "breadcrumbs": false,
+    "agent_review": false,
+    "selections_menu": false,
+    "quick_actions": false,
+  },
+  "show_edit_predictions": true,
+  "current_line_highlight": "all",
+
+  // Things provided by Extensions.
+  "icon_theme": "VSCode Great Icons Theme",
+
+  // Syntax highlighting related
+  "semantic_tokens": "combined", // Use LSP semantic tokens together with tree-sitter highlighting. Tree-sitter provides base highlighting, and semantic tokens overlay additional information.
+
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_type": "parameter",
+        "foreground_color": "#0D6A3D",
+        "font_style": "italic",
+      },
+      {
+        "token_type": "enum",
+        "foreground_color": "#ffc85a",
+      },
+      {
+        "token_type": "enumMember",
+        "foreground_color": "#ffc85a",
+      },
+      {
+        "token_type": "import",
+        "foreground_color": "#ffc85a",
+        "font_style": "normal",
+      },
+
+      {
+        "token_type": "punctuation",
+        "foreground_color": "#ff0000",
+      },
+      {
+        "token_type": "function",
+        "foreground_color": "#d97705",
+      },
+      {
+        "token_type": "method",
+        "foreground_color": "#d97704",
+      },
+      {
+        "token_type": "string",
+        "foreground_color": "#ff0000",
+      },
+    ],
+  },
+  "experimental.theme_overrides": {
+    "editor.background": "#1f1f1f",
+    "editor.gutter.background": "#1f1f1f",
+    "tab_bar.background": "#1f1f1f",
+    "tab.active_background": "#1f1f1f",
+    "tab.inactive_background": "#181818",
+    "status_bar.background": "#1f1f1f",
+    "panel.background": "#1f1f1f",
+    "title_bar.background": "#1f1f1f",
+    "title_bar.inactive_background": "#2b2b2b",
+    "border": "#2b2b2b",
+
+    "version_control.added": "#487E02",
+    "version_control.modified": "#1B81A8",
+    "hint": "#494949", //git blame color
+    "syntax": {
+      "keyword": {
+        "color": "#9872A2",
+      },
+      "function": {
+        "color": "#d97705",
+      },
+      "string": {
+        "color": "#9AA83A",
+      },
+      "punctuation": {
+        "color": "#676867",
+      },
+      "punctuation.bracket": {
+        "color": "#676867",
+      },
+      "punctuation.delimiter": {
+        "color": "#676867",
+      },
+      "punctuation.special": {
+        "color": "#676867",
+      },
+      "operator": {
+        "color": "#676867",
+      },
+      "number": {
+        "color": "#408080",
+      },
+      "boolean": {
+        "color": "#408080",
+      },
+      "comment": {
+        "color": "#525252",
+      },
+      "comment.doc": {
+        "color": "#525252",
+      },
+      //null, undefined
+      "constant.builtin": {
+        "color": "#408080",
+      },
+      // this, super
+      "variable.special": {
+        "color": "#C7444A",
+      },
+      "pattern.identifier": {
+        "color": "#C7444A",
+      },
+      "export": {
+        "color": "#C7444A",
+      },
+    },
+  },
 }
