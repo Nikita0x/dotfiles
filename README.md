@@ -3,6 +3,8 @@ NVIDIA:
 
 Так же включить `Accessibility` -> `Large Text`.
 
+Так же - чтобы работал `helix mode` для `ru`, `uk` раскладок - необходимо отключить `ibus` в системе, этот input framework - преднозначен для сложных вводов (ктиайский, японский и тд) - мне он не нужен, и без него все работает.
+
 You also need to generate new SSH key for Github (after fresh install)
 
 1. `ssh-keygen -t ed25519 -C "email@gmail.com"` //generate new key
