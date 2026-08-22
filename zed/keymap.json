@@ -28,6 +28,20 @@
     },
   },
   {
+    // bind for num+ to insert "λ" in racket language
+    "context": "Editor && vim_mode == insert && extension == rkt",
+    "bindings": {
+      "add": ["workspace::SendKeystrokes", "λ"],
+    },
+  },
+  {
+    // bind for num+ to insert arrow function in JS/TS/Vue
+    "context": "Editor && vim_mode == insert && (extension == js || extension == ts || extension == vue)",
+    "bindings": {
+      "add": ["workspace::SendKeystrokes", "() => {}"],
+    },
+  },
+  {
     "context": "Workspace",
     "bindings": {
       "ctrl-e": "project_panel::Toggle",
