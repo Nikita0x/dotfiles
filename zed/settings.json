@@ -52,6 +52,10 @@
 
   // Things provided by Extensions.
   "icon_theme": "VSCode Great Icons Theme",
+  // "theme": {
+  //   "light": "Ayu Dark",
+  //   "dark": "VSCode Dark Modern",
+  // },
 
   // Syntax highlighting related
   "semantic_tokens": "combined", // Use LSP semantic tokens together with tree-sitter highlighting. Tree-sitter provides base highlighting, and semantic tokens overlay additional information.
@@ -60,6 +64,11 @@
     "semantic_token_rules": [
       {
         "token_type": "parameter",
+        "foreground_color": "#0D6A3D",
+        "font_style": "italic",
+      },
+      {
+        "token_type": "typeParameter",
         "foreground_color": "#0D6A3D",
         "font_style": "italic",
       },
@@ -74,7 +83,6 @@
       {
         "token_type": "import",
         "foreground_color": "#ffc85a",
-        "font_style": "normal",
       },
 
       {
@@ -92,6 +100,24 @@
       {
         "token_type": "string",
         "foreground_color": "#ff0000",
+      },
+
+      {
+        "token_type": "property",
+        "foreground_color": "#88c7ed",
+      },
+      {
+        "token_type": "variable",
+        "foreground_color": "#3B8CB8",
+        "token_modifiers": ["readonly"],
+      },
+      {
+        "token_type": "variable",
+        "foreground_color": "#88c7ed",
+      },
+      {
+        "token_type": "type",
+        "foreground_color": "#53B20B",
       },
     ],
   },
@@ -147,7 +173,7 @@
       "comment.doc": {
         "color": "#525252",
       },
-      //null, undefined
+      //null, undefined, "center, flex" - keywords in css
       "constant.builtin": {
         "color": "#408080",
       },
@@ -161,6 +187,17 @@
       "export": {
         "color": "#C7444A",
       },
+      "tag": {
+        "color": "#3B8CB8",
+      },
+      "attribute": {
+        "color": "#D0B344",
+      },
+      "selector": {
+        "color": "#D0B344",
+      },
     },
   },
 }
+
+// https://github.com/catppuccin/zed/blob/main/themes/catppuccin-no-italics-mauve.json - for referencing proper tokens
