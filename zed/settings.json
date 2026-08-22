@@ -8,6 +8,7 @@
 // // command palette (cmd-shift-p / ctrl-shift-p)
 //
 {
+  "cli_default_open_behavior": "new_window",
   "helix_mode": true,
   "soft_wrap": "editor_width",
   "format_on_save": "on",
@@ -181,9 +182,6 @@
       "variable.special": {
         "color": "#C7444A",
       },
-      "pattern.identifier": {
-        "color": "#C7444A",
-      },
       "export": {
         "color": "#C7444A",
       },
@@ -199,11 +197,24 @@
       "type": {
         "color": "#4EC9B0",
       },
-
       "class": {
-        //TODO: decide what color to use for classes
-        "color": "#C7444A",
+        "color": "#4EC9B0",
         "font_style": "italic",
+      },
+      "property": {
+        "color": "#88c7ed",
+      },
+      "variable": {
+        "color": "#88c7ed",
+      },
+      "variable.parameter": {
+        "color": "#0D6A3D",
+        "font_style": "italic",
+      },
+
+      // CSS units
+      "type.unit": {
+        "color": "#676767",
       },
     },
   },
