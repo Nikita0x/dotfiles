@@ -130,9 +130,12 @@
     "tab.inactive_background": "#181818",
     "status_bar.background": "#1f1f1f",
     "panel.background": "#1f1f1f",
+    "background": "#1f1f1f",
     "title_bar.background": "#1f1f1f",
     "title_bar.inactive_background": "#2b2b2b",
     "border": "#2b2b2b",
+    "terminal.background": "#1f1f1f",
+    "elevated_surface.background": "#1f1f1f",
 
     "version_control.added": "#487E02",
     "version_control.modified": "#1B81A8",
