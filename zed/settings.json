@@ -196,6 +196,15 @@
       "selector": {
         "color": "#D0B344",
       },
+      "type": {
+        "color": "#4EC9B0",
+      },
+
+      "class": {
+        //TODO: decide what color to use for classes
+        "color": "#C7444A",
+        "font_style": "italic",
+      },
     },
   },
 }
